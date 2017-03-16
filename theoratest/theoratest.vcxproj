@@ -88,12 +88,12 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>SDL-1.2.15/include;libogg-1.3.2\include;libtheora-1.1.1\include;libvorbis-1.3.5/include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>SDL2-2.0.5/include;libogg-1.3.2\include;libtheora-1.1.1\include;libvorbis-1.3.5/include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>libogg_static.lib;libtheora_static.lib;libvorbis_static.lib;SDL-1.2.15/lib/x86/SDL.lib;SDL-1.2.15/lib/x86/SDLmain.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libogg_static.lib;libtheora_static.lib;libvorbis_static.lib;SDL2-2.0.5/lib/x86/SDL2.lib;SDL2-2.0.5/lib/x86/SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">

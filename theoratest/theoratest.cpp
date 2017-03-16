@@ -115,8 +115,9 @@ static void playfile(const char *fname)
 	THEORAPLAY_Decoder *decoder = NULL;
 	const THEORAPLAY_VideoFrame *video = NULL;
 	const THEORAPLAY_AudioPacket *audio = NULL;
-	SDL_Surface *screen = NULL;
-	SDL_Overlay *overlay = NULL;
+	SDL_Window* window = NULL;
+	SDL_Texture* texture = NULL;
+	SDL_Renderer* renderer = NULL;
 	SDL_AudioSpec spec;
 	SDL_Event event;
 	Uint32 framems = 0;
@@ -146,25 +147,23 @@ static void playfile(const char *fname)
 		SDL_Delay(10);
 	} // if
 
-	SDL_WM_SetCaption(fname, "TheoraPlay");
-
 	framems = (video->fps == 0.0) ? 0 : ((Uint32)(1000.0 / video->fps));
-	screen = SDL_SetVideoMode(video->width, video->height, 0, 0);
-	if(!screen)
-		fprintf(stderr, "SDL_SetVideoMode() failed: %s\n", SDL_GetError());
+	window = SDL_CreateWindow("TheoraPlay", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, video->width, video->height, 0);
+	if(!window)
+		fprintf(stderr, "SDL_CreateWindow() failed: %s\n", SDL_GetError());
 	else  // software surface
 	{
-		// blank out the screen to start.
-		SDL_FillRect(screen, NULL, SDL_MapRGB(screen->format, 0, 0, 0));
-		SDL_Flip(screen);
-
-		overlay = SDL_CreateYUVOverlay(video->width, video->height,
-			SDL_IYUV_OVERLAY, screen);
-		if(!overlay)
-			fprintf(stderr, "YUV Overlay failed: %s\n", SDL_GetError());
+		renderer = SDL_CreateRenderer(window, -1, 0);
+		texture = SDL_CreateTexture(
+			renderer,
+			SDL_PIXELFORMAT_YV12,
+			SDL_TEXTUREACCESS_STREAMING,
+			video->width,
+			video->height
+		);
 	} // else
 
-	initfailed = quit = (!screen || !overlay);
+	initfailed = quit = (!texture || !renderer);
 
 	memset(&spec, '\0', sizeof(SDL_AudioSpec));
 	spec.freq = audio->freq;
@@ -224,17 +223,6 @@ static void playfile(const char *fname)
 					fprintf(stderr, "WARNING: Playback can't keep up!\n");
 				} // if
 			} // if
-
-			else if(SDL_LockYUVOverlay(overlay) == -1)
-			{
-				static int warned = 0;
-				if(!warned)
-				{
-					warned = 1;
-					fprintf(stderr, "Couldn't lock YUV overlay: %s\n", SDL_GetError());
-				} // if
-			} // else if
-
 			else
 			{
 				SDL_Rect dstrect = { 0, 0, video->width, video->height };
@@ -246,29 +234,12 @@ static void playfile(const char *fname)
 				Uint8 *dst;
 				int i;
 
-				dst = overlay->pixels[0];
-				for(i = 0; i < h; i++, y += w, dst += overlay->pitches[0])
-					memcpy(dst, y, w);
+				int uvpitch = video->width / 2;
+				SDL_UpdateYUVTexture(texture, &dstrect, y, video->width, u, uvpitch, v, uvpitch);
 
-				dst = overlay->pixels[1];
-				for(i = 0; i < h / 2; i++, u += w / 2, dst += overlay->pitches[1])
-					memcpy(dst, u, w / 2);
-
-				dst = overlay->pixels[2];
-				for(i = 0; i < h / 2; i++, v += w / 2, dst += overlay->pitches[1])
-					memcpy(dst, v, w / 2);
-
-				SDL_UnlockYUVOverlay(overlay);
-
-				if(SDL_DisplayYUVOverlay(overlay, &dstrect) != 0)
-				{
-					static int warned = 0;
-					if(!warned)
-					{
-						warned = 1;
-						fprintf(stderr, "Couldn't display YUV overlay: %s\n", SDL_GetError());
-					} // if
-				} // if
+				SDL_RenderClear(renderer);
+				SDL_RenderCopy(renderer, texture, NULL, NULL);
+				SDL_RenderPresent(renderer);
 			} // else
 
 			THEORAPLAY_freeVideo(video);
@@ -283,17 +254,17 @@ static void playfile(const char *fname)
 			queue_audio(audio);
 
 		// Pump the event loop here.
-		while(screen && SDL_PollEvent(&event))
+		while(window && SDL_PollEvent(&event))
 		{
 			switch(event.type)
 			{
-			case SDL_VIDEOEXPOSE:
-				if(overlay)
-				{
-					SDL_Rect dstrect = { 0, 0, screen->w, screen->h };
-					SDL_DisplayYUVOverlay(overlay, &dstrect);
-				} // if
-				break;
+			//case SDL_VIDEOEXPOSE:
+			//	if(overlay)
+			//	{
+			//		SDL_Rect dstrect = { 0, 0, screen->w, screen->h };
+			//		SDL_DisplayYUVOverlay(overlay, &dstrect);
+			//	} // if
+			//	break;
 
 			case SDL_QUIT:
 				quit = 1;
@@ -324,7 +295,9 @@ static void playfile(const char *fname)
 	else
 		printf("done with this file!\n");
 
-	if(overlay) SDL_FreeYUVOverlay(overlay);
+	if(texture) SDL_DestroyTexture(texture);
+	if(renderer) SDL_DestroyRenderer(renderer);
+	if(window) SDL_DestroyWindow(window);
 	if(video) THEORAPLAY_freeVideo(video);
 	if(audio) THEORAPLAY_freeAudio(audio);
 	if(decoder) THEORAPLAY_stopDecode(decoder);
