@@ -10,12 +10,6 @@
     <Filter Include="lib">
       <UniqueIdentifier>{d732d2ee-48f8-481a-8f85-2ecbd5055422}</UniqueIdentifier>
     </Filter>
-    <Filter Include="lib\enc">
-      <UniqueIdentifier>{cf8c8c8b-9a72-436c-87d4-103cc2685d7f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="lib\enc\x86_vc">
-      <UniqueIdentifier>{1e40e913-ffab-475c-9009-1eb531d65138}</UniqueIdentifier>
-    </Filter>
     <Filter Include="lib\dec">
       <UniqueIdentifier>{ff6dd9d4-9ce9-4d5a-84b2-6f3dc83244ab}</UniqueIdentifier>
     </Filter>
@@ -38,21 +32,6 @@
     </ClInclude>
     <ClInclude Include="..\..\..\lib\internal.h">
       <Filter>lib</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\lib\encint.h">
-      <Filter>lib\enc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\lib\enquant.h">
-      <Filter>lib\enc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\lib\huffenc.h">
-      <Filter>lib\enc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\lib\mathops.h">
-      <Filter>lib\enc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\lib\modedec.h">
-      <Filter>lib\enc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\lib\apiwrapper.h">
       <Filter>lib\dec</Filter>
@@ -88,54 +67,6 @@
   <ItemGroup>
     <ClCompile Include="..\..\..\lib\cpu.c">
       <Filter>lib</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\lib\analyze.c">
-      <Filter>lib\enc</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\lib\encapiwrapper.c">
-      <Filter>lib\enc</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\lib\encfrag.c">
-      <Filter>lib\enc</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\lib\encinfo.c">
-      <Filter>lib\enc</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\lib\encode.c">
-      <Filter>lib\enc</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\lib\encoder_disabled.c">
-      <Filter>lib\enc</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\lib\enquant.c">
-      <Filter>lib\enc</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\lib\fdct.c">
-      <Filter>lib\enc</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\lib\huffenc.c">
-      <Filter>lib\enc</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\lib\mathops.c">
-      <Filter>lib\enc</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\lib\mcenc.c">
-      <Filter>lib\enc</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\lib\rate.c">
-      <Filter>lib\enc</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\lib\tokenize.c">
-      <Filter>lib\enc</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\lib\x86_vc\mmxencfrag.c">
-      <Filter>lib\enc\x86_vc</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\lib\x86_vc\mmxfdct.c">
-      <Filter>lib\enc\x86_vc</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\lib\x86_vc\x86enc.c">
-      <Filter>lib\enc\x86_vc</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\lib\apiwrapper.c">
       <Filter>lib\dec</Filter>
