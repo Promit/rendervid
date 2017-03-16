@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="webm.cpp" />
+    <ClCompile Include="nestegg\src\nestegg.c">
+      <Filter>nestegg</Filter>
+    </ClCompile>
+    <ClCompile Include="nestegg\halloc\src\halloc.c">
+      <Filter>halloc</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="nestegg">
+      <UniqueIdentifier>{11209f03-c198-44ee-8ca6-80682d560f04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="halloc">
+      <UniqueIdentifier>{3380da85-aa67-4946-acb4-020fbf5ee2e0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
