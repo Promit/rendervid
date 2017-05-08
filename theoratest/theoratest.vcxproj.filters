@@ -3,8 +3,15 @@
   <ItemGroup>
     <ClCompile Include="theoratest.cpp" />
     <ClCompile Include="theoraplay.c" />
+    <ClCompile Include="theorarun.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="theoraplay.h" />
+    <ClInclude Include="theorarun.h" />
+    <ClInclude Include="shader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="texture.vs" />
+    <None Include="texture.frag" />
   </ItemGroup>
 </Project>

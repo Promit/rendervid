@@ -88,12 +88,13 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>SDL2-2.0.5/include;libogg-1.3.2\include;libtheora-1.1.1\include;libvorbis-1.3.5/include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>SDL2-2.0.5/include;libogg-1.3.2\include;libtheora-1.1.1\include;libvorbis-1.3.5/include;glfw-3.2.1.bin.WIN32/include;glew-2.0.0\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>SDL2-2.0.5/lib/x86/SDL2.lib;SDL2-2.0.5/lib/x86/SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>SDL2-2.0.5/lib/x86/SDL2.lib;SDL2-2.0.5/lib/x86/SDL2main.lib;opengl32.lib;glfw3.lib;glew32s.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>glfw-3.2.1.bin.WIN32\lib-vc2015;glew-2.0.0\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -145,10 +146,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="theoraplay.c" />
+    <ClCompile Include="theorarun.c" />
     <ClCompile Include="theoratest.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="shader.h" />
     <ClInclude Include="theoraplay.h" />
+    <ClInclude Include="theorarun.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="libogg-1.3.2\win32\VS2010\libogg_static.vcxproj">
@@ -160,6 +164,10 @@
     <ProjectReference Include="libvorbis-1.3.5\win32\VS2010\libvorbis\libvorbis_static.vcxproj">
       <Project>{3a214e06-b95e-4d61-a291-1f8df2ec10fd}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="texture.frag" />
+    <None Include="texture.vs" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
