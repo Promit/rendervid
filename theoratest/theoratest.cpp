@@ -10,8 +10,6 @@
 * This is meant to be a dirt simple test case. If you want a big, robust
 *  version that handles lots of strange variations, try sdltheoraplay.c
 */
-#define STB_IMAGE_IMPLEMENTATION
-#include "../../../3rdParty/OpenGL/stb-master/stb_image.h"
 #include <stdio.h>
 #include <string.h>
 #include <assert.h>
@@ -152,33 +150,6 @@ static int setup() {
 	return 0;
 }
 
-static GLuint texture;
-static void gen_texture() {
-	glEnable(GL_TEXTURE_2D);
-	//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_MIRRORED_REPEAT);
-	//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-	//generate texture
-	glGenTextures(1, &texture);
-	glBindTexture(GL_TEXTURE_2D, texture);
-	// Load and generate the texture
-	/*int width, height, n;
-	//unsigned char *image = stbi_load(name, &width, &height, &n, 0);
-	//glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, image);
-	//glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, ix, iy, 0, GL_RGBA, GL_UNSIGNED_BYTE, tx_image);
-	glGenerateMipmap(GL_TEXTURE_2D);
-	glBindTexture(GL_TEXTURE_2D, 0);*/
-}
-
-static long long getTime() {
-	using namespace std::chrono;
-	milliseconds ms = duration_cast< milliseconds >(
-		system_clock::now().time_since_epoch()
-	);
-	return ms.count();
-}
-
 static unsigned char * convertToRGB(unsigned char *yuyv_image, int width, int height) {
 	unsigned char* rgb_image = new unsigned char[width * height * 3]; //width and height of the image to be converted
 
@@ -200,7 +171,7 @@ static unsigned char * convertToRGB(unsigned char *yuyv_image, int width, int he
 		g = y - (0.3455 * (cb - 128)) - (0.7169 * (cr - 128));
 		b = y + (1.7790 * (cb - 128));
 
-		//This prevents colour distortions in your rgb image
+		//To prevent colour distortions
 		if (r < 0) r = 0;
 		else if (r > 255) r = 255;
 		if (g < 0) g = 0;
@@ -235,32 +206,43 @@ static unsigned char * convertToRGB(unsigned char *yuyv_image, int width, int he
 	return rgb_image;
 }
 
-static GLuint VAO = 0, VBO = 0, EBO = 0;
-static const THEORAPLAY_VideoFrame *video = NULL;
-static void game_loop(Shader ourShader) {
-	glfwPollEvents(); // checks if any events are triggered and calls the corresponding functions
-					  // Rendering commands
-	glClearColor(0.2f, 0.3f, 0.3f, 1.0f); // sets the color used for glClear
-	glClear(GL_COLOR_BUFFER_BIT); // clears the entire buffer (can be color, depth, and/or stencil)
-								  // Draw traingle
-								  //glUseProgram(ourShader);
-	ourShader.Use();
+static GLuint texture;
+static void gen_texture(const THEORAPLAY_VideoFrame *video) {
+	glEnable(GL_TEXTURE_2D);
+	//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_MIRRORED_REPEAT);
+	//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+	//generate texture
+	glGenTextures(1, &texture);
 	glBindTexture(GL_TEXTURE_2D, texture);
-	glBindVertexArray(VAO);
-	glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
-	glBindVertexArray(0);
-	//unsigned char *rgb = new unsigned char[video->width * video->height * 3];// = convertToRGB(video->pixels, video->width, video->height);
-	//memset(rgb, 255, video->width * video->height * 3
-	int width, height, n;
-	const char* name = "container.jpg";
-	unsigned char *rgb = stbi_load(name, &width, &height, &n, 0);
+ 	unsigned char *rgb = convertToRGB(video->pixels, video->width, video->height); // new unsigned char[video->width * video->height * 3];//
+	//memset(rgb, 255, video->width * video->height * 3);
+	
+	
 	//glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, video->width, video->height, 0, GL_RGB, GL_UNSIGNED_BYTE, rgb);// video->pixels);
-	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, rgb);// video->pixels);
-	// swaps front (final output image) and back (where rendering is happening) buffer
-	glfwSwapBuffers(window);
+	//glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, rgb);// video->pixels);*/
+
+	// Load and generate the texture
+	//int width, height, n;
+	//const char* name = "container.jpg";
+	//unsigned char *image = stbi_load(name, &width, &height, &n, 0);
+	//unsigned char *rgb = stbi_load(name, &width, &height, &n, 0);
+	//glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, image);
+	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, video->width, video->height, 0, GL_RGB, GL_UNSIGNED_BYTE, rgb);
+	glGenerateMipmap(GL_TEXTURE_2D);
+	glBindTexture(GL_TEXTURE_2D, 0);
 }
 
-static void setupBindings() {
+static long long getTime() {
+	using namespace std::chrono;
+	milliseconds ms = duration_cast< milliseconds >(
+		system_clock::now().time_since_epoch()
+	);
+	return ms.count();
+}
+
+static GLuint setupBindings(Shader ourShader) {
 	GLfloat vertices[] = {
 		// Positions          // Colors           // Texture Coords
 		0.5f,  0.5f, 0.0f,   1.0f, 0.0f, 0.0f,   1.0f, 1.0f,   // Top Right
@@ -272,14 +254,15 @@ static void setupBindings() {
 		0, 1, 3, // First Triangle
 		1, 2, 3  // Second Triangle
 	};
-	gen_texture();
+	//gen_texture();
 	// tell how vertex data is organized
 	// (index of vertex attribute we want to configure, size of vertex attribute, data type, if the data should be normalized, stride - pace between consecutive vertex attribute sets, offset of first component)
 	//glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(GLfloat), (GLvoid*)0);
 	// enable attributes
+
 	glEnableVertexAttribArray(0);
 
-	
+	GLuint VAO, VBO, EBO;
 	glGenVertexArrays(1, &VAO);
 	glGenBuffers(1, &VBO);
 	glGenBuffers(1, &EBO);
@@ -303,12 +286,40 @@ static void setupBindings() {
 	glEnableVertexAttribArray(2);
 	//4. Unbind the VAO
 	glBindVertexArray(0);
+	return VAO;
+}
+
+//static GLuint VAO = 0, VBO = 0, EBO = 0;
+//static const THEORAPLAY_VideoFrame *video = NULL;
+static void game_loop(Shader ourShader, const THEORAPLAY_VideoFrame *video, GLuint VAO) {
+	glfwPollEvents(); // checks if any events are triggered and calls the corresponding functions
+					  // Rendering commands
+	glClearColor(0.2f, 0.3f, 0.3f, 1.0f); // sets the color used for glClear
+	glClear(GL_COLOR_BUFFER_BIT); // clears the entire buffer (can be color, depth, and/or stencil)
+								  // Draw traingle
+								  //glUseProgram(ourShader);
+	gen_texture(video);
+	ourShader.Use();
+	glBindTexture(GL_TEXTURE_2D, texture);
+	glBindVertexArray(VAO);
+	glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+	glBindVertexArray(0);
+	//unsigned char *rgb = new unsigned char[video->width * video->height * 3];// = convertToRGB(video->pixels, video->width, video->height);
+	//memset(rgb, 255, video->width * video->height * 3
+	/*int width, height, n;
+	const char* name = "container.jpg";
+	unsigned char *rgb = stbi_load(name, &width, &height, &n, 0);
+	//glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, video->width, video->height, 0, GL_RGB, GL_UNSIGNED_BYTE, rgb);// video->pixels);
+	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, rgb);// video->pixels);*/
+	// swaps front (final output image) and back (where rendering is happening) buffer
+	glfwSwapBuffers(window);
 }
 
 static void playfile(const char *fname)
 {
 	THEORAPLAY_Decoder *decoder = NULL;
 	const THEORAPLAY_AudioPacket *audio = NULL;
+	const THEORAPLAY_VideoFrame *video = NULL;
 	/*SDL_Window* window = NULL;
 	SDL_Texture* texture = NULL;
 	SDL_Renderer* renderer = NULL;
@@ -320,8 +331,10 @@ static void playfile(const char *fname)
 	int quit = 0;
 	if (setup() != 0) {
 		return;
-	}
-
+	} 
+	Shader ourShader("texture.vs", "texture.frag");
+	GLuint VAO = setupBindings(ourShader);
+	
 	printf("Trying file '%s' ...\n", fname);
 
 	decoder = THEORAPLAY_startDecodeFile(fname, 30, THEORAPLAY_VIDFMT_IYUV);
@@ -344,7 +357,7 @@ static void playfile(const char *fname)
 		if(!video) video = THEORAPLAY_getVideo(decoder);
 		//SDL_Delay(10);
 	} // if
-
+	
 	//framems = (video->fps == 0.0) ? 0 : ((Uint32)(1000.0 / video->fps));
 	framems = (video->fps == 0.0) ? 0 : ((GLuint)(1000.0 / video->fps));
 	//window = SDL_CreateWindow("TheoraPlay", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, video->width, video->height, 0);
@@ -360,9 +373,9 @@ static void playfile(const char *fname)
 			video->width,
 			video->height
 		);*/
-		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, video->width, video->height, 0, GL_RGB, GL_UNSIGNED_BYTE, convertToRGB(video->pixels, video->width, video->height));
+		/*glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, video->width, video->height, 0, GL_RGB, GL_UNSIGNED_BYTE, convertToRGB(video->pixels, video->width, video->height));
 		glGenerateMipmap(GL_TEXTURE_2D);
-		glBindTexture(GL_TEXTURE_2D, 0);
+		glBindTexture(GL_TEXTURE_2D, 0);*/
 	} // else
 
 	//initfailed = quit = (!texture || !renderer);
@@ -374,7 +387,7 @@ static void playfile(const char *fname)
 	spec.samples = 2048;
 	spec.callback = audio_callback;
 	initfailed = quit = (initfailed || (SDL_OpenAudio(&spec, NULL) != 0));*/
-	Shader ourShader("texture.vs", "texture.frag");
+	
 	while(audio)
 	{
 		queue_audio(audio);
@@ -386,8 +399,6 @@ static void playfile(const char *fname)
 	if(!quit)
 		SDL_PauseAudio(0);*/
 	baseticks = getTime();
-	
-	setupBindings();
 	while(!quit && THEORAPLAY_isDecoding(decoder))
 	{
 		//const Uint32 now = SDL_GetTicks() - baseticks;
@@ -445,7 +456,7 @@ static void playfile(const char *fname)
 				SDL_RenderClear(renderer);
 				SDL_RenderCopy(renderer, texture, NULL, NULL);
 				SDL_RenderPresent(renderer);*/
-				game_loop(ourShader);
+				game_loop(ourShader, video, VAO);
 			} // else
 
 			THEORAPLAY_freeVideo(video);

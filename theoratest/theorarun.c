@@ -79,6 +79,10 @@ static int getHeight(TheoraDecoder *ctx) {
 	return ctx->tinfo->pic_height;
 }
 
+static THEORARUN_VideoFormat getFormat(TheoraDecoder *ctx) {
+	return ctx->vidfmt;
+}
+
 static void init_decoder(THEORARUN_Io *io, const unsigned int maxframes, THEORARUN_VideoFormat vidfmt) {
 	TheoraDecoder *ctx = NULL;
 	//ConvertVideoFrameFn vidcvt = NULL;
@@ -111,6 +115,3 @@ static void init() {
 	th_info_init(&tinfo);
 }
 
-static THEORARUN_VideoFormat getFormat(TheoraDecoder *ctx) {
-	return ctx->vidfmt;
-}
