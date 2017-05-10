@@ -150,9 +150,42 @@ static int setup() {
 	return 0;
 }
 
+void YCbCrToRgb(const unsigned char y, const unsigned char cb, const unsigned char cr, unsigned char* rout, unsigned char* gout, unsigned char* bout)
+{
+	double r = y +(1.4065 * (cr - 128));
+	double g = y -(0.3455 * (cb - 128)) - (0.7169 * (cr - 128));
+	double b = y +(1.7790 * (cb - 128));
+	//double r = cb;
+	//double g = cb;
+	//double b = cb;
+
+	//To prevent colour distortions
+	if (r < 0) r = 0;
+	else if (r > 255) r = 255;
+	if (g < 0) g = 0;
+	else if (g > 255) g = 255;
+	if (b < 0) b = 0;
+	else if (b > 255) b = 255;
+
+	*rout = r;
+	*gout = g;
+	*bout = b;
+}
+
 static unsigned char * convertToRGB(unsigned char *yuyv_image, int width, int height) {
 	unsigned char* rgb_image = new unsigned char[width * height * 3]; //width and height of the image to be converted
-
+	/*memset(rgb_image, 0, width*height * 3);
+	for (int x = 0; x < width; ++x)
+	{
+		for (int y = 0; y < height; ++y)
+		{
+			int offset = y * width + x;
+			rgb_image[offset * 3 + 0] = yuyv_image[offset];
+			rgb_image[offset * 3 + 1] = yuyv_image[offset];
+			rgb_image[offset * 3 + 2] = yuyv_image[offset];
+		}
+	}
+	return rgb_image;*/
 	int y;
 	int cr;
 	int cb;
@@ -160,48 +193,22 @@ static unsigned char * convertToRGB(unsigned char *yuyv_image, int width, int he
 	double r;
 	double g;
 	double b;
-
-	for (int i = 0, j = 0; i < width * height * 3; i += 6, j += 4) {
-		//first pixel
-		y = yuyv_image[j];
-		cb = yuyv_image[j + 1];
-		cr = yuyv_image[j + 3];
-
-		r = y + (1.4065 * (cr - 128));
-		g = y - (0.3455 * (cb - 128)) - (0.7169 * (cr - 128));
-		b = y + (1.7790 * (cb - 128));
-
-		//To prevent colour distortions
-		if (r < 0) r = 0;
-		else if (r > 255) r = 255;
-		if (g < 0) g = 0;
-		else if (g > 255) g = 255;
-		if (b < 0) b = 0;
-		else if (b > 255) b = 255;
-
-		rgb_image[i] = (unsigned char)r;
-		rgb_image[i + 1] = (unsigned char)g;
-		rgb_image[i + 2] = (unsigned char)b;
-
-		//second pixel
-		y = yuyv_image[j + 2];
-		cb = yuyv_image[j + 1];
-		cr = yuyv_image[j + 3];
-
-		r = y + (1.4065 * (cr - 128));
-		g = y - (0.3455 * (cb - 128)) - (0.7169 * (cr - 128));
-		b = y + (1.7790 * (cb - 128));
-
-		if (r < 0) r = 0;
-		else if (r > 255) r = 255;
-		if (g < 0) g = 0;
-		else if (g > 255) g = 255;
-		if (b < 0) b = 0;
-		else if (b > 255) b = 255;
-
-		rgb_image[i + 3] = (unsigned char)r;
-		rgb_image[i + 4] = (unsigned char)g;
-		rgb_image[i + 5] = (unsigned char)b;
+	
+	unsigned char* yptr = yuyv_image;
+	unsigned char* cbptr = yptr + width * height;
+	unsigned char* crptr = cbptr + (width / 2) * (height / 2);
+	for (int imgx = 0; imgx < width; ++imgx)
+	{
+		for (int imgy = 0; imgy < height; ++imgy)
+		{
+			int offset = imgy * width + imgx;
+			int cbcroffset = (imgy / 2) * (width / 2) + (imgx / 2);
+			int rgboffset = offset * 3;
+			unsigned char y = yptr[offset];
+			unsigned char cb = cbptr[cbcroffset];
+			unsigned char cr = crptr[cbcroffset];
+			YCbCrToRgb(y, cb, cr, rgb_image + rgboffset, rgb_image + rgboffset + 1, rgb_image + rgboffset + 2);
+		}
 	}
 	return rgb_image;
 }
@@ -209,17 +216,17 @@ static unsigned char * convertToRGB(unsigned char *yuyv_image, int width, int he
 static GLuint texture;
 static void gen_texture(const THEORAPLAY_VideoFrame *video) {
 	glEnable(GL_TEXTURE_2D);
-	//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_MIRRORED_REPEAT);
-	//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 	//generate texture
 	glGenTextures(1, &texture);
 	glBindTexture(GL_TEXTURE_2D, texture);
  	unsigned char *rgb = convertToRGB(video->pixels, video->width, video->height); // new unsigned char[video->width * video->height * 3];//
 	//memset(rgb, 255, video->width * video->height * 3);
 	
-	
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+
 	//glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, video->width, video->height, 0, GL_RGB, GL_UNSIGNED_BYTE, rgb);// video->pixels);
 	//glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, rgb);// video->pixels);*/
 
@@ -230,7 +237,7 @@ static void gen_texture(const THEORAPLAY_VideoFrame *video) {
 	//unsigned char *rgb = stbi_load(name, &width, &height, &n, 0);
 	//glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, image);
 	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, video->width, video->height, 0, GL_RGB, GL_UNSIGNED_BYTE, rgb);
-	glGenerateMipmap(GL_TEXTURE_2D);
+	//glGenerateMipmap(GL_TEXTURE_2D);
 	glBindTexture(GL_TEXTURE_2D, 0);
 }
 
@@ -245,10 +252,10 @@ static long long getTime() {
 static GLuint setupBindings(Shader ourShader) {
 	GLfloat vertices[] = {
 		// Positions          // Colors           // Texture Coords
-		0.5f,  0.5f, 0.0f,   1.0f, 0.0f, 0.0f,   1.0f, 1.0f,   // Top Right
-		0.5f, -0.5f, 0.0f,   0.0f, 1.0f, 0.0f,   1.0f, 0.0f,   // Bottom Right
-		-0.5f, -0.5f, 0.0f,   0.0f, 0.0f, 1.0f,   0.0f, 0.0f,   // Bottom Left
-		-0.5f,  0.5f, 0.0f,   1.0f, 1.0f, 0.0f,   0.0f, 1.0f    // Top Left 
+		1.f,  1.f, 0.0f,   1.0f, 0.0f, 0.0f,   1.0f, 0.0f,   // Top Right
+		1.f, -1.f, 0.0f,   0.0f, 1.0f, 0.0f,   1.0f, 1.0f,   // Bottom Right
+		-1.f, -1.f, 0.0f,   0.0f, 0.0f, 1.0f,   0.0f, 1.0f,   // Bottom Left
+		-1.f,  1.f, 0.0f,   1.0f, 1.0f, 0.0f,   0.0f, 0.0f    // Top Left 
 	};
 	GLuint indices[] = {  // Note that we start from 0!
 		0, 1, 3, // First Triangle
