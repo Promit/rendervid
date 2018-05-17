@@ -2,7 +2,6 @@
 
 #include <memory>
 
-typedef struct THEORAPLAYER_Io THEORAPLAY_Io;
 struct THEORAPLAYER_Io
 {
 	long(*read)(THEORAPLAYER_Io *io, void *buf, long buflen);
@@ -10,16 +9,16 @@ struct THEORAPLAYER_Io
 	void *userdata;
 };
 
-typedef struct THEORAPLAY_Decoder THEORAPLAY_Decoder;
-
 /* YV12 is YCrCb, not YCbCr; that's what SDL uses for YV12 overlays. */
-typedef enum THEORAPLAYER_VideoFormat
+enum THEORAPLAYER_VideoFormat
 {
 	THEORAPLAYER_VIDFMT_YV12,  /* NTSC colorspace, planar YCrCb 4:2:0 */
 	THEORAPLAYER_VIDFMT_IYUV,  /* NTSC colorspace, planar YCbCr 4:2:0 */
 	THEORAPLAYER_VIDFMT_RGB,   /* 24 bits packed pixel RGB */
-	THEORAPLAYER_VIDFMT_RGBA   /* 32 bits packed pixel RGBA (full alpha). */
-} THEORAPLAY_VideoFormat;
+	THEORAPLAYER_VIDFMT_RGBA,   /* 32 bits packed pixel RGBA (full alpha). */
+	THEORAPLAYER_VIDFMT_BGR,   /* 24 bits packed pixel BGR */
+	THEORAPLAYER_VIDFMT_BGRA   /* 32 bits packed pixel BGRA (full alpha). */
+};
 
 struct THEORAPLAYER_VideoFrame
 {

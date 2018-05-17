@@ -63,7 +63,7 @@ static unsigned char *THEORAPLAY_CVT_FNNAME_420(const th_info *tinfo,
                 *(dst++) = (unsigned char) ((g < 0.0f) ? 0.0f : (g > 255.0f) ? 255.0f : g);
                 *(dst++) = (unsigned char) ((b < 0.0f) ? 0.0f : (b > 255.0f) ? 255.0f : b);
 				#if THEORAPLAY_CVT_BGR
-				std::swap(*dst - 1, *dst - 3);
+				std::swap(*(dst - 1), *(dst - 3));
 				#endif
                 #if THEORAPLAY_CVT_RGB_ALPHA
                 *(dst++) = 0xFF;

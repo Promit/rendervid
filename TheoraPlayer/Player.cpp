@@ -83,7 +83,7 @@ static void gen_texture(const THEORAPLAYER_VideoFrame *video) {
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
 	// Load and generate the texture
-	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, video->width, video->height, 0, GL_RGB, GL_UNSIGNED_BYTE, rgb);
+	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, video->width, video->height, 0, GL_BGR, GL_UNSIGNED_BYTE, rgb);
 	glBindTexture(GL_TEXTURE_2D, 0);
 }
 
@@ -173,7 +173,7 @@ static void playfile(const char *fname)
 
 	printf("Trying file '%s' ...\n", fname);
 
-	auto result = player.OpenDecode(fname, THEORAPLAYER_VIDFMT_RGB);
+	auto result = player.OpenDecode(fname, THEORAPLAYER_VIDFMT_BGR);
 	if(!result)
 	{
 		printf("Failed to open decoding '%s'!\n", fname);

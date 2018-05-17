@@ -55,17 +55,35 @@ static unsigned char *ConvertVideoFrame420ToIYUV(const th_info *tinfo,
 	return ConvertVideoFrame420ToYUVPlanar(tinfo, ycbcr, 0, 1, 2);
 } // ConvertVideoFrame420ToIYUV
 
-  // RGB
+ // RGB
 #define THEORAPLAY_CVT_FNNAME_420 ConvertVideoFrame420ToRGB
 #define THEORAPLAY_CVT_RGB_ALPHA 0
 #include "theoraplay_cvtrgb.h"
 #undef THEORAPLAY_CVT_RGB_ALPHA
 #undef THEORAPLAY_CVT_FNNAME_420
 
-  // RGBA
+ // RGBA
 #define THEORAPLAY_CVT_FNNAME_420 ConvertVideoFrame420ToRGBA
 #define THEORAPLAY_CVT_RGB_ALPHA 1
 #include "theoraplay_cvtrgb.h"
+#undef THEORAPLAY_CVT_RGB_ALPHA
+#undef THEORAPLAY_CVT_FNNAME_420
+
+ // BGR
+#define THEORAPLAY_CVT_FNNAME_420 ConvertVideoFrame420ToBGR
+#define THEORAPLAY_CVT_RGB_ALPHA 0
+#define THEORAPLAY_CVT_BGR 1
+#include "theoraplay_cvtrgb.h"
+#undef THEORAPLAY_CVT_BGR
+#undef THEORAPLAY_CVT_RGB_ALPHA
+#undef THEORAPLAY_CVT_FNNAME_420
+
+ // BGRA
+#define THEORAPLAY_CVT_FNNAME_420 ConvertVideoFrame420ToBGRA
+#define THEORAPLAY_CVT_RGB_ALPHA 1
+#define THEORAPLAY_CVT_BGR 1
+#include "theoraplay_cvtrgb.h"
+#undef THEORAPLAY_CVT_BGR
 #undef THEORAPLAY_CVT_RGB_ALPHA
 #undef THEORAPLAY_CVT_FNNAME_420
 
@@ -418,6 +436,12 @@ int TheoraPlayer::OpenDecode(THEORAPLAYER_Io* io, THEORAPLAYER_VideoFormat outpu
 		break;
 	case THEORAPLAYER_VIDFMT_RGBA:
 		vidcvt = ConvertVideoFrame420ToRGBA;
+		break;
+	case THEORAPLAYER_VIDFMT_BGR:
+		vidcvt = ConvertVideoFrame420ToBGR;
+		break;
+	case THEORAPLAYER_VIDFMT_BGRA:
+		vidcvt = ConvertVideoFrame420ToBGRA;
 		break;
 	default:
 		io->close(io);
