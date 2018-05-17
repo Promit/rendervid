@@ -388,18 +388,18 @@ TheoraPlayer::~TheoraPlayer() = default;
 
 int TheoraPlayer::OpenDecode(const char* filename, THEORAPLAYER_VideoFormat outputFormat)
 {
-	THEORAPLAYER_Io *io = new THEORAPLAYER_Io();
+	_io.reset(new THEORAPLAYER_Io());
 	FILE *f = fopen(filename, "rb");
 	if(f == NULL)
 	{
-		delete io;
+		_io.reset();
 		return -1;
 	} // if
 
-	io->read = IoFopenRead;
-	io->close = IoFopenClose;
-	io->userdata = f;
-	return OpenDecode(io, outputFormat);
+	_io->read = IoFopenRead;
+	_io->close = IoFopenClose;
+	_io->userdata = f;
+	return OpenDecode(_io.get(), outputFormat);
 }
 
 int TheoraPlayer::OpenDecode(THEORAPLAYER_Io* io, THEORAPLAYER_VideoFormat outputFormat)

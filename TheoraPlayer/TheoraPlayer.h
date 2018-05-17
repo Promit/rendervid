@@ -58,4 +58,5 @@ public:
 private:
 	std::unique_ptr<struct THEORAPLAYER_Decoder> _decoder;
 	std::unique_ptr<struct THEORAPLAYER_State> _state;
+	std::unique_ptr<THEORAPLAYER_Io> _io;
 };
