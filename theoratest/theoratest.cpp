@@ -15,7 +15,7 @@
 #include <assert.h>
 #include <chrono>
 #include "theoraplay.h"
-#include "SDL.h"
+
 #ifndef GLEW_STATIC
 //GLEW
 #define GLEW_STATIC
@@ -173,7 +173,10 @@ void YCbCrToRgb(const unsigned char y, const unsigned char cb, const unsigned ch
 }
 
 static unsigned char * convertToRGB(unsigned char *yuyv_image, int width, int height) {
-	unsigned char* rgb_image = new unsigned char[width * height * 3]; //width and height of the image to be converted
+	//same width and height of the image to be converted
+	unsigned char* rgb_image = new unsigned char[width * height * 3];
+
+	//Test/debug code that simply copies the YUV channels over to RGB
 	/*memset(rgb_image, 0, width*height * 3);
 	for (int x = 0; x < width; ++x)
 	{
@@ -186,6 +189,7 @@ static unsigned char * convertToRGB(unsigned char *yuyv_image, int width, int he
 		}
 	}
 	return rgb_image;*/
+
 	int y;
 	int cr;
 	int cb;
@@ -219,7 +223,7 @@ static void gen_texture(const THEORAPLAY_VideoFrame *video) {
 	//generate texture
 	glGenTextures(1, &texture);
 	glBindTexture(GL_TEXTURE_2D, texture);
- 	unsigned char *rgb = convertToRGB(video->pixels, video->width, video->height); // new unsigned char[video->width * video->height * 3];//
+ 	unsigned char *rgb = convertToRGB(video->pixels, video->width, video->height);
 	//memset(rgb, 255, video->width * video->height * 3);
 	
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP);
@@ -227,17 +231,8 @@ static void gen_texture(const THEORAPLAY_VideoFrame *video) {
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
-	//glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, video->width, video->height, 0, GL_RGB, GL_UNSIGNED_BYTE, rgb);// video->pixels);
-	//glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, rgb);// video->pixels);*/
-
 	// Load and generate the texture
-	//int width, height, n;
-	//const char* name = "container.jpg";
-	//unsigned char *image = stbi_load(name, &width, &height, &n, 0);
-	//unsigned char *rgb = stbi_load(name, &width, &height, &n, 0);
-	//glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, image);
 	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, video->width, video->height, 0, GL_RGB, GL_UNSIGNED_BYTE, rgb);
-	//glGenerateMipmap(GL_TEXTURE_2D);
 	glBindTexture(GL_TEXTURE_2D, 0);
 }
 
@@ -311,14 +306,7 @@ static void game_loop(Shader ourShader, const THEORAPLAY_VideoFrame *video, GLui
 	glBindVertexArray(VAO);
 	glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 	glBindVertexArray(0);
-	//unsigned char *rgb = new unsigned char[video->width * video->height * 3];// = convertToRGB(video->pixels, video->width, video->height);
-	//memset(rgb, 255, video->width * video->height * 3
-	/*int width, height, n;
-	const char* name = "container.jpg";
-	unsigned char *rgb = stbi_load(name, &width, &height, &n, 0);
-	//glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, video->width, video->height, 0, GL_RGB, GL_UNSIGNED_BYTE, rgb);// video->pixels);
-	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, rgb);// video->pixels);*/
-	// swaps front (final output image) and back (where rendering is happening) buffer
+
 	glfwSwapBuffers(window);
 }
 
@@ -327,12 +315,6 @@ static void playfile(const char *fname)
 	THEORAPLAY_Decoder *decoder = NULL;
 	const THEORAPLAY_AudioPacket *audio = NULL;
 	const THEORAPLAY_VideoFrame *video = NULL;
-	/*SDL_Window* window = NULL;
-	SDL_Texture* texture = NULL;
-	SDL_Renderer* renderer = NULL;
-	SDL_AudioSpec spec;
-	SDL_Event event;
-	Uint32 framems = 0;*/
 	GLuint framems = 0;
 	int initfailed = 0;
 	int quit = 0;
@@ -351,12 +333,6 @@ static void playfile(const char *fname)
 		return;
 	} // if
 
-	/*if(SDL_Init(SDL_INIT_VIDEO | SDL_INIT_AUDIO) == -1)
-	{
-		fprintf(stderr, "SDL_Init() failed: %s\n", SDL_GetError());
-		return;
-	}*/ // if
-
 	  // wait until we have video and/or audio data, so we can set up hardware.
 	while(!audio || !video)
 	{
@@ -365,46 +341,17 @@ static void playfile(const char *fname)
 		//SDL_Delay(10);
 	} // if
 	
-	//framems = (video->fps == 0.0) ? 0 : ((Uint32)(1000.0 / video->fps));
 	framems = (video->fps == 0.0) ? 0 : ((GLuint)(1000.0 / video->fps));
-	//window = SDL_CreateWindow("TheoraPlay", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, video->width, video->height, 0);
-	if (!window)
-		std::cout << "ERROR" << std::endl;// fprintf(stderr, "SDL_CreateWindow() failed: %s\n", SDL_GetError());
-	else  // software surface
+	if(!window)
 	{
-		/*renderer = SDL_CreateRenderer(window, -1, 0);
-		texture = SDL_CreateTexture(
-			renderer,
-			SDL_PIXELFORMAT_YV12,
-			SDL_TEXTUREACCESS_STREAMING,
-			video->width,
-			video->height
-		);*/
-		/*glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, video->width, video->height, 0, GL_RGB, GL_UNSIGNED_BYTE, convertToRGB(video->pixels, video->width, video->height));
-		glGenerateMipmap(GL_TEXTURE_2D);
-		glBindTexture(GL_TEXTURE_2D, 0);*/
-	} // else
-
-	//initfailed = quit = (!texture || !renderer);
-
-	/*memset(&spec, '\0', sizeof(SDL_AudioSpec));
-	spec.freq = audio->freq;
-	spec.format = AUDIO_S16SYS;
-	spec.channels = audio->channels;
-	spec.samples = 2048;
-	spec.callback = audio_callback;
-	initfailed = quit = (initfailed || (SDL_OpenAudio(&spec, NULL) != 0));*/
-	
+		std::cout << "ERROR" << std::endl;// fprintf(stderr, "SDL_CreateWindow() failed: %s\n", SDL_GetError());
+	}
 	while(audio)
 	{
 		queue_audio(audio);
 		audio = THEORAPLAY_getAudio(decoder);
 	} // while
 
-	/*baseticks = SDL_GetTicks();
-
-	if(!quit)
-		SDL_PauseAudio(0);*/
 	baseticks = getTime();
 	while(!quit && THEORAPLAY_isDecoding(decoder))
 	{
@@ -448,21 +395,6 @@ static void playfile(const char *fname)
 			} // if
 			else
 			{
-				/*SDL_Rect dstrect = { 0, 0, video->width, video->height };
-				const int w = video->width;
-				const int h = video->height;
-				const Uint8 *y = (const Uint8 *)video->pixels;
-				const Uint8 *u = y + (w * h);
-				const Uint8 *v = u + ((w / 2) * (h / 2));
-				Uint8 *dst;
-				int i;
-
-				int uvpitch = video->width / 2;
-				SDL_UpdateYUVTexture(texture, &dstrect, y, video->width, u, uvpitch, v, uvpitch);
-
-				SDL_RenderClear(renderer);
-				SDL_RenderCopy(renderer, texture, NULL, NULL);
-				SDL_RenderPresent(renderer);*/
 				game_loop(ourShader, video, VAO);
 			} // else
 
@@ -473,44 +405,7 @@ static void playfile(const char *fname)
 		{
 			//SDL_Delay(10);
 		} // else
-
-		/*while((audio = THEORAPLAY_getAudio(decoder)) != NULL)
-			queue_audio(audio);*/
-
-		// Pump the event loop here.
-		/*while(window && SDL_PollEvent(&event))
-		{
-			switch(event.type)
-			{
-			//case SDL_VIDEOEXPOSE:
-			//	if(overlay)
-			//	{
-			//		SDL_Rect dstrect = { 0, 0, screen->w, screen->h };
-			//		SDL_DisplayYUVOverlay(overlay, &dstrect);
-			//	} // if
-			//	break;
-
-			case SDL_QUIT:
-				quit = 1;
-				break;
-
-			case SDL_KEYDOWN:
-				if(event.key.keysym.sym == SDLK_ESCAPE)
-					quit = 1;
-				break;
-			} // switch
-		} // while*/
-	} // while
-
-	  // Drain out the audio queue.
-	/*while(!quit)
-	{
-		SDL_LockAudio();
-		quit = (audio_queue == NULL);
-		SDL_UnlockAudio();
-		if(!quit)
-			SDL_Delay(100);  // wait for final audio packets to play out.
-	} // while*/
+	}
 
 	if(initfailed)
 		printf("Initialization failed!\n");
@@ -519,17 +414,9 @@ static void playfile(const char *fname)
 	else
 		printf("done with this file!\n");
 
-	/*if(texture) SDL_DestroyTexture(texture);
-	if(renderer) SDL_DestroyRenderer(renderer);
-	if(window) SDL_DestroyWindow(window);
-	if(video) THEORAPLAY_freeVideo(video);
-	if(audio) THEORAPLAY_freeAudio(audio);
-	if(decoder) THEORAPLAY_stopDecode(decoder);
-	SDL_CloseAudio();
-	SDL_Quit();*/
 } // playfile
 
-int SDL_main(int argc, char **argv)
+int main(int argc, char **argv)
 {
 	int i;
 	for(i = 1; i < argc; i++)
@@ -539,5 +426,3 @@ int SDL_main(int argc, char **argv)
 
 	return 0;
 } // main
-
-  // end of sdltheoraplay.c ...
