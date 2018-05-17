@@ -362,7 +362,6 @@ struct THEORAPLAYER_State
 					item->height = tinfo.pic_height;
 					item->format = ctx->vidfmt;
 					item->pixels = ctx->vidcvt(&tinfo, ycbcr);
-					item->next = NULL;
 
 					if(item->pixels == NULL)
 					{
