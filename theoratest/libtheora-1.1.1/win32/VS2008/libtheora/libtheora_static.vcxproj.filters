@@ -54,9 +54,6 @@
     <ClInclude Include="..\..\..\lib\huffman.h">
       <Filter>lib\dec</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\lib\idct.h">
-      <Filter>lib\dec</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\lib\ocintrin.h">
       <Filter>lib\dec</Filter>
     </ClInclude>

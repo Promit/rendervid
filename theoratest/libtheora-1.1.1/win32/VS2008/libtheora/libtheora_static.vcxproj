@@ -331,7 +331,6 @@
     <ClInclude Include="..\..\..\lib\dequant.h" />
     <ClInclude Include="..\..\..\lib\huffdec.h" />
     <ClInclude Include="..\..\..\lib\huffman.h" />
-    <ClInclude Include="..\..\..\lib\idct.h" />
     <ClInclude Include="..\..\..\lib\internal.h" />
     <ClInclude Include="..\..\..\lib\ocintrin.h" />
     <ClInclude Include="..\..\..\lib\quant.h" />
