@@ -15,7 +15,14 @@ static unsigned char *THEORAPLAY_CVT_FNNAME_420(const th_info *tinfo,
 {
     const int w = tinfo->pic_width;
     const int h = tinfo->pic_height;
-    unsigned char *pixels = (unsigned char *) malloc(w * h * 4);
+
+#if THEORAPLAY_CVT_RGB_ALPHA
+	const size_t allocSize = w * h * 4;
+#else
+	const size_t allocSize = w * h * 3;
+#endif
+    unsigned char *pixels = (unsigned char *) malloc(allocSize);
+
     if (pixels)
     {
         unsigned char *dst = pixels;

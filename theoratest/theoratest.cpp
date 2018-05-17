@@ -223,7 +223,8 @@ static void gen_texture(const THEORAPLAY_VideoFrame *video) {
 	//generate texture
 	glGenTextures(1, &texture);
 	glBindTexture(GL_TEXTURE_2D, texture);
- 	unsigned char *rgb = convertToRGB(video->pixels, video->width, video->height);
+ 	//unsigned char *rgb = convertToRGB(video->pixels, video->width, video->height);
+	unsigned char* rgb = video->pixels;
 	//memset(rgb, 255, video->width * video->height * 3);
 	
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP);
@@ -326,7 +327,7 @@ static void playfile(const char *fname)
 	
 	printf("Trying file '%s' ...\n", fname);
 
-	decoder = THEORAPLAY_startDecodeFile(fname, 30, THEORAPLAY_VIDFMT_IYUV);
+	decoder = THEORAPLAY_startDecodeFile(fname, 30, THEORAPLAY_VIDFMT_RGB);
 	if(!decoder)
 	{
 		fprintf(stderr, "Failed to start decoding '%s'!\n", fname);
