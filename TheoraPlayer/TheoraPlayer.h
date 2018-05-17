@@ -28,7 +28,6 @@ struct THEORAPLAYER_VideoFrame
 	unsigned int height;
 	THEORAPLAYER_VideoFormat format;
 	unsigned char *pixels;
-	struct THEORAPLAYER_VideoFrame *next;
 };
 
 struct THEORAPLAYER_AudioPacket

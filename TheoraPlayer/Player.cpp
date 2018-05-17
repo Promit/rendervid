@@ -172,13 +172,12 @@ static void playfile(const char *fname)
 	framems = (video->fps == 0.0) ? 0 : ((GLuint)(1000.0 / video->fps));
 	if(!window)
 	{
-		std::cout << "ERROR" << std::endl;// fprintf(stderr, "SDL_CreateWindow() failed: %s\n", SDL_GetError());
+		std::cout << "ERROR" << std::endl;
 	}
 
 	baseticks = getTime();
 	while(!quit && player.IsDecoding())
 	{
-		//const Uint32 now = SDL_GetTicks() - baseticks;
 		const long long now = getTime() - baseticks;
 
 		game_loop(ourShader, video, VAO);
