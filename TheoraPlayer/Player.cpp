@@ -1,18 +1,6 @@
-/**
-* TheoraPlay; multithreaded Ogg Theora/Ogg Vorbis decoding.
-*
-* Please see the file LICENSE.txt in the source's root directory.
-*
-*  This file written by Ryan C. Gordon.
-*/
-
-/*
-* This is meant to be a dirt simple test case. If you want a big, robust
-*  version that handles lots of strange variations, try sdltheoraplay.c
-*/
-#include <stdio.h>
-#include <string.h>
-#include <assert.h>
+#include <cstdio>
+#include <cstring>
+#include <cassert>
 #include <chrono>
 #include "TheoraPlayer.h"
 
@@ -20,20 +8,13 @@
 //GLEW
 #define GLEW_STATIC
 #include <GL/glew.h>
+#endif
+
 // GLFW
 #include <GLFW/glfw3.h>
-#include <iostream>
-#endif
 #include "shader.h"
 
-//static GLuint baseticks = 0;
 static long long baseticks = 0;
-FILE _iob[] = { *stdin, *stdout, *stderr };
-
-extern "C" FILE * __cdecl __iob_func(void)
-{
-	return _iob;
-}
 
 
 static GLFWwindow* window;
@@ -46,10 +27,10 @@ static int setup() {
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 	glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
 	// create window --> (width, height, windowName, null for windowed mode, null to not share resources)
-	window = glfwCreateWindow(800, 600, "LearnOpenGL", nullptr, nullptr);
+	window = glfwCreateWindow(800, 600, "TheoraPlayer", nullptr, nullptr);
 	if(window == nullptr)
 	{
-		std::cout << "Failed to create GLFW window" << std::endl;
+		printf("Failed to create GLFW window\n");
 		glfwTerminate();
 		return -1;
 	}
@@ -58,7 +39,7 @@ static int setup() {
 	glewExperimental = GL_TRUE;
 	if(glewInit() != GLEW_OK)
 	{
-		std::cout << "Failed to initialize GLEW" << std::endl;
+		printf("Failed to initialize GLEW\n");
 		return -1;
 	}
 	//set size of rendering window
@@ -204,6 +185,7 @@ static void playfile(const char *fname)
 		delete video;
 		player.GetVideoFrame(&video);
 
+		//FIXME: This is the old code for correctly timing the video. Need to rewrite this for the new code.
 #if 0
 		// Play video frames when it's time.
 		if(video && (video->playms <= now))
