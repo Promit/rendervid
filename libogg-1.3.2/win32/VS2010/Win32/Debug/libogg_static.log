@@ -1,5 +1,5 @@
-﻿Build started 5/16/2018 11:40:03 PM.
-     1>Project "D:\Projects\rendervid\libogg-1.3.2\win32\VS2010\libogg_static.vcxproj" on node 4 (Build target(s)).
+﻿Build started 5/17/2018 12:09:03 AM.
+     1>Project "D:\Projects\rendervid\libogg-1.3.2\win32\VS2010\libogg_static.vcxproj" on node 3 (Build target(s)).
      1>Building with tools version "14.0".
      1>Target "_CheckForInvalidConfigurationAndPlatform" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\libogg-1.3.2\win32\VS2010\libogg_static.vcxproj" (entry point):
        Task "Error" skipped, due to false condition; ( '$(_InvalidConfigurationError)' == 'true' ) was evaluated as ( '' == 'true' ).
@@ -11,7 +11,7 @@
        Task "Message"
          Platform=Win32
        Done executing task "Message".
-       Task "Error" skipped, due to false condition; ('$(OutDir)' != '' and !HasTrailingSlash('$(OutDir)')) was evaluated as ('D:\Projects\rendervid\theoratest\Win32\Debug\' != '' and !HasTrailingSlash('D:\Projects\rendervid\theoratest\Win32\Debug\')).
+       Task "Error" skipped, due to false condition; ('$(OutDir)' != '' and !HasTrailingSlash('$(OutDir)')) was evaluated as ('D:\Projects\rendervid\TheoraPlayer\Win32\Debug\' != '' and !HasTrailingSlash('D:\Projects\rendervid\TheoraPlayer\Win32\Debug\')).
        Task "Error" skipped, due to false condition; ('$(BaseIntermediateOutputPath)' != '' and !HasTrailingSlash('$(BaseIntermediateOutputPath)')) was evaluated as ('obj\' != '' and !HasTrailingSlash('obj\')).
        Task "Error" skipped, due to false condition; ('$(IntermediateOutputPath)' != '' and !HasTrailingSlash('$(IntermediateOutputPath)')) was evaluated as ('Win32\Debug\' != '' and !HasTrailingSlash('Win32\Debug\')).
      1>Done building target "_CheckForInvalidConfigurationAndPlatform" in project "libogg_static.vcxproj".
@@ -53,7 +53,7 @@
      1>Target "SetBuildDefaultEnvironmentVariables" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.Cpp.Current.targets" from project "D:\Projects\rendervid\libogg-1.3.2\win32\VS2010\libogg_static.vcxproj" (target "PrepareForBuild" depends on it):
        Using "SetEnv" task from assembly "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.Build.CppTasks.Common.dll".
        Task "SetEnv"
-         PATH=C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin;C:\Program Files (x86)\Windows Kits\8.1\bin\x86;;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\Tools\bin;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\tools;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;;C:\Program Files (x86)\MSBuild\14.0\bin\;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\;C:\WINDOWS\SysWow64;;C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MGY3CUOZ.PQB\NativeBinaries\x86;C:\VulkanSDK\1.1.73.0\Bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files (x86)\Autodesk\Backburner\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\Git\cmd;C:\Users\Promit\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft Emulator Manager\1.0\;C:\ProgramData\Oracle\Java\javapath;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Program Files\SourceGear\Common\DiffMerge\;C:\Program Files\dotnet\;C:\Users\Promit\AppData\Local\Microsoft\WindowsApps;C:\Users\Promit\AppData\Roaming\npm;C:\Users\Promit\AppData\Local\GitHubDesktop\bin;
+         PATH=C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin;C:\Program Files (x86)\Windows Kits\8.1\bin\x86;;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\Tools\bin;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\tools;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;;C:\Program Files (x86)\MSBuild\14.0\bin\;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\;C:\WINDOWS\SysWow64;;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\NativeBinaries\x86;C:\VulkanSDK\1.1.73.0\Bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files (x86)\Autodesk\Backburner\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\Git\cmd;C:\Users\Promit\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft Emulator Manager\1.0\;C:\ProgramData\Oracle\Java\javapath;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Program Files\SourceGear\Common\DiffMerge\;C:\Program Files\dotnet\;C:\Users\Promit\AppData\Local\Microsoft\WindowsApps;C:\Users\Promit\AppData\Roaming\npm;C:\Users\Promit\AppData\Local\GitHubDesktop\bin;
        Done executing task "SetEnv".
        Task "SetEnv"
          LIB=C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\lib;;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\lib;;C:\Program Files (x86)\Windows Kits\10\lib\10.0.10240.0\ucrt\x86;;;C:\Program Files (x86)\Windows Kits\8.1\lib\winv6.3\um\x86;;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\Lib\um\x86
@@ -235,25 +235,16 @@
        Target "GenerateTargetFrameworkMonikerAttribute" skipped, due to false condition; ('$(GenerateTargetFrameworkAttribute)' == 'true') was evaluated as ('false' == 'true').
        Target "ManagedIncrementalBuildPreProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('..\..\src\bitwise.c;..\..\src\framing.c' != '' and 'false' == 'True').
      1>Target "ClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "D:\Projects\rendervid\libogg-1.3.2\win32\VS2010\libogg_static.vcxproj" (target "_ClCompile" depends on it):
-       Using "Delete" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-       Task "Delete"
-       Done executing task "Delete".
+       Task "Delete" skipped, due to false condition; ('%(ClCompile.DebugInformationFormat)' != '' and '%(ClCompile.DebugInformationFormat)' != 'None' and '%(ClCompile.DebugInformationFormat)' != 'OldStyle' and '%(ClCompile.ProgramDataBaseFileName)' != '' and !Exists(%(ClCompile.ProgramDataBaseFileName))) was evaluated as ('EditAndContinue' != '' and 'EditAndContinue' != 'None' and 'EditAndContinue' != 'OldStyle' and 'Win32\Debug\libogg_static.pdb' != '' and !Exists(Win32\Debug\libogg_static.pdb)).
        Task "CL" skipped, due to false condition; ('%(ClCompile.PrecompiledHeader)' == 'Create' and '%(ClCompile.ExcludedFromBuild)'!='true' and '%(ClCompile.CompilerIteration)' == '') was evaluated as ('' == 'Create' and ''!='true' and '' == '').
        Using "CL" task from assembly "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.Build.CppTasks.Common.dll".
        Task "CL"
-         Forcing recompile of all source files due to missing PDB "Win32\Debug\libogg_static.pdb".
-         Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=1580
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I..\..\include /ZI /nologo /W4 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D LIBOGG_EXPORTS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Win32\Debug\\" /Fd"Win32\Debug\libogg_static.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\src\bitwise.c ..\..\src\framing.c
-         Tracking command:
-         C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker.dll" /i D:\Projects\rendervid\libogg-1.3.2\win32\VS2010\Win32\Debug\libogg_static.tlog /r "D:\PROJECTS\RENDERVID\LIBOGG-1.3.2\SRC\BITWISE.C|D:\PROJECTS\RENDERVID\LIBOGG-1.3.2\SRC\FRAMING.C" /b MSBuildConsole_CancelEventaad984ebb76b4de2a320f0b69c1141d3  /c "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe"  /c /I..\..\include /ZI /nologo /W4 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D LIBOGG_EXPORTS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Win32\Debug\\" /Fd"Win32\Debug\libogg_static.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\src\bitwise.c ..\..\src\framing.c
-         framing.c
-     1>d:\projects\rendervid\libogg-1.3.2\src\framing.c(733): warning C4456: declaration of 'page' hides previous local declaration
-         d:\projects\rendervid\libogg-1.3.2\src\framing.c(678): note: see declaration of 'page'
-     1>d:\projects\rendervid\libogg-1.3.2\src\framing.c(734): warning C4456: declaration of 'bytes' hides previous local declaration
-         d:\projects\rendervid\libogg-1.3.2\src\framing.c(680): note: see declaration of 'bytes'
-         bitwise.c
-         Generating Code...
+         Read Tracking Logs:
+         	Win32\Debug\libogg_static.tlog\CL.read.1.tlog
+         Outputs for D:\PROJECTS\RENDERVID\LIBOGG-1.3.2\SRC\BITWISE.C|D:\PROJECTS\RENDERVID\LIBOGG-1.3.2\SRC\FRAMING.C:
+         	D:\PROJECTS\RENDERVID\LIBOGG-1.3.2\WIN32\VS2010\WIN32\DEBUG\BITWISE.OBJ
+         	D:\PROJECTS\RENDERVID\LIBOGG-1.3.2\WIN32\VS2010\WIN32\DEBUG\FRAMING.OBJ
+         All outputs are up-to-date.
        Done executing task "CL".
      1>Done building target "ClCompile" in project "libogg_static.vcxproj".
        Target "ManagedIncrementalBuildPostProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('..\..\src\bitwise.c;..\..\src\framing.c' != '' and 'false' == 'True').
@@ -304,10 +295,10 @@
        Done executing task "MakeDir".
      1>Done building target "MakeDirsForLib" in project "libogg_static.vcxproj".
      1>Target "DoLibOutputFilesMatch" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libogg-1.3.2\win32\VS2010\libogg_static.vcxproj" (target "_Lib" depends on it):
-       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLib)' == '') was evaluated as ('D:\Projects\rendervid\theoratest\Win32\Debug\libogg_static.lib' == '').
-       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLib)' != '' and '%(_OutputFileFromLib.FullPath)' != '$([System.IO.Path]::GetFullPath($(TargetPath)))') was evaluated as ('D:\Projects\rendervid\theoratest\Win32\Debug\libogg_static.lib' != '' and 'D:\Projects\rendervid\theoratest\Win32\Debug\libogg_static.lib' != 'D:\Projects\rendervid\theoratest\Win32\Debug\libogg_static.lib').
-       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLib)' != '' and '%(_OutputFileFromLib.Extension)' != '' and '%(_OutputFileFromLib.Extension)' != '$(TargetExt)') was evaluated as ('D:\Projects\rendervid\theoratest\Win32\Debug\libogg_static.lib' != '' and '.lib' != '' and '.lib' != '.lib').
-       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLib)' != '' and '%(_OutputFileFromLib.Filename)' !=  '' and '%(_OutputFileFromLib.Filename)' != '$(TargetName)') was evaluated as ('D:\Projects\rendervid\theoratest\Win32\Debug\libogg_static.lib' != '' and 'libogg_static' !=  '' and 'libogg_static' != 'libogg_static').
+       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLib)' == '') was evaluated as ('D:\Projects\rendervid\TheoraPlayer\Win32\Debug\libogg_static.lib' == '').
+       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLib)' != '' and '%(_OutputFileFromLib.FullPath)' != '$([System.IO.Path]::GetFullPath($(TargetPath)))') was evaluated as ('D:\Projects\rendervid\TheoraPlayer\Win32\Debug\libogg_static.lib' != '' and 'D:\Projects\rendervid\TheoraPlayer\Win32\Debug\libogg_static.lib' != 'D:\Projects\rendervid\TheoraPlayer\Win32\Debug\libogg_static.lib').
+       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLib)' != '' and '%(_OutputFileFromLib.Extension)' != '' and '%(_OutputFileFromLib.Extension)' != '$(TargetExt)') was evaluated as ('D:\Projects\rendervid\TheoraPlayer\Win32\Debug\libogg_static.lib' != '' and '.lib' != '' and '.lib' != '.lib').
+       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLib)' != '' and '%(_OutputFileFromLib.Filename)' !=  '' and '%(_OutputFileFromLib.Filename)' != '$(TargetName)') was evaluated as ('D:\Projects\rendervid\TheoraPlayer\Win32\Debug\libogg_static.lib' != '' and 'libogg_static' !=  '' and 'libogg_static' != 'libogg_static').
      1>Done building target "DoLibOutputFilesMatch" in project "libogg_static.vcxproj".
      1>Target "PreLinkEvent" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "D:\Projects\rendervid\libogg-1.3.2\win32\VS2010\libogg_static.vcxproj" (target "_Lib" depends on it):
        Task "Message" skipped, due to false condition; ('%(PreLinkEvent.Message)' != '' and '%(PreLinkEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
@@ -316,15 +307,22 @@
      1>Target "Lib" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "D:\Projects\rendervid\libogg-1.3.2\win32\VS2010\libogg_static.vcxproj" (target "_Lib" depends on it):
        Using "LIB" task from assembly "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.Build.CppTasks.Common.dll".
        Task "LIB"
-         Forcing rebuild of all source files due to missing command TLog "D:\Projects\rendervid\libogg-1.3.2\win32\VS2010\Win32\Debug\libogg_static.tlog\lib.command.1.tlog".
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\Lib.exe /OUT:"D:\Projects\rendervid\theoratest\Win32\Debug\libogg_static.lib" /NOLOGO Win32\Debug\bitwise.obj
+         Write Tracking Logs:
+         	Win32\Debug\libogg_static.tlog\Lib-link.write.1.tlog
+         Read Tracking Logs:
+         	Win32\Debug\libogg_static.tlog\Lib-link.read.1.tlog
+         Outputs for D:\PROJECTS\RENDERVID\LIBOGG-1.3.2\WIN32\VS2010\WIN32\DEBUG\BITWISE.OBJ|D:\PROJECTS\RENDERVID\LIBOGG-1.3.2\WIN32\VS2010\WIN32\DEBUG\FRAMING.OBJ:
+         	D:\PROJECTS\RENDERVID\THEORATEST\WIN32\DEBUG\LIBOGG_STATIC.LIB
+         All outputs are up-to-date.
+         Forcing rebuild of all source files due to a change in the command line since the last build.
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\Lib.exe /OUT:"D:\Projects\rendervid\TheoraPlayer\Win32\Debug\libogg_static.lib" /NOLOGO Win32\Debug\bitwise.obj
          Win32\Debug\framing.obj
          Tracking command:
-         C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker.dll" /i D:\Projects\rendervid\libogg-1.3.2\win32\VS2010\Win32\Debug\libogg_static.tlog /r "D:\PROJECTS\RENDERVID\LIBOGG-1.3.2\WIN32\VS2010\WIN32\DEBUG\BITWISE.OBJ|D:\PROJECTS\RENDERVID\LIBOGG-1.3.2\WIN32\VS2010\WIN32\DEBUG\FRAMING.OBJ" /b MSBuildConsole_CancelEvent02874405670a4520a5af3a2e14d13bd9  /c "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\Lib.exe"  /OUT:"D:\Projects\rendervid\theoratest\Win32\Debug\libogg_static.lib" /NOLOGO Win32\Debug\bitwise.obj
+         C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker.dll" /i D:\Projects\rendervid\libogg-1.3.2\win32\VS2010\Win32\Debug\libogg_static.tlog /r "D:\PROJECTS\RENDERVID\LIBOGG-1.3.2\WIN32\VS2010\WIN32\DEBUG\BITWISE.OBJ|D:\PROJECTS\RENDERVID\LIBOGG-1.3.2\WIN32\VS2010\WIN32\DEBUG\FRAMING.OBJ" /b MSBuildConsole_CancelEventb824fda151e54ee9bc050bf120ff63b7  /c "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\Lib.exe"  /OUT:"D:\Projects\rendervid\TheoraPlayer\Win32\Debug\libogg_static.lib" /NOLOGO Win32\Debug\bitwise.obj
          Win32\Debug\framing.obj
        Done executing task "LIB".
        Task "Message"
-         libogg_static.vcxproj -> D:\Projects\rendervid\theoratest\Win32\Debug\libogg_static.lib
+         libogg_static.vcxproj -> D:\Projects\rendervid\TheoraPlayer\Win32\Debug\libogg_static.lib
        Done executing task "Message".
      1>Done building target "Lib" in project "libogg_static.vcxproj".
      1>Target "AfterLib" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libogg-1.3.2\win32\VS2010\libogg_static.vcxproj" (target "_Lib" depends on it):
@@ -439,7 +437,7 @@
        Task "Copy" skipped, due to false condition; ('$(_SGenDllCreated)'=='true') was evaluated as ('false'=='true').
        Using "Copy" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "Copy"
-         Copying file from "Win32\Debug\libogg_static.pdb" to "D:\Projects\rendervid\theoratest\Win32\Debug\libogg_static.pdb".
+         Copying file from "Win32\Debug\libogg_static.pdb" to "D:\Projects\rendervid\TheoraPlayer\Win32\Debug\libogg_static.pdb".
        Done executing task "Copy".
        Task "Copy" skipped, due to false condition; ('$(_DocumentationFileProduced)'=='true') was evaluated as ('false'=='true').
        Task "Copy" skipped, due to false condition; ('@(IntermediateSatelliteAssembliesWithTargetPath)' != '') was evaluated as ('' != '').
@@ -462,6 +460,7 @@
      1>Target "AfterBuild" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.BuildSteps.Targets" from project "D:\Projects\rendervid\libogg-1.3.2\win32\VS2010\libogg_static.vcxproj" (target "Build" depends on it):
      1>Done building target "AfterBuild" in project "libogg_static.vcxproj".
      1>Target "FinalizeBuildStatus" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libogg-1.3.2\win32\VS2010\libogg_static.vcxproj" (target "Build" depends on it):
+       Using "Delete" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "Delete"
          Deleting file "Win32\Debug\libogg_static.tlog\unsuccessfulbuild".
        Done executing task "Delete".
@@ -475,4 +474,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.49
+Time Elapsed 00:00:00.14

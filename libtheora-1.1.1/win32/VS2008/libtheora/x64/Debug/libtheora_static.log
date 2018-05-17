@@ -1,7 +1,7 @@
-﻿Build started 5/16/2018 8:00:51 PM.
-     1>Project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" on node 2 (Build target(s)).
+﻿Build started 5/17/2018 12:08:05 AM.
+     1>Project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" on node 2 (Build target(s)).
      1>Building with tools version "14.0".
-     1>Target "_CheckForInvalidConfigurationAndPlatform" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (entry point):
+     1>Target "_CheckForInvalidConfigurationAndPlatform" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (entry point):
        Task "Error" skipped, due to false condition; ( '$(_InvalidConfigurationError)' == 'true' ) was evaluated as ( '' == 'true' ).
        Task "Warning" skipped, due to false condition; ( '$(_InvalidConfigurationWarning)' == 'true' ) was evaluated as ( '' == 'true' ).
        Using "Message" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
@@ -11,30 +11,30 @@
        Task "Message"
          Platform=x64
        Done executing task "Message".
-       Task "Error" skipped, due to false condition; ('$(OutDir)' != '' and !HasTrailingSlash('$(OutDir)')) was evaluated as ('D:\Projects\rendervid\theoratest\x64\Debug\' != '' and !HasTrailingSlash('D:\Projects\rendervid\theoratest\x64\Debug\')).
+       Task "Error" skipped, due to false condition; ('$(OutDir)' != '' and !HasTrailingSlash('$(OutDir)')) was evaluated as ('D:\Projects\rendervid\TheoraPlayer\x64\Debug\' != '' and !HasTrailingSlash('D:\Projects\rendervid\TheoraPlayer\x64\Debug\')).
        Task "Error" skipped, due to false condition; ('$(BaseIntermediateOutputPath)' != '' and !HasTrailingSlash('$(BaseIntermediateOutputPath)')) was evaluated as ('obj\' != '' and !HasTrailingSlash('obj\')).
        Task "Error" skipped, due to false condition; ('$(IntermediateOutputPath)' != '' and !HasTrailingSlash('$(IntermediateOutputPath)')) was evaluated as ('x64\Debug\' != '' and !HasTrailingSlash('x64\Debug\')).
      1>Done building target "_CheckForInvalidConfigurationAndPlatform" in project "libtheora_static.vcxproj".
-     1>Target "_PrepareForBuild" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.BuildSteps.Targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "Build" depends on it):
+     1>Target "_PrepareForBuild" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.BuildSteps.Targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "Build" depends on it):
        Task "CreateItem" skipped, due to false condition; ('%(CustomBuild.IncludeFileToTool)'!='') was evaluated as (''!='').
      1>Done building target "_PrepareForBuild" in project "libtheora_static.vcxproj".
-     1>Target "_PrepareForReferenceResolution" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "ResolveReferences" depends on it):
+     1>Target "_PrepareForReferenceResolution" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "ResolveReferences" depends on it):
        Task "Message" skipped, due to false condition; ('$(_REFERENCE_DEBUG)'=='true') was evaluated as (''=='true').
      1>Done building target "_PrepareForReferenceResolution" in project "libtheora_static.vcxproj".
        Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('..\..\..\lib\apiwrapper.c;..\..\..\lib\bitpack.c;..\..\..\lib\cpu.c;..\..\..\lib\decapiwrapper.c;..\..\..\lib\decinfo.c;..\..\..\lib\decode.c;..\..\..\lib\dequant.c;..\..\..\lib\fragment.c;..\..\..\lib\huffdec.c;..\..\..\lib\idct.c;..\..\..\lib\info.c;..\..\..\lib\internal.c;..\..\..\lib\quant.c;..\..\..\lib\state.c;..\..\..\lib\x86_vc\mmxfrag.c;..\..\..\lib\x86_vc\mmxidct.c;..\..\..\lib\x86_vc\mmxstate.c;..\..\..\lib\x86_vc\x86state.c'!='' and 'false'=='true' and '' != 'false').
-     1>Target "BeforeResolveReferences" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "ResolveReferences" depends on it):
+     1>Target "BeforeResolveReferences" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "ResolveReferences" depends on it):
      1>Done building target "BeforeResolveReferences" in project "libtheora_static.vcxproj".
-     1>Target "AssignProjectConfiguration" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "ResolveReferences" depends on it):
+     1>Target "AssignProjectConfiguration" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "ResolveReferences" depends on it):
        Using "AssignProjectConfiguration" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "AssignProjectConfiguration"
        Done executing task "AssignProjectConfiguration".
      1>Done building target "AssignProjectConfiguration" in project "libtheora_static.vcxproj".
        Target "AssignProjectConfiguration" skipped. Previously built successfully.
-     1>Target "_SplitProjectReferencesByFileExistence" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "ResolveProjectReferences" depends on it):
+     1>Target "_SplitProjectReferencesByFileExistence" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "ResolveProjectReferences" depends on it):
        Task "ResolveNonMSBuildProjectOutput" skipped, due to false condition; ('$(BuildingInsideVisualStudio)'=='true' and '@(ProjectReferenceWithConfiguration)'!='') was evaluated as ('true'=='true' and ''!='').
      1>Done building target "_SplitProjectReferencesByFileExistence" in project "libtheora_static.vcxproj".
        Target "_RemoveNameMetadataFromProjectReferenceItems" skipped, due to false condition; ('@(ProjectReference)'!='') was evaluated as (''!='').
-     1>Target "ResolveProjectReferences" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "ResolveReferences" depends on it):
+     1>Target "ResolveProjectReferences" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "ResolveReferences" depends on it):
        Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and ('$(BuildingInsideVisualStudio)' == 'true' or '$(BuildProjectReferences)' != 'true') and '$(VisualStudioVersion)' != '10.0' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and ('true' == 'true' or 'true' != 'true') and '14.0' != '10.0' and '' != '').
        Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and ('$(BuildingInsideVisualStudio)' == 'true' or '$(BuildProjectReferences)' != 'true') and '$(VisualStudioVersion)' == '10.0' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and ('true' == 'true' or 'true' != 'true') and '14.0' == '10.0' and '' != '').
        Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '$(BuildingInsideVisualStudio)' != 'true' and '$(BuildProjectReferences)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and 'true' != 'true' and 'true' == 'true' and '' != '').
@@ -44,16 +44,16 @@
        Target "FindInvalidProjectReferences" skipped, due to false condition; ('$(FindInvalidProjectReferences)' == 'true') was evaluated as ('' == 'true').
        Target "ResolveNativeReferences" skipped, due to false condition; ('@(NativeReference)'!='') was evaluated as (''!='').
        Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
-     1>Target "GetFrameworkPaths" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.NetFramework.CurrentVersion.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+     1>Target "GetFrameworkPaths" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.NetFramework.CurrentVersion.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "ResolveAssemblyReferences" depends on it):
      1>Done building target "GetFrameworkPaths" in project "libtheora_static.vcxproj".
        Target "GetWinFXPath" skipped, due to false condition; (('@(Page)' != '' or '@(ApplicationDefinition)' != '' or '@(Resource)' != '') and ('$(GetWinFXNativePath)' != '' or '$(GetWinFXWoWPath)' != '' )) was evaluated as (('' != '' or '' != '' or '' != '') and ('' != '' or '' != '' )).
-     1>Target "GetReferenceAssemblyPaths" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+     1>Target "GetReferenceAssemblyPaths" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "ResolveAssemblyReferences" depends on it):
        Task "GetReferenceAssemblyPaths" skipped, due to false condition; ('$(TargetFrameworkMoniker)' != '' and ('$(_TargetFrameworkDirectories)' == '' or '$(_FullFrameworkReferenceAssemblyPaths)' == '')) was evaluated as ('' != '' and ('C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0' == '' or 'C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0' == '')).
      1>Done building target "GetReferenceAssemblyPaths" in project "libtheora_static.vcxproj".
-     1>Target "SetBuildDefaultEnvironmentVariables" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.Cpp.Current.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "PrepareForBuild" depends on it):
+     1>Target "SetBuildDefaultEnvironmentVariables" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.Cpp.Current.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "PrepareForBuild" depends on it):
        Using "SetEnv" task from assembly "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.Build.CppTasks.Common.dll".
        Task "SetEnv"
-         PATH=C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin;C:\Program Files (x86)\Windows Kits\8.1\bin\x86;;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\Tools\bin;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\tools;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;;C:\Program Files (x86)\MSBuild\14.0\bin\;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\;;C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MGY3CUOZ.PQB\NativeBinaries\x86;C:\VulkanSDK\1.1.73.0\Bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files (x86)\Autodesk\Backburner\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\Git\cmd;C:\Users\Promit\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft Emulator Manager\1.0\;C:\ProgramData\Oracle\Java\javapath;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Program Files\SourceGear\Common\DiffMerge\;C:\Program Files\dotnet\;C:\Users\Promit\AppData\Local\Microsoft\WindowsApps;C:\Users\Promit\AppData\Roaming\npm;C:\Users\Promit\AppData\Local\GitHubDesktop\bin;
+         PATH=C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin;C:\Program Files (x86)\Windows Kits\8.1\bin\x86;;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\Tools\bin;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\tools;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;;C:\Program Files (x86)\MSBuild\14.0\bin\;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\;;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\NativeBinaries\x86;C:\VulkanSDK\1.1.73.0\Bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files (x86)\Autodesk\Backburner\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\Git\cmd;C:\Users\Promit\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft Emulator Manager\1.0\;C:\ProgramData\Oracle\Java\javapath;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Program Files\SourceGear\Common\DiffMerge\;C:\Program Files\dotnet\;C:\Users\Promit\AppData\Local\Microsoft\WindowsApps;C:\Users\Promit\AppData\Roaming\npm;C:\Users\Promit\AppData\Local\GitHubDesktop\bin;
        Done executing task "SetEnv".
        Task "SetEnv"
          LIB=C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\lib\amd64;;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\lib\amd64;;C:\Program Files (x86)\Windows Kits\10\lib\10.0.10240.0\ucrt\x64;;;C:\Program Files (x86)\Windows Kits\8.1\lib\winv6.3\um\x64;;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\Lib\um\x64
@@ -65,31 +65,31 @@
          INCLUDE=C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include;;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt;;;C:\Program Files (x86)\Windows Kits\8.1\Include\um;C:\Program Files (x86)\Windows Kits\8.1\Include\shared;C:\Program Files (x86)\Windows Kits\8.1\Include\winrt;;
        Done executing task "SetEnv".
      1>Done building target "SetBuildDefaultEnvironmentVariables" in project "libtheora_static.vcxproj".
-     1>Target "SetUserMacroEnvironmentVariables" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.Cpp.Current.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "PrepareForBuild" depends on it):
+     1>Target "SetUserMacroEnvironmentVariables" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.Cpp.Current.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "PrepareForBuild" depends on it):
        Task "SetEnv" skipped, due to false condition; ('%(BuildMacro.EnvironmentVariable)' == 'true') was evaluated as ('' == 'true').
      1>Done building target "SetUserMacroEnvironmentVariables" in project "libtheora_static.vcxproj".
-     1>Target "GetResolvedWinMD" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "PrepareForBuild" depends on it):
+     1>Target "GetResolvedWinMD" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "PrepareForBuild" depends on it):
      1>Done building target "GetResolvedWinMD" in project "libtheora_static.vcxproj".
-     1>Target "PlatformPrepareForBuild" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.Cpp.Platform.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "PrepareForBuild" depends on it):
+     1>Target "PlatformPrepareForBuild" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.Cpp.Platform.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "PrepareForBuild" depends on it):
        Task "VCMessage" skipped, due to false condition; ('$(_Error64bitToolsNotInstalled)' == 'true') was evaluated as ('' == 'true').
        Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(_ToolsetFound)' != 'true' and '$(PlatformToolset)' == 'v110') was evaluated as (''!='true' and 'true' != 'true' and 'v140' == 'v110').
        Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(_ToolsetFound)' != 'true' and '$(PlatformToolset)' == 'v100') was evaluated as (''!='true' and 'true' != 'true' and 'v140' == 'v100').
        Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(_ToolsetFound)' != 'true' and '$(PlatformToolset)' == 'v90') was evaluated as (''!='true' and 'true' != 'true' and 'v140' == 'v90').
        Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(_ToolsetFound)' != 'true' and '$(PlatformToolset)' != 'v90' and '$(PlatformToolset)' != 'v100' and '$(PlatformToolset)' != 'v110') was evaluated as (''!='true' and 'true' != 'true' and 'v140' != 'v90' and 'v140' != 'v100' and 'v140' != 'v110').
      1>Done building target "PlatformPrepareForBuild" in project "libtheora_static.vcxproj".
-     1>Target "Desktop_PlatformPrepareForBuild" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Platforms\x64\PlatformToolsets\v140\Toolset.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "PrepareForBuild" depends on it):
+     1>Target "Desktop_PlatformPrepareForBuild" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Platforms\x64\PlatformToolsets\v140\Toolset.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "PrepareForBuild" depends on it):
        Task "VCMessage" skipped, due to false condition; ($(MissingSDKProps) == 'true') was evaluated as ( == 'true').
      1>Done building target "Desktop_PlatformPrepareForBuild" in project "libtheora_static.vcxproj".
        Target "GetFrameworkPaths" skipped. Previously built successfully.
        Target "GetReferenceAssemblyPaths" skipped. Previously built successfully.
        Target "AssignLinkMetadata" skipped, due to false condition; ( '$(SynthesizeLinkMetadata)' == 'true' ) was evaluated as ( '' == 'true' ).
-     1>Target "SetCABuildNativeEnvironmentVariables" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v14.0\CodeAnalysis\Microsoft.CodeAnalysis.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "PrepareForBuild" depends on it):
+     1>Target "SetCABuildNativeEnvironmentVariables" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v14.0\CodeAnalysis\Microsoft.CodeAnalysis.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "PrepareForBuild" depends on it):
        Initializing task factory "CodeTaskFactory" from assembly "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Build.Tasks.Core.dll".
        Using "SetEnvironmentVariable" task from the task factory "Code Task Factory".
        Task "SetEnvironmentVariable"
        Done executing task "SetEnvironmentVariable".
      1>Done building target "SetCABuildNativeEnvironmentVariables" in project "libtheora_static.vcxproj".
-     1>Target "PrepareForBuild" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+     1>Target "PrepareForBuild" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "ResolveAssemblyReferences" depends on it):
        Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)' != 'true' and '$(ConfigurationPlatformExists)' != 'true') was evaluated as ('' != 'true' and 'true' != 'true').
        Using "MakeDir" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "MakeDir"
@@ -106,42 +106,40 @@
        Task "VCMessage" skipped, due to false condition; ('$(IgnoreWarnIntDirSharingDetected)' != 'true' and '$(IntDirSharingDetected)' == 'true') was evaluated as ('' != 'true' and '' == 'true').
        Task "VCMessage" skipped, due to false condition; ('$(IgnoreWarnIntDirInTempDetected)' != 'true' and ('$(_IntDirFullpath.StartsWith($(Tmp), true, null))' == 'true' or '$(_IntDirFullpath.StartsWith($(Temp), true, null))' == 'true' or '$(_OutDirFullpath.StartsWith($(Tmp), true, null))' == 'true' or '$(_OutDirFullpath.StartsWith($(Temp), true, null))' == 'true')) was evaluated as ('' != 'true' and ('False' == 'true' or 'False' == 'true' or 'False' == 'true' or 'False' == 'true')).
        Task "MakeDir"
-         Creating directory "D:\Projects\rendervid\theoratest\x64\Debug\".
-         Creating directory "x64\Debug\libtheora_static.tlog\".
        Done executing task "MakeDir".
      1>Done building target "PrepareForBuild" in project "libtheora_static.vcxproj".
        Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
        Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('..\..\..\lib\apiwrapper.c;..\..\..\lib\bitpack.c;..\..\..\lib\cpu.c;..\..\..\lib\decapiwrapper.c;..\..\..\lib\decinfo.c;..\..\..\lib\decode.c;..\..\..\lib\dequant.c;..\..\..\lib\fragment.c;..\..\..\lib\huffdec.c;..\..\..\lib\idct.c;..\..\..\lib\info.c;..\..\..\lib\internal.c;..\..\..\lib\quant.c;..\..\..\lib\state.c;..\..\..\lib\x86_vc\mmxfrag.c;..\..\..\lib\x86_vc\mmxidct.c;..\..\..\lib\x86_vc\mmxstate.c;..\..\..\lib\x86_vc\x86state.c'!='' and 'false'=='true' and '' != 'false').
-     1>Target "GetInstalledSDKLocations" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "ResolveSDKReferences" depends on it):
+     1>Target "GetInstalledSDKLocations" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "ResolveSDKReferences" depends on it):
        Task "GetInstalledSDKLocations" skipped, due to false condition; ('@(SDKReference)' != '') was evaluated as ('' != '').
        Task "GetInstalledSDKLocations" skipped, due to false condition; ('@(SDKReference)' != '' and '$(SupportWindows81SDKs)' == 'true' and '$(TargetPlatformIdentifierWindows81)' != '' and '$(TargetPlatformVersionWindows81)' != '') was evaluated as ('' != '' and '' == 'true' and '' != '' and '' != '').
        Task "GetInstalledSDKLocations" skipped, due to false condition; ('@(SDKReference)' != '' and '$(SupportWindowsPhone81SDKs)' == 'true' and '$(TargetPlatformIdentifierWindowsPhone81)' != '' and '$(TargetPlatformVersionWindowsPhone81)' != '') was evaluated as ('' != '' and '' == 'true' and '' != '' and '' != '').
      1>Done building target "GetInstalledSDKLocations" in project "libtheora_static.vcxproj".
-     1>Target "ModifyUnitTestPlatformVersion" in file "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportBefore\Windows.8.1.UT_SDKReference.props" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "ResolveSDKReferences" depends on it):
+     1>Target "ModifyUnitTestPlatformVersion" in file "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportBefore\Windows.8.1.UT_SDKReference.props" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "ResolveSDKReferences" depends on it):
      1>Done building target "ModifyUnitTestPlatformVersion" in project "libtheora_static.vcxproj".
-     1>Target "ResolveSDKReferences" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+     1>Target "ResolveSDKReferences" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "ResolveAssemblyReferences" depends on it):
        Task "ResolveSDKReference" skipped, due to false condition; ('@(SDKReference)'!='') was evaluated as (''!='').
      1>Done building target "ResolveSDKReferences" in project "libtheora_static.vcxproj".
        Target "ResolveSDKReferences" skipped. Previously built successfully.
-     1>Target "ExpandSDKReferences" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+     1>Target "ExpandSDKReferences" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "ResolveAssemblyReferences" depends on it):
        Task "GetSDKReferenceFiles" skipped, due to false condition; ('@(ResolvedSDKReference)'!='') was evaluated as (''!='').
      1>Done building target "ExpandSDKReferences" in project "libtheora_static.vcxproj".
        Target "ResolveNuGetPackageAssets" skipped, due to false condition; ('$(ResolveNuGetPackages)' == 'true' and exists('$(ProjectLockFile)')) was evaluated as ('true' == 'true' and exists('project.lock.json')).
-     1>Target "ResolveAssemblyReferences" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "ResolveReferences" depends on it):
+     1>Target "ResolveAssemblyReferences" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "ResolveReferences" depends on it):
        Task "ResolveAssemblyReference" skipped, due to false condition; ('@(Reference)'!='' or '@(_ResolvedProjectReferencePaths)'!='' or '@(_ExplicitReference)' != '') was evaluated as (''!='' or ''!='' or '' != '').
      1>Done building target "ResolveAssemblyReferences" in project "libtheora_static.vcxproj".
        Target "GenerateBindingRedirects" skipped, due to false condition; ('$(AutoGenerateBindingRedirects)' == 'true' and '$(GenerateBindingRedirectsOutputType)' == 'true') was evaluated as ('' == 'true' and '' == 'true').
        Target "GenerateBindingRedirectsUpdateAppConfig" skipped, due to false condition; ('$(AutoGenerateBindingRedirects)' == 'true' and '$(GenerateBindingRedirectsOutputType)' == 'true' and Exists('$(_GenerateBindingRedirectsIntermediateAppConfig)')) was evaluated as ('' == 'true' and '' == 'true' and Exists('x64\Debug\libtheora_static.vcxproj.libtheora_static.lib.config')).
        Target "ResolveComReferences" skipped, due to false condition; ('@(COMReference)'!='' or '@(COMFileReference)'!='') was evaluated as (''!='' or ''!='').
-     1>Target "AfterResolveReferences" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "ResolveReferences" depends on it):
+     1>Target "AfterResolveReferences" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "ResolveReferences" depends on it):
      1>Done building target "AfterResolveReferences" in project "libtheora_static.vcxproj".
        Target "ImplicitlyExpandDesignTimeFacades" skipped, due to false condition; ('$(ImplicitlyExpandDesignTimeFacades)' == 'true') was evaluated as ('' == 'true').
        Target "ResolveTestReferences" skipped, due to false condition; ('@(Shadow)'!='') was evaluated as (''!='').
-     1>Target "ResolveReferences" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "Build" depends on it):
+     1>Target "ResolveReferences" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "Build" depends on it):
      1>Done building target "ResolveReferences" in project "libtheora_static.vcxproj".
        Target "PrepareForBuild" skipped. Previously built successfully.
        Target "PrepareForBuild" skipped. Previously built successfully.
-     1>Target "InitializeBuildStatus" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "Build" depends on it):
+     1>Target "InitializeBuildStatus" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "Build" depends on it):
        Using "ReadLinesFromFile" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "ReadLinesFromFile"
        Done executing task "ReadLinesFromFile".
@@ -155,14 +153,14 @@
      1>Done building target "InitializeBuildStatus" in project "libtheora_static.vcxproj".
        Target "AssignProjectConfiguration" skipped. Previously built successfully.
        Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
-     1>Target "BuildGenerateSourcesTraverse" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "BuildGenerateSources" depends on it):
+     1>Target "BuildGenerateSourcesTraverse" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "BuildGenerateSources" depends on it):
        Task "MSBuild" skipped, due to false condition; ('$(BuildPassReferences)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != '' and '%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true') was evaluated as ('' == 'true' and '' != '' and '' != '' and '' == 'true').
      1>Done building target "BuildGenerateSourcesTraverse" in project "libtheora_static.vcxproj".
        Target "PrepareForBuild" skipped. Previously built successfully.
        Target "ResolveReferences" skipped. Previously built successfully.
-     1>Target "BeforeBuildGenerateSources" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.BuildSteps.Targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+     1>Target "BeforeBuildGenerateSources" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.BuildSteps.Targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
      1>Done building target "BeforeBuildGenerateSources" in project "libtheora_static.vcxproj".
-     1>Target "PreBuildEvent" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+     1>Target "PreBuildEvent" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
        Task "Message" skipped, due to false condition; ('%(PreBuildEvent.Message)' != '' and '%(PreBuildEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
        Task "Exec" skipped, due to false condition; ('%(PreBuildEvent.Command)' != '') was evaluated as ('' != '').
      1>Done building target "PreBuildEvent" in project "libtheora_static.vcxproj".
@@ -170,9 +168,9 @@
        Target "FxExport" skipped, due to false condition; ('@(FxCompile)' != '') was evaluated as ('' != '').
        Target "FxCompile" skipped, due to false condition; ('@(FxCompile)' != '') was evaluated as ('' != '').
        Target "Xsd" skipped, due to false condition; ('@(Xsd)' != '') was evaluated as ('' != '').
-     1>Target "_Xsd" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+     1>Target "_Xsd" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
      1>Done building target "_Xsd" in project "libtheora_static.vcxproj".
-     1>Target "MakeDirsForMidl" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_Midl" depends on it):
+     1>Target "MakeDirsForMidl" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_Midl" depends on it):
        Task "Makedir"
        Done executing task "Makedir".
      1>Done building target "MakeDirsForMidl" in project "libtheora_static.vcxproj".
@@ -180,38 +178,38 @@
        Target "CustomBuild" skipped, due to false condition; ('@(CustomBuild)' != '') was evaluated as ('' != '').
        Target "FxExport" skipped, due to false condition; ('@(FxCompile)' != '') was evaluated as ('' != '').
        Target "FxCompile" skipped, due to false condition; ('@(FxCompile)' != '') was evaluated as ('' != '').
-     1>Target "ComputeMIDLGeneratedCompileInputs" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_Midl" depends on it):
+     1>Target "ComputeMIDLGeneratedCompileInputs" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_Midl" depends on it):
      1>Done building target "ComputeMIDLGeneratedCompileInputs" in project "libtheora_static.vcxproj".
-     1>Target "AfterMidl" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_Midl" depends on it):
+     1>Target "AfterMidl" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_Midl" depends on it):
      1>Done building target "AfterMidl" in project "libtheora_static.vcxproj".
-     1>Target "_Midl" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+     1>Target "_Midl" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
      1>Done building target "_Midl" in project "libtheora_static.vcxproj".
-     1>Target "AfterBuildGenerateSources" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.BuildSteps.Targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+     1>Target "AfterBuildGenerateSources" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.BuildSteps.Targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
      1>Done building target "AfterBuildGenerateSources" in project "libtheora_static.vcxproj".
-     1>Target "AfterBuildGenerateSourcesEvent" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+     1>Target "AfterBuildGenerateSourcesEvent" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
      1>Done building target "AfterBuildGenerateSourcesEvent" in project "libtheora_static.vcxproj".
-     1>Target "_BuildGenerateSourcesAction" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "BuildGenerateSources" depends on it):
+     1>Target "_BuildGenerateSourcesAction" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "BuildGenerateSources" depends on it):
      1>Done building target "_BuildGenerateSourcesAction" in project "libtheora_static.vcxproj".
-     1>Target "BuildGenerateSources" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "Build" depends on it):
+     1>Target "BuildGenerateSources" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "Build" depends on it):
      1>Done building target "BuildGenerateSources" in project "libtheora_static.vcxproj".
        Target "AssignProjectConfiguration" skipped. Previously built successfully.
        Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
-     1>Target "BuildCompileTraverse" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "BuildCompile" depends on it):
+     1>Target "BuildCompileTraverse" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "BuildCompile" depends on it):
        Task "MSBuild" skipped, due to false condition; ('$(BuildPassReferences)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != ''  and '%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true') was evaluated as ('' == 'true' and '' != '' and '' != ''  and '' == 'true').
      1>Done building target "BuildCompileTraverse" in project "libtheora_static.vcxproj".
        Target "PrepareForBuild" skipped. Previously built successfully.
        Target "ResolveReferences" skipped. Previously built successfully.
-     1>Target "BeforeClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_ClCompile" depends on it):
+     1>Target "BeforeClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_ClCompile" depends on it):
      1>Done building target "BeforeClCompile" in project "libtheora_static.vcxproj".
        Target "ComputeMIDLGeneratedCompileInputs" skipped. Previously built successfully.
-     1>Target "ComputeCLInputPDBName" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_ClCompile" depends on it):
+     1>Target "ComputeCLInputPDBName" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_ClCompile" depends on it):
      1>Done building target "ComputeCLInputPDBName" in project "libtheora_static.vcxproj".
        Target "ResolveReferences" skipped. Previously built successfully.
-     1>Target "ComputeReferenceCLInput" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_ClCompile" depends on it):
+     1>Target "ComputeReferenceCLInput" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_ClCompile" depends on it):
        Task "WriteLinesToFile" skipped, due to false condition; (('@(_ReferenceCopyLocalPaths)'!='') and '$(DesignTimeBuild)' != 'true') was evaluated as ((''!='') and '' != 'true').
        Task "Message" skipped, due to false condition; ('$(_REFERENCE_DEBUG)'=='true') was evaluated as (''=='true').
      1>Done building target "ComputeReferenceCLInput" in project "libtheora_static.vcxproj".
-     1>Target "WarnCompileDuplicatedFilename" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_ClCompile" depends on it):
+     1>Target "WarnCompileDuplicatedFilename" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_ClCompile" depends on it):
        Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'apiwrapper.c' != 'apiwrapper.c' and 'x64\Debug\' == 'x64\Debug\').
        Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'bitpack.c' != 'bitpack.c' and 'x64\Debug\' == 'x64\Debug\').
        Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'cpu.c' != 'cpu.c' and 'x64\Debug\' == 'x64\Debug\').
@@ -231,16 +229,16 @@
        Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'mmxstate.c' != 'mmxstate.c' and 'x64\Debug\' == 'x64\Debug\').
        Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'x86state.c' != 'x86state.c' and 'x64\Debug\' == 'x64\Debug\').
      1>Done building target "WarnCompileDuplicatedFilename" in project "libtheora_static.vcxproj".
-     1>Target "FixupCLCompileOptions" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_ClCompile" depends on it):
+     1>Target "FixupCLCompileOptions" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_ClCompile" depends on it):
      1>Done building target "FixupCLCompileOptions" in project "libtheora_static.vcxproj".
-     1>Target "MakeDirsForCl" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_ClCompile" depends on it):
+     1>Target "MakeDirsForCl" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_ClCompile" depends on it):
        Task "MakeDir"
        Done executing task "MakeDir".
      1>Done building target "MakeDirsForCl" in project "libtheora_static.vcxproj".
        Target "PrepareForBuild" skipped. Previously built successfully.
        Target "SetBuildDefaultEnvironmentVariables" skipped. Previously built successfully.
        Target "SetUserMacroEnvironmentVariables" skipped. Previously built successfully.
-     1>Target "_SelectedFiles" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "SelectClCompile" depends on it):
+     1>Target "_SelectedFiles" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "SelectClCompile" depends on it):
      1>Done building target "_SelectedFiles" in project "libtheora_static.vcxproj".
        Target "ComputeMIDLGeneratedCompileInputs" skipped. Previously built successfully.
        Target "ComputeCLInputPDBName" skipped. Previously built successfully.
@@ -248,28 +246,58 @@
        Target "WarnCompileDuplicatedFilename" skipped. Previously built successfully.
        Target "FixupCLCompileOptions" skipped. Previously built successfully.
        Target "_SelectedFiles" skipped. Previously built successfully.
-     1>Target "SelectCustomBuild" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "SelectClCompile" depends on it):
+     1>Target "SelectCustomBuild" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "SelectClCompile" depends on it):
      1>Done building target "SelectCustomBuild" in project "libtheora_static.vcxproj".
-     1>Target "SelectClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "ClCompile" depends on it):
+     1>Target "SelectClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "ClCompile" depends on it):
      1>Done building target "SelectClCompile" in project "libtheora_static.vcxproj".
        Target "GenerateTargetFrameworkMonikerAttribute" skipped, due to false condition; ('$(GenerateTargetFrameworkAttribute)' == 'true') was evaluated as ('false' == 'true').
        Target "ManagedIncrementalBuildPreProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('..\..\..\lib\apiwrapper.c;..\..\..\lib\bitpack.c;..\..\..\lib\cpu.c;..\..\..\lib\decapiwrapper.c;..\..\..\lib\decinfo.c;..\..\..\lib\decode.c;..\..\..\lib\dequant.c;..\..\..\lib\fragment.c;..\..\..\lib\huffdec.c;..\..\..\lib\idct.c;..\..\..\lib\info.c;..\..\..\lib\internal.c;..\..\..\lib\quant.c;..\..\..\lib\state.c;..\..\..\lib\x86_vc\mmxfrag.c;..\..\..\lib\x86_vc\mmxidct.c;..\..\..\lib\x86_vc\mmxstate.c;..\..\..\lib\x86_vc\x86state.c' != '' and 'false' == 'True').
-     1>Target "ClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_ClCompile" depends on it):
-       Using "Delete" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-       Task "Delete"
-       Done executing task "Delete".
+     1>Target "ClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_ClCompile" depends on it):
+       Task "Delete" skipped, due to false condition; ('%(ClCompile.DebugInformationFormat)' != '' and '%(ClCompile.DebugInformationFormat)' != 'None' and '%(ClCompile.DebugInformationFormat)' != 'OldStyle' and '%(ClCompile.ProgramDataBaseFileName)' != '' and !Exists(%(ClCompile.ProgramDataBaseFileName))) was evaluated as ('ProgramDatabase' != '' and 'ProgramDatabase' != 'None' and 'ProgramDatabase' != 'OldStyle' and 'x64\Debug\libtheora_static.pdb' != '' and !Exists(x64\Debug\libtheora_static.pdb)).
        Task "CL" skipped, due to false condition; ('%(ClCompile.PrecompiledHeader)' == 'Create' and '%(ClCompile.ExcludedFromBuild)'!='true' and '%(ClCompile.CompilerIteration)' == '') was evaluated as ('' == 'Create' and ''!='true' and '' == '').
        Task "CL" skipped, due to false condition; ('%(ClCompile.PrecompiledHeader)' == 'Create' and '%(ClCompile.ExcludedFromBuild)'!='true' and '%(ClCompile.CompilerIteration)' == '') was evaluated as ('' == 'Create' and ''!='true' and '' == '').
        Task "CL" skipped, due to false condition; ('%(ClCompile.PrecompiledHeader)' == 'Create' and '%(ClCompile.ExcludedFromBuild)'!='true' and '%(ClCompile.CompilerIteration)' == '') was evaluated as ('' == 'Create' and ''!='true' and '' == '').
        Task "CL" skipped, due to false condition; ('%(ClCompile.PrecompiledHeader)' == 'Create' and '%(ClCompile.ExcludedFromBuild)'!='true' and '%(ClCompile.CompilerIteration)' == '') was evaluated as ('' == 'Create' and ''!='true' and '' == '').
        Using "CL" task from assembly "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.Build.CppTasks.Common.dll".
        Task "CL"
-         Forcing recompile of all source files due to missing PDB "x64\Debug\libtheora_static.pdb".
+         Read Tracking Logs:
+         	x64\Debug\libtheora_static.tlog\CL.read.1.tlog
+         Outputs for D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\LIB\APIWRAPPER.C|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\LIB\BITPACK.C|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\LIB\CPU.C|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\LIB\DECAPIWRAPPER.C|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\LIB\DECINFO.C|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\LIB\DEQUANT.C|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\LIB\FRAGMENT.C|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\LIB\HUFFDEC.C|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\LIB\INFO.C|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\LIB\INTERNAL.C|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\LIB\STATE.C|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\LIB\X86_VC\MMXFRAG.C|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\LIB\X86_VC\MMXIDCT.C|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\LIB\X86_VC\MMXSTATE.C|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\LIB\X86_VC\X86STATE.C:
+         	D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\APIWRAPPER.OBJ
+         	D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\BITPACK.OBJ
+         	D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\CPU.OBJ
+         	D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\DECAPIWRAPPER.OBJ
+         	D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\DECINFO.OBJ
+         	D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\DEQUANT.OBJ
+         	D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\FRAGMENT.OBJ
+         	D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\HUFFDEC.OBJ
+         	D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\INFO.OBJ
+         	D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\INTERNAL.OBJ
+         	D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\STATE.OBJ
+         	D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\MMXFRAG.OBJ
+         	D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\MMXIDCT.OBJ
+         	D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\MMXSTATE.OBJ
+         	D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\X86STATE.OBJ
+         ..\..\..\lib\apiwrapper.c will be compiled as it was not found in the tracking log.
+         ..\..\..\lib\bitpack.c will be compiled as it was not found in the tracking log.
+         ..\..\..\lib\cpu.c will be compiled as it was not found in the tracking log.
+         ..\..\..\lib\decapiwrapper.c will be compiled as it was not found in the tracking log.
+         ..\..\..\lib\decinfo.c will be compiled as it was not found in the tracking log.
+         ..\..\..\lib\dequant.c will be compiled as it was not found in the tracking log.
+         ..\..\..\lib\fragment.c will be compiled as it was not found in the tracking log.
+         ..\..\..\lib\huffdec.c will be compiled as it was not found in the tracking log.
+         ..\..\..\lib\info.c will be compiled as it was not found in the tracking log.
+         ..\..\..\lib\internal.c will be compiled as it was not found in the tracking log.
+         ..\..\..\lib\state.c will be compiled as it was not found in the tracking log.
+         ..\..\..\lib\x86_vc\mmxfrag.c will be compiled as it was not found in the tracking log.
+         ..\..\..\lib\x86_vc\mmxidct.c will be compiled as it was not found in the tracking log.
+         ..\..\..\lib\x86_vc\mmxstate.c will be compiled as it was not found in the tracking log.
+         ..\..\..\lib\x86_vc\x86state.c will be compiled as it was not found in the tracking log.
          Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=1000
+           VS_UNICODE_OUTPUT=2164
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /I..\..\..\include /I..\..\..\lib /I..\..\..\..\libogg\include /I..\..\..\..\..\..\..\core\ogg\libogg\include\ /I"..\..\..\..\libogg-1.3.2\include" /I..\..\..\..\ogg\include /I..\..\..\..\..\..\..\core\ogg\libogg\include /Zi /nologo /W3 /WX- /Od /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _BIND_TO_CURRENT_CRT_VERSION /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D LIBTHEORA_EXPORTS /D DEBUG /D _VC80_UPGRADE=0x0710 /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\libtheora_static.pdb" /Gd /TC /errorReport:prompt ..\..\..\lib\apiwrapper.c ..\..\..\lib\bitpack.c ..\..\..\lib\cpu.c ..\..\..\lib\decapiwrapper.c ..\..\..\lib\decinfo.c ..\..\..\lib\dequant.c ..\..\..\lib\fragment.c ..\..\..\lib\huffdec.c ..\..\..\lib\info.c ..\..\..\lib\internal.c ..\..\..\lib\state.c ..\..\..\lib\x86_vc\mmxfrag.c ..\..\..\lib\x86_vc\mmxidct.c ..\..\..\lib\x86_vc\mmxstate.c ..\..\..\lib\x86_vc\x86state.c
          Tracking command:
-         C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker.dll" /i D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\x64\Debug\libtheora_static.tlog /r "D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\LIB\APIWRAPPER.C|D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\LIB\BITPACK.C|D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\LIB\CPU.C|D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\LIB\DECAPIWRAPPER.C|D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\LIB\DECINFO.C|D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\LIB\DEQUANT.C|D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\LIB\FRAGMENT.C|D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\LIB\HUFFDEC.C|D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\LIB\INFO.C|D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\LIB\INTERNAL.C|D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\LIB\STATE.C|D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\LIB\X86_VC\MMXFRAG.C|D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\LIB\X86_VC\MMXIDCT.C|D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\LIB\X86_VC\MMXSTATE.C|D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\LIB\X86_VC\X86STATE.C" /b MSBuildConsole_CancelEventa11e96fd4d84474baba25d75265f0032  /c "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe"  /c /I..\..\..\include /I..\..\..\lib /I..\..\..\..\libogg\include /I..\..\..\..\..\..\..\core\ogg\libogg\include\ /I"..\..\..\..\libogg-1.3.2\include" /I..\..\..\..\ogg\include /I..\..\..\..\..\..\..\core\ogg\libogg\include /Zi /nologo /W3 /WX- /Od /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _BIND_TO_CURRENT_CRT_VERSION /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D LIBTHEORA_EXPORTS /D DEBUG /D _VC80_UPGRADE=0x0710 /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\libtheora_static.pdb" /Gd /TC /errorReport:prompt ..\..\..\lib\apiwrapper.c ..\..\..\lib\bitpack.c ..\..\..\lib\cpu.c ..\..\..\lib\decapiwrapper.c ..\..\..\lib\decinfo.c ..\..\..\lib\dequant.c ..\..\..\lib\fragment.c ..\..\..\lib\huffdec.c ..\..\..\lib\info.c ..\..\..\lib\internal.c ..\..\..\lib\state.c ..\..\..\lib\x86_vc\mmxfrag.c ..\..\..\lib\x86_vc\mmxidct.c ..\..\..\lib\x86_vc\mmxstate.c ..\..\..\lib\x86_vc\x86state.c
+         C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker.dll" /i D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\x64\Debug\libtheora_static.tlog /r "D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\LIB\APIWRAPPER.C|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\LIB\BITPACK.C|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\LIB\CPU.C|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\LIB\DECAPIWRAPPER.C|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\LIB\DECINFO.C|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\LIB\DEQUANT.C|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\LIB\FRAGMENT.C|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\LIB\HUFFDEC.C|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\LIB\INFO.C|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\LIB\INTERNAL.C|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\LIB\STATE.C|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\LIB\X86_VC\MMXFRAG.C|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\LIB\X86_VC\MMXIDCT.C|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\LIB\X86_VC\MMXSTATE.C|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\LIB\X86_VC\X86STATE.C" /b MSBuildConsole_CancelEvent7218d47b07ee4ddb852f42665d55a8b9  /c "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe"  /c /I..\..\..\include /I..\..\..\lib /I..\..\..\..\libogg\include /I..\..\..\..\..\..\..\core\ogg\libogg\include\ /I"..\..\..\..\libogg-1.3.2\include" /I..\..\..\..\ogg\include /I..\..\..\..\..\..\..\core\ogg\libogg\include /Zi /nologo /W3 /WX- /Od /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _BIND_TO_CURRENT_CRT_VERSION /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D LIBTHEORA_EXPORTS /D DEBUG /D _VC80_UPGRADE=0x0710 /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\libtheora_static.pdb" /Gd /TC /errorReport:prompt ..\..\..\lib\apiwrapper.c ..\..\..\lib\bitpack.c ..\..\..\lib\cpu.c ..\..\..\lib\decapiwrapper.c ..\..\..\lib\decinfo.c ..\..\..\lib\dequant.c ..\..\..\lib\fragment.c ..\..\..\lib\huffdec.c ..\..\..\lib\info.c ..\..\..\lib\internal.c ..\..\..\lib\state.c ..\..\..\lib\x86_vc\mmxfrag.c ..\..\..\lib\x86_vc\mmxidct.c ..\..\..\lib\x86_vc\mmxstate.c ..\..\..\lib\x86_vc\x86state.c
          x86state.c
          mmxstate.c
          mmxidct.c
@@ -302,14 +330,14 @@
        Task "CL"
          Read Tracking Logs:
          	x64\Debug\libtheora_static.tlog\CL.read.1.tlog
-         Outputs for D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\LIB\DECODE.C:
-         	D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\DECODE1.OBJ
+         Outputs for D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\LIB\DECODE.C:
+         	D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\DECODE1.OBJ
          ..\..\..\lib\decode.c will be compiled as it was not found in the tracking log.
          Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=1532
+           VS_UNICODE_OUTPUT=2772
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /I..\..\..\include /I..\..\..\lib /I..\..\..\..\libogg\include /I..\..\..\..\..\..\..\core\ogg\libogg\include\ /I"..\..\..\..\libogg-1.3.2\include" /I..\..\..\..\ogg\include /I..\..\..\..\..\..\..\core\ogg\libogg\include /Zi /nologo /W3 /WX- /Od /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _BIND_TO_CURRENT_CRT_VERSION /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D LIBTHEORA_EXPORTS /D DEBUG /D _VC80_UPGRADE=0x0710 /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\decode1.obj" /Fd"x64\Debug\libtheora_static.pdb" /Gd /TC /errorReport:prompt ..\..\..\lib\decode.c
          Tracking command:
-         C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker.dll" /i D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\x64\Debug\libtheora_static.tlog /r D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\LIB\DECODE.C /b MSBuildConsole_CancelEvent540ccb45f7ae47b68bcd401c369798bd  /c "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe"  /c /I..\..\..\include /I..\..\..\lib /I..\..\..\..\libogg\include /I..\..\..\..\..\..\..\core\ogg\libogg\include\ /I"..\..\..\..\libogg-1.3.2\include" /I..\..\..\..\ogg\include /I..\..\..\..\..\..\..\core\ogg\libogg\include /Zi /nologo /W3 /WX- /Od /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _BIND_TO_CURRENT_CRT_VERSION /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D LIBTHEORA_EXPORTS /D DEBUG /D _VC80_UPGRADE=0x0710 /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\decode1.obj" /Fd"x64\Debug\libtheora_static.pdb" /Gd /TC /errorReport:prompt ..\..\..\lib\decode.c
+         C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker.dll" /i D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\x64\Debug\libtheora_static.tlog /r D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\LIB\DECODE.C /b MSBuildConsole_CancelEventcceb041452e34ea8bfc61a449e62f1b9  /c "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe"  /c /I..\..\..\include /I..\..\..\lib /I..\..\..\..\libogg\include /I..\..\..\..\..\..\..\core\ogg\libogg\include\ /I"..\..\..\..\libogg-1.3.2\include" /I..\..\..\..\ogg\include /I..\..\..\..\..\..\..\core\ogg\libogg\include /Zi /nologo /W3 /WX- /Od /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _BIND_TO_CURRENT_CRT_VERSION /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D LIBTHEORA_EXPORTS /D DEBUG /D _VC80_UPGRADE=0x0710 /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\decode1.obj" /Fd"x64\Debug\libtheora_static.pdb" /Gd /TC /errorReport:prompt ..\..\..\lib\decode.c
          decode.c
      1>..\..\..\lib\decode.c(1044): warning C4244: '=': conversion from 'ptrdiff_t' to 'int', possible loss of data
      1>..\..\..\lib\decode.c(1116): warning C4244: '=': conversion from 'ptrdiff_t' to 'int', possible loss of data
@@ -319,57 +347,57 @@
        Task "CL"
          Read Tracking Logs:
          	x64\Debug\libtheora_static.tlog\CL.read.1.tlog
-         Outputs for D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\LIB\IDCT.C:
-         	D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\IDCT1.OBJ
+         Outputs for D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\LIB\IDCT.C:
+         	D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\IDCT1.OBJ
          ..\..\..\lib\idct.c will be compiled as it was not found in the tracking log.
          Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=1504
+           VS_UNICODE_OUTPUT=2772
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /I..\..\..\include /I..\..\..\lib /I..\..\..\..\libogg\include /I..\..\..\..\..\..\..\core\ogg\libogg\include\ /I"..\..\..\..\libogg-1.3.2\include" /I..\..\..\..\ogg\include /I..\..\..\..\..\..\..\core\ogg\libogg\include /Zi /nologo /W3 /WX- /Od /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _BIND_TO_CURRENT_CRT_VERSION /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D LIBTHEORA_EXPORTS /D DEBUG /D _VC80_UPGRADE=0x0710 /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\idct1.obj" /Fd"x64\Debug\libtheora_static.pdb" /Gd /TC /errorReport:prompt ..\..\..\lib\idct.c
          Tracking command:
-         C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker.dll" /i D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\x64\Debug\libtheora_static.tlog /r D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\LIB\IDCT.C /b MSBuildConsole_CancelEventb988c88274764ee39ff8f08ad94e227d  /c "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe"  /c /I..\..\..\include /I..\..\..\lib /I..\..\..\..\libogg\include /I..\..\..\..\..\..\..\core\ogg\libogg\include\ /I"..\..\..\..\libogg-1.3.2\include" /I..\..\..\..\ogg\include /I..\..\..\..\..\..\..\core\ogg\libogg\include /Zi /nologo /W3 /WX- /Od /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _BIND_TO_CURRENT_CRT_VERSION /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D LIBTHEORA_EXPORTS /D DEBUG /D _VC80_UPGRADE=0x0710 /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\idct1.obj" /Fd"x64\Debug\libtheora_static.pdb" /Gd /TC /errorReport:prompt ..\..\..\lib\idct.c
+         C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker.dll" /i D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\x64\Debug\libtheora_static.tlog /r D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\LIB\IDCT.C /b MSBuildConsole_CancelEventfb2c84d346924b7aa9c537b3fb983ae5  /c "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe"  /c /I..\..\..\include /I..\..\..\lib /I..\..\..\..\libogg\include /I..\..\..\..\..\..\..\core\ogg\libogg\include\ /I"..\..\..\..\libogg-1.3.2\include" /I..\..\..\..\ogg\include /I..\..\..\..\..\..\..\core\ogg\libogg\include /Zi /nologo /W3 /WX- /Od /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _BIND_TO_CURRENT_CRT_VERSION /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D LIBTHEORA_EXPORTS /D DEBUG /D _VC80_UPGRADE=0x0710 /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\idct1.obj" /Fd"x64\Debug\libtheora_static.pdb" /Gd /TC /errorReport:prompt ..\..\..\lib\idct.c
          idct.c
        Done executing task "CL".
        Task "CL"
          Read Tracking Logs:
          	x64\Debug\libtheora_static.tlog\CL.read.1.tlog
-         Outputs for D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\LIB\QUANT.C:
-         	D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\QUANT1.OBJ
+         Outputs for D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\LIB\QUANT.C:
+         	D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\QUANT1.OBJ
          ..\..\..\lib\quant.c will be compiled as it was not found in the tracking log.
          Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=1176
+           VS_UNICODE_OUTPUT=980
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /I..\..\..\include /I..\..\..\lib /I..\..\..\..\libogg\include /I..\..\..\..\..\..\..\core\ogg\libogg\include\ /I"..\..\..\..\libogg-1.3.2\include" /I..\..\..\..\ogg\include /I..\..\..\..\..\..\..\core\ogg\libogg\include /Zi /nologo /W3 /WX- /Od /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _BIND_TO_CURRENT_CRT_VERSION /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D LIBTHEORA_EXPORTS /D DEBUG /D _VC80_UPGRADE=0x0710 /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\quant1.obj" /Fd"x64\Debug\libtheora_static.pdb" /Gd /TC /errorReport:prompt ..\..\..\lib\quant.c
          Tracking command:
-         C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker.dll" /i D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\x64\Debug\libtheora_static.tlog /r D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\LIB\QUANT.C /b MSBuildConsole_CancelEvent8cfaef5e2c494ebebf5b545b71a5bda2  /c "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe"  /c /I..\..\..\include /I..\..\..\lib /I..\..\..\..\libogg\include /I..\..\..\..\..\..\..\core\ogg\libogg\include\ /I"..\..\..\..\libogg-1.3.2\include" /I..\..\..\..\ogg\include /I..\..\..\..\..\..\..\core\ogg\libogg\include /Zi /nologo /W3 /WX- /Od /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _BIND_TO_CURRENT_CRT_VERSION /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D LIBTHEORA_EXPORTS /D DEBUG /D _VC80_UPGRADE=0x0710 /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\quant1.obj" /Fd"x64\Debug\libtheora_static.pdb" /Gd /TC /errorReport:prompt ..\..\..\lib\quant.c
+         C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker.dll" /i D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\x64\Debug\libtheora_static.tlog /r D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\LIB\QUANT.C /b MSBuildConsole_CancelEvent8a1678e6d05e45f78059b50059a96ffb  /c "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe"  /c /I..\..\..\include /I..\..\..\lib /I..\..\..\..\libogg\include /I..\..\..\..\..\..\..\core\ogg\libogg\include\ /I"..\..\..\..\libogg-1.3.2\include" /I..\..\..\..\ogg\include /I..\..\..\..\..\..\..\core\ogg\libogg\include /Zi /nologo /W3 /WX- /Od /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _BIND_TO_CURRENT_CRT_VERSION /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D LIBTHEORA_EXPORTS /D DEBUG /D _VC80_UPGRADE=0x0710 /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\quant1.obj" /Fd"x64\Debug\libtheora_static.pdb" /Gd /TC /errorReport:prompt ..\..\..\lib\quant.c
          quant.c
        Done executing task "CL".
      1>Done building target "ClCompile" in project "libtheora_static.vcxproj".
        Target "ManagedIncrementalBuildPostProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('..\..\..\lib\apiwrapper.c;..\..\..\lib\bitpack.c;..\..\..\lib\cpu.c;..\..\..\lib\decapiwrapper.c;..\..\..\lib\decinfo.c;..\..\..\lib\decode.c;..\..\..\lib\dequant.c;..\..\..\lib\fragment.c;..\..\..\lib\huffdec.c;..\..\..\lib\idct.c;..\..\..\lib\info.c;..\..\..\lib\internal.c;..\..\..\lib\quant.c;..\..\..\lib\state.c;..\..\..\lib\x86_vc\mmxfrag.c;..\..\..\lib\x86_vc\mmxidct.c;..\..\..\lib\x86_vc\mmxstate.c;..\..\..\lib\x86_vc\x86state.c' != '' and 'false' == 'True').
-     1>Target "AfterClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_ClCompile" depends on it):
+     1>Target "AfterClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_ClCompile" depends on it):
      1>Done building target "AfterClCompile" in project "libtheora_static.vcxproj".
-     1>Target "_ClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildCompileAction" depends on it):
+     1>Target "_ClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildCompileAction" depends on it):
      1>Done building target "_ClCompile" in project "libtheora_static.vcxproj".
        Target "_ResGen" skipped, due to false condition; ('@(EmbeddedResource)'!='') was evaluated as (''!='').
-     1>Target "BeforeResourceCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_ResourceCompile" depends on it):
+     1>Target "BeforeResourceCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_ResourceCompile" depends on it):
      1>Done building target "BeforeResourceCompile" in project "libtheora_static.vcxproj".
-     1>Target "MakeDirsForResourceCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_ResourceCompile" depends on it):
+     1>Target "MakeDirsForResourceCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_ResourceCompile" depends on it):
        Task "MakeDir"
        Done executing task "MakeDir".
      1>Done building target "MakeDirsForResourceCompile" in project "libtheora_static.vcxproj".
        Target "ResourceCompile" skipped, due to false condition; ('@(ResourceCompile)' != '') was evaluated as ('' != '').
-     1>Target "AfterResourceCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_ResourceCompile" depends on it):
+     1>Target "AfterResourceCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_ResourceCompile" depends on it):
      1>Done building target "AfterResourceCompile" in project "libtheora_static.vcxproj".
-     1>Target "_ResourceCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildCompileAction" depends on it):
+     1>Target "_ResourceCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildCompileAction" depends on it):
      1>Done building target "_ResourceCompile" in project "libtheora_static.vcxproj".
        Target "_ImpLib" skipped, due to false condition; ('$(ImpLibCompiled)' == 'true') was evaluated as ('' == 'true').
-     1>Target "BeforeLib" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_Lib" depends on it):
+     1>Target "BeforeLib" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_Lib" depends on it):
      1>Done building target "BeforeLib" in project "libtheora_static.vcxproj".
-     1>Target "ComputeLibAdditionalOptions" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_Lib" depends on it):
+     1>Target "ComputeLibAdditionalOptions" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_Lib" depends on it):
      1>Done building target "ComputeLibAdditionalOptions" in project "libtheora_static.vcxproj".
-     1>Target "ComputeRCOutputs" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "ComputeRCGeneratedLibInputs" depends on it):
+     1>Target "ComputeRCOutputs" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "ComputeRCGeneratedLibInputs" depends on it):
      1>Done building target "ComputeRCOutputs" in project "libtheora_static.vcxproj".
-     1>Target "ComputeRCGeneratedLibInputs" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_Lib" depends on it):
+     1>Target "ComputeRCGeneratedLibInputs" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_Lib" depends on it):
      1>Done building target "ComputeRCGeneratedLibInputs" in project "libtheora_static.vcxproj".
-     1>Target "ComputeCustomBuildOutput" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_Lib" depends on it):
+     1>Target "ComputeCustomBuildOutput" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_Lib" depends on it):
        Task "CreateItem" skipped, due to false condition; ('%(CustomBuildDirsToMake.OutputFileToTool)'!='') was evaluated as (''!='').
        Task "MakeDir"
        Done executing task "MakeDir".
@@ -379,32 +407,37 @@
        Target "ComputeReferenceCLInput" skipped. Previously built successfully.
        Target "WarnCompileDuplicatedFilename" skipped. Previously built successfully.
        Target "FixupCLCompileOptions" skipped. Previously built successfully.
-     1>Target "ComputeCLOutputs" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "ComputeCLGeneratedLibInputs" depends on it):
+     1>Target "ComputeCLOutputs" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "ComputeCLGeneratedLibInputs" depends on it):
      1>Done building target "ComputeCLOutputs" in project "libtheora_static.vcxproj".
-     1>Target "ComputeCLGeneratedLibInputs" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_Lib" depends on it):
+     1>Target "ComputeCLGeneratedLibInputs" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_Lib" depends on it):
      1>Done building target "ComputeCLGeneratedLibInputs" in project "libtheora_static.vcxproj".
-     1>Target "ComputeLibInputsFromProject" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_Lib" depends on it):
+     1>Target "ComputeLibInputsFromProject" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_Lib" depends on it):
      1>Done building target "ComputeLibInputsFromProject" in project "libtheora_static.vcxproj".
        Target "ComputeReferenceLibInputs" skipped, due to false condition; (@(ProjectReference) != '') was evaluated as ( != '').
-     1>Target "MakeDirsForLib" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_Lib" depends on it):
+     1>Target "MakeDirsForLib" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_Lib" depends on it):
        Task "MakeDir"
        Done executing task "MakeDir".
      1>Done building target "MakeDirsForLib" in project "libtheora_static.vcxproj".
-     1>Target "DoLibOutputFilesMatch" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_Lib" depends on it):
-       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLib)' == '') was evaluated as ('D:\Projects\rendervid\theoratest\x64\Debug\libtheora_static.lib' == '').
-       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLib)' != '' and '%(_OutputFileFromLib.FullPath)' != '$([System.IO.Path]::GetFullPath($(TargetPath)))') was evaluated as ('D:\Projects\rendervid\theoratest\x64\Debug\libtheora_static.lib' != '' and 'D:\Projects\rendervid\theoratest\x64\Debug\libtheora_static.lib' != 'D:\Projects\rendervid\theoratest\x64\Debug\libtheora_static.lib').
-       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLib)' != '' and '%(_OutputFileFromLib.Extension)' != '' and '%(_OutputFileFromLib.Extension)' != '$(TargetExt)') was evaluated as ('D:\Projects\rendervid\theoratest\x64\Debug\libtheora_static.lib' != '' and '.lib' != '' and '.lib' != '.lib').
-       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLib)' != '' and '%(_OutputFileFromLib.Filename)' !=  '' and '%(_OutputFileFromLib.Filename)' != '$(TargetName)') was evaluated as ('D:\Projects\rendervid\theoratest\x64\Debug\libtheora_static.lib' != '' and 'libtheora_static' !=  '' and 'libtheora_static' != 'libtheora_static').
+     1>Target "DoLibOutputFilesMatch" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_Lib" depends on it):
+       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLib)' == '') was evaluated as ('D:\Projects\rendervid\TheoraPlayer\x64\Debug\libtheora_static.lib' == '').
+       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLib)' != '' and '%(_OutputFileFromLib.FullPath)' != '$([System.IO.Path]::GetFullPath($(TargetPath)))') was evaluated as ('D:\Projects\rendervid\TheoraPlayer\x64\Debug\libtheora_static.lib' != '' and 'D:\Projects\rendervid\TheoraPlayer\x64\Debug\libtheora_static.lib' != 'D:\Projects\rendervid\TheoraPlayer\x64\Debug\libtheora_static.lib').
+       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLib)' != '' and '%(_OutputFileFromLib.Extension)' != '' and '%(_OutputFileFromLib.Extension)' != '$(TargetExt)') was evaluated as ('D:\Projects\rendervid\TheoraPlayer\x64\Debug\libtheora_static.lib' != '' and '.lib' != '' and '.lib' != '.lib').
+       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLib)' != '' and '%(_OutputFileFromLib.Filename)' !=  '' and '%(_OutputFileFromLib.Filename)' != '$(TargetName)') was evaluated as ('D:\Projects\rendervid\TheoraPlayer\x64\Debug\libtheora_static.lib' != '' and 'libtheora_static' !=  '' and 'libtheora_static' != 'libtheora_static').
      1>Done building target "DoLibOutputFilesMatch" in project "libtheora_static.vcxproj".
-     1>Target "PreLinkEvent" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_Lib" depends on it):
+     1>Target "PreLinkEvent" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_Lib" depends on it):
        Task "Message" skipped, due to false condition; ('%(PreLinkEvent.Message)' != '' and '%(PreLinkEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
        Task "Exec" skipped, due to false condition; ('%(PreLinkEvent.Command)' != '') was evaluated as ('' != '').
      1>Done building target "PreLinkEvent" in project "libtheora_static.vcxproj".
-     1>Target "Lib" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_Lib" depends on it):
+     1>Target "Lib" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_Lib" depends on it):
        Using "LIB" task from assembly "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.Build.CppTasks.Common.dll".
        Task "LIB"
-         Forcing rebuild of all source files due to missing command TLog "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\x64\Debug\libtheora_static.tlog\lib.command.1.tlog".
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\Projects\rendervid\theoratest\x64\Debug\libtheora_static.lib" /NOLOGO /MACHINE:X64 x64\Debug\apiwrapper.obj
+         Write Tracking Logs:
+         	x64\Debug\libtheora_static.tlog\Lib-link.write.1.tlog
+         Read Tracking Logs:
+         	x64\Debug\libtheora_static.tlog\Lib-link.read.1.tlog
+         No output for D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\APIWRAPPER.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\BITPACK.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\CPU.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\DECAPIWRAPPER.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\DECINFO.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\DECODE1.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\DEQUANT.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\FRAGMENT.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\HUFFDEC.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\IDCT1.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\INFO.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\INTERNAL.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\MMXFRAG.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\MMXIDCT.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\MMXSTATE.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\QUANT1.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\STATE.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\X86STATE.OBJ was found in the tracking log; source compilation required.
+         No dependencies for output D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\APIWRAPPER.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\BITPACK.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\CPU.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\DECAPIWRAPPER.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\DECINFO.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\DECODE1.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\DEQUANT.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\FRAGMENT.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\HUFFDEC.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\IDCT1.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\INFO.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\INTERNAL.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\MMXFRAG.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\MMXIDCT.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\MMXSTATE.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\QUANT1.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\STATE.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\X86STATE.OBJ were found in the tracking log; source compilation required.
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\Projects\rendervid\TheoraPlayer\x64\Debug\libtheora_static.lib" /NOLOGO /MACHINE:X64 x64\Debug\apiwrapper.obj
          x64\Debug\bitpack.obj
          x64\Debug\cpu.obj
          x64\Debug\decapiwrapper.obj
@@ -423,7 +456,7 @@
          x64\Debug\idct1.obj
          x64\Debug\quant1.obj
          Tracking command:
-         C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker.dll" /i D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\x64\Debug\libtheora_static.tlog /r "D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\APIWRAPPER.OBJ|D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\BITPACK.OBJ|D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\CPU.OBJ|D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\DECAPIWRAPPER.OBJ|D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\DECINFO.OBJ|D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\DECODE1.OBJ|D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\DEQUANT.OBJ|D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\FRAGMENT.OBJ|D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\HUFFDEC.OBJ|D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\IDCT1.OBJ|D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\INFO.OBJ|D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\INTERNAL.OBJ|D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\MMXFRAG.OBJ|D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\MMXIDCT.OBJ|D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\MMXSTATE.OBJ|D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\QUANT1.OBJ|D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\STATE.OBJ|D:\PROJECTS\RENDERVID\THEORATEST\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\X86STATE.OBJ" /b MSBuildConsole_CancelEventd498ab7effea43048c279e24f03c8c3e  /c "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\Lib.exe"  /OUT:"D:\Projects\rendervid\theoratest\x64\Debug\libtheora_static.lib" /NOLOGO /MACHINE:X64 x64\Debug\apiwrapper.obj
+         C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker.dll" /i D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\x64\Debug\libtheora_static.tlog /r "D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\APIWRAPPER.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\BITPACK.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\CPU.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\DECAPIWRAPPER.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\DECINFO.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\DECODE1.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\DEQUANT.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\FRAGMENT.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\HUFFDEC.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\IDCT1.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\INFO.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\INTERNAL.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\MMXFRAG.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\MMXIDCT.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\MMXSTATE.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\QUANT1.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\STATE.OBJ|D:\PROJECTS\RENDERVID\LIBTHEORA-1.1.1\WIN32\VS2008\LIBTHEORA\X64\DEBUG\X86STATE.OBJ" /b MSBuildConsole_CancelEvent5d7f843df3494a85a03cbe76a1d15a0e  /c "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\Lib.exe"  /OUT:"D:\Projects\rendervid\TheoraPlayer\x64\Debug\libtheora_static.lib" /NOLOGO /MACHINE:X64 x64\Debug\apiwrapper.obj
          x64\Debug\bitpack.obj
          x64\Debug\cpu.obj
          x64\Debug\decapiwrapper.obj
@@ -443,37 +476,37 @@
          x64\Debug\quant1.obj
        Done executing task "LIB".
        Task "Message"
-         libtheora_static.vcxproj -> D:\Projects\rendervid\theoratest\x64\Debug\libtheora_static.lib
+         libtheora_static.vcxproj -> D:\Projects\rendervid\TheoraPlayer\x64\Debug\libtheora_static.lib
        Done executing task "Message".
      1>Done building target "Lib" in project "libtheora_static.vcxproj".
-     1>Target "AfterLib" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_Lib" depends on it):
+     1>Target "AfterLib" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_Lib" depends on it):
      1>Done building target "AfterLib" in project "libtheora_static.vcxproj".
-     1>Target "_Lib" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildCompileAction" depends on it):
+     1>Target "_Lib" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildCompileAction" depends on it):
      1>Done building target "_Lib" in project "libtheora_static.vcxproj".
-     1>Target "AfterBuildCompileEvent" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildCompileAction" depends on it):
+     1>Target "AfterBuildCompileEvent" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildCompileAction" depends on it):
      1>Done building target "AfterBuildCompileEvent" in project "libtheora_static.vcxproj".
-     1>Target "_BuildCompileAction" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "BuildCompile" depends on it):
+     1>Target "_BuildCompileAction" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "BuildCompile" depends on it):
      1>Done building target "_BuildCompileAction" in project "libtheora_static.vcxproj".
-     1>Target "BuildCompile" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "Build" depends on it):
+     1>Target "BuildCompile" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "Build" depends on it):
      1>Done building target "BuildCompile" in project "libtheora_static.vcxproj".
        Target "AssignProjectConfiguration" skipped. Previously built successfully.
        Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
-     1>Target "BuildLinkTraverse" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "BuildLink" depends on it):
+     1>Target "BuildLinkTraverse" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "BuildLink" depends on it):
        Task "MSBuild" skipped, due to false condition; ('$(BuildPassReferences)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != ''  and '%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true') was evaluated as ('' == 'true' and '' != '' and '' != ''  and '' == 'true').
      1>Done building target "BuildLinkTraverse" in project "libtheora_static.vcxproj".
        Target "PrepareForBuild" skipped. Previously built successfully.
        Target "ResolveReferences" skipped. Previously built successfully.
-     1>Target "ComputeLegacyManifestEmbedding" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Target "ComputeLegacyManifestEmbedding" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildLinkAction" depends on it):
        Task "VCMessage" skipped, due to false condition; ('$(RevertManifestEmbedding)' == 'true' and '$(_LegacyManifestEmbeddingDebug)' == 'true') was evaluated as ('' == 'true' and '' == 'true').
      1>Done building target "ComputeLegacyManifestEmbedding" in project "libtheora_static.vcxproj".
        Target "_Link" skipped, due to false condition; ('$(LinkCompiled)' == 'true') was evaluated as ('' == 'true').
-     1>Target "_ALink" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Target "_ALink" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildLinkAction" depends on it):
      1>Done building target "_ALink" in project "libtheora_static.vcxproj".
        Target "ComputeLegacyManifestEmbedding" skipped. Previously built successfully.
-     1>Target "_Manifest" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Target "_Manifest" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildLinkAction" depends on it):
        Task "CallTarget" skipped, due to false condition; ('$(LegacyManifestEmbedding)' == 'true') was evaluated as ('' == 'true').
      1>Done building target "_Manifest" in project "libtheora_static.vcxproj".
-     1>Target "RegisterOutput" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Target "RegisterOutput" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildLinkAction" depends on it):
        Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='DynamicLibrary' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'!='true') was evaluated as ('StaticLibrary'=='DynamicLibrary' and ''=='true' and ''!='true').
        Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='DynamicLibrary' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'=='true') was evaluated as ('StaticLibrary'=='DynamicLibrary' and ''=='true' and ''=='true').
        Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='Application' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'!='true') was evaluated as ('StaticLibrary'=='Application' and ''=='true' and ''!='true').
@@ -482,45 +515,45 @@
      1>Done building target "RegisterOutput" in project "libtheora_static.vcxproj".
        Target "PrepareForBuild" skipped. Previously built successfully.
        Target "ResolveReferences" skipped. Previously built successfully.
-     1>Target "ResolvedXDCMake" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_XdcMake" depends on it):
+     1>Target "ResolvedXDCMake" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_XdcMake" depends on it):
        Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.Extension)' == '.vcxproj' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != '' and '$(_ClCompileGenerateXMLDocumentationFiles)' == 'true') was evaluated as ('' == '.vcxproj' and '' != '' and '' != '' and '' == 'true').
      1>Done building target "ResolvedXDCMake" in project "libtheora_static.vcxproj".
-     1>Target "ComputeCLCompileGeneratedXDCFiles" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_XdcMake" depends on it):
+     1>Target "ComputeCLCompileGeneratedXDCFiles" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_XdcMake" depends on it):
      1>Done building target "ComputeCLCompileGeneratedXDCFiles" in project "libtheora_static.vcxproj".
-     1>Target "MakeDirsForXdcMake" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_XdcMake" depends on it):
+     1>Target "MakeDirsForXdcMake" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_XdcMake" depends on it):
        Task "MakeDir"
        Done executing task "MakeDir".
      1>Done building target "MakeDirsForXdcMake" in project "libtheora_static.vcxproj".
        Target "XdcMake" skipped, due to false condition; ('@(XdcMake)' != '') was evaluated as ('' != '').
-     1>Target "_XdcMake" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Target "_XdcMake" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildLinkAction" depends on it):
      1>Done building target "_XdcMake" in project "libtheora_static.vcxproj".
-     1>Target "ComputeCLCompileGeneratedSbrFiles" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BscMake" depends on it):
+     1>Target "ComputeCLCompileGeneratedSbrFiles" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BscMake" depends on it):
      1>Done building target "ComputeCLCompileGeneratedSbrFiles" in project "libtheora_static.vcxproj".
-     1>Target "MakeDirsForBscMake" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BscMake" depends on it):
+     1>Target "MakeDirsForBscMake" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BscMake" depends on it):
        Task "MakeDir"
        Done executing task "MakeDir".
      1>Done building target "MakeDirsForBscMake" in project "libtheora_static.vcxproj".
        Target "BscMake" skipped, due to false condition; ('@(BscMake)' != '') was evaluated as ('' != '').
        Target "CustomBuildStep" skipped, due to false condition; ('@(CustomBuildStep)' != '' and '$(SelectedFiles)'=='') was evaluated as ('' != '' and ''=='').
-     1>Target "_BscMake" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Target "_BscMake" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildLinkAction" depends on it):
      1>Done building target "_BscMake" in project "libtheora_static.vcxproj".
        Target "RunMergeNativeCodeAnalysis" skipped, due to false condition; ('$(Language)'=='C++' and '$(RunCodeAnalysisOnThisProject)'=='true') was evaluated as ('C++'=='C++' and ''=='true').
        Target "RunNativeCodeAnalysis" skipped, due to false condition; ('$(Language)'=='C++' and '$(RunCodeAnalysisOnThisProject)'=='true') was evaluated as ('C++'=='C++' and ''=='true').
-     1>Target "_GenerateSatelliteAssemblyInputs" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "CreateSatelliteAssemblies" depends on it):
+     1>Target "_GenerateSatelliteAssemblyInputs" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "CreateSatelliteAssemblies" depends on it):
        Task "Warning" skipped, due to false condition; ('@(ManifestResourceWithCulture)'!='' and '%(ManifestResourceWithCulture.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
        Task "Warning" skipped, due to false condition; ('@(ManifestNonResxWithCultureOnDisk)'!='' and '%(ManifestNonResxWithCultureOnDisk.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
      1>Done building target "_GenerateSatelliteAssemblyInputs" in project "libtheora_static.vcxproj".
        Target "ComputeIntermediateSatelliteAssemblies" skipped, due to false condition; (@(ReferenceSatellitePaths->'%(DestinationSubDirectory)') != '') was evaluated as ( != '').
        Target "GenerateSatelliteAssemblies" skipped, due to false condition; ('@(_SatelliteAssemblyResourceInputs)' != '') was evaluated as ('' != '').
-     1>Target "CreateSatelliteAssemblies" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Target "CreateSatelliteAssemblies" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildLinkAction" depends on it):
      1>Done building target "CreateSatelliteAssemblies" in project "libtheora_static.vcxproj".
-     1>Target "_Appverifier" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Target "_Appverifier" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildLinkAction" depends on it):
      1>Done building target "_Appverifier" in project "libtheora_static.vcxproj".
-     1>Target "_Deploy" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Target "_Deploy" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildLinkAction" depends on it):
      1>Done building target "_Deploy" in project "libtheora_static.vcxproj".
        Target "ComputeIntermediateSatelliteAssemblies" skipped, due to false condition; (@(ReferenceSatellitePaths->'%(DestinationSubDirectory)') != '') was evaluated as ( != '').
        Target "_CopyFilesMarkedCopyLocal" skipped, due to false condition; ('@(ReferenceCopyLocalPaths)' != '') was evaluated as ('' != '').
-     1>Target "AssignTargetPaths" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "GetCopyToOutputDirectoryItems" depends on it):
+     1>Target "AssignTargetPaths" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "GetCopyToOutputDirectoryItems" depends on it):
        Using "AssignTargetPath" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "AssignTargetPath"
        Done executing task "AssignTargetPath".
@@ -533,32 +566,32 @@
        Task "AssignTargetPath" skipped, due to false condition; ('@(_DeploymentBaseManifestWithTargetPath)'=='' and '%(None.Extension)'=='.manifest') was evaluated as (''=='' and ''=='.manifest').
      1>Done building target "AssignTargetPaths" in project "libtheora_static.vcxproj".
        Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
-     1>Target "GetCopyToOutputDirectoryXamlAppDefs" in file "C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\Microsoft.Xaml.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "GetCopyToOutputDirectoryItems" depends on it):
+     1>Target "GetCopyToOutputDirectoryXamlAppDefs" in file "C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\Microsoft.Xaml.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "GetCopyToOutputDirectoryItems" depends on it):
        Task "AssignTargetPath"
        Done executing task "AssignTargetPath".
      1>Done building target "GetCopyToOutputDirectoryXamlAppDefs" in project "libtheora_static.vcxproj".
-     1>Target "GetCopyToOutputDirectoryItems" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_CopySourceItemsToOutputDirectory" depends on it):
+     1>Target "GetCopyToOutputDirectoryItems" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_CopySourceItemsToOutputDirectory" depends on it):
        Task "MSBuild" skipped, due to false condition; ('@(_MSBuildProjectReferenceExistent)' != '' and '$(_GetChildProjectCopyToOutputDirectoryItems)' == 'true' and '%(_MSBuildProjectReferenceExistent.Private)' != 'false' and '$(UseCommonOutputDirectory)' != 'true') was evaluated as ('' != '' and 'true' == 'true' and '' != 'false' and 'false' != 'true').
        Task "AssignTargetPath"
        Done executing task "AssignTargetPath".
      1>Done building target "GetCopyToOutputDirectoryItems" in project "libtheora_static.vcxproj".
        Target "_CopyOutOfDateSourceItemsToOutputDirectory" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectory)' != '' ) was evaluated as ( '' != '' ).
        Target "_CopyOutOfDateSourceItemsToOutputDirectoryAlways" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectoryAlways)' != '' ) was evaluated as ( '' != '' ).
-     1>Target "_CopySourceItemsToOutputDirectory" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "CopyFilesToOutputDirectory" depends on it):
+     1>Target "_CopySourceItemsToOutputDirectory" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "CopyFilesToOutputDirectory" depends on it):
      1>Done building target "_CopySourceItemsToOutputDirectory" in project "libtheora_static.vcxproj".
        Target "_CopyAppConfigFile" skipped, due to false condition; ( '@(AppConfigWithTargetPath)' != '' ) was evaluated as ( '' != '' ).
        Target "_CopyManifestFiles" skipped, due to false condition; ( '$(_DeploymentCopyApplicationManifest)'=='true' or '$(GenerateClickOnceManifests)'=='true' ) was evaluated as ( ''=='true' or ''=='true' ).
-     1>Target "_CheckForCompileOutputs" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "CopyFilesToOutputDirectory" depends on it):
+     1>Target "_CheckForCompileOutputs" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "CopyFilesToOutputDirectory" depends on it):
      1>Done building target "_CheckForCompileOutputs" in project "libtheora_static.vcxproj".
        Target "_SGenCheckForOutputs" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Off' == 'On' or (''!='' and 'Off' == 'Auto')).
-     1>Target "CopyFilesToOutputDirectory" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "PrepareForRun" depends on it):
+     1>Target "CopyFilesToOutputDirectory" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "PrepareForRun" depends on it):
        Task "Copy" skipped, due to false condition; ('$(CopyBuildOutputToOutputDirectory)' == 'true' and '$(SkipCopyBuildProduct)' != 'true') was evaluated as ('true' == 'true' and 'true' != 'true').
        Task "Message" skipped, due to false condition; ('$(CopyBuildOutputToOutputDirectory)' == 'true' and '$(SkipCopyBuildProduct)'!='true') was evaluated as ('true' == 'true' and 'true'!='true').
        Task "Copy" skipped, due to false condition; ('@(AddModules)' != '') was evaluated as ('' != '').
        Task "Copy" skipped, due to false condition; ('$(_SGenDllCreated)'=='true') was evaluated as ('false'=='true').
        Using "Copy" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "Copy"
-         Copying file from "x64\Debug\libtheora_static.pdb" to "D:\Projects\rendervid\theoratest\x64\Debug\libtheora_static.pdb".
+         Copying file from "x64\Debug\libtheora_static.pdb" to "D:\Projects\rendervid\TheoraPlayer\x64\Debug\libtheora_static.pdb".
        Done executing task "Copy".
        Task "Copy" skipped, due to false condition; ('$(_DocumentationFileProduced)'=='true') was evaluated as ('false'=='true').
        Task "Copy" skipped, due to false condition; ('@(IntermediateSatelliteAssembliesWithTargetPath)' != '') was evaluated as ('' != '').
@@ -566,21 +599,22 @@
        Task "Copy" skipped, due to false condition; ('$(SkipCopyWinMDArtifact)' != 'true' and '@(WinMDExpArtifacts)' != '') was evaluated as ('' != 'true' and '' != '').
        Task "Message" skipped, due to false condition; ('$(SkipCopyWinMDArtifact)' != 'true' and '$(_WindowsMetadataOutputPath)' != '') was evaluated as ('' != 'true' and '' != '').
      1>Done building target "CopyFilesToOutputDirectory" in project "libtheora_static.vcxproj".
-     1>Target "PrepareForRun" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Target "PrepareForRun" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildLinkAction" depends on it):
      1>Done building target "PrepareForRun" in project "libtheora_static.vcxproj".
        Target "CustomBuildStep" skipped, due to false condition; ('@(CustomBuildStep)' != '' and '$(SelectedFiles)'=='') was evaluated as ('' != '' and ''=='').
-     1>Target "PostBuildEvent" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Target "PostBuildEvent" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "_BuildLinkAction" depends on it):
        Task "Message" skipped, due to false condition; ('%(PostBuildEvent.Message)' != '' and '%(PostBuildEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
        Task "Exec" skipped, due to false condition; ('%(PostBuildEvent.Command)' != '') was evaluated as ('' != '').
      1>Done building target "PostBuildEvent" in project "libtheora_static.vcxproj".
-     1>Target "_BuildLinkAction" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "BuildLink" depends on it):
+     1>Target "_BuildLinkAction" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "BuildLink" depends on it):
      1>Done building target "_BuildLinkAction" in project "libtheora_static.vcxproj".
-     1>Target "BuildLink" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "Build" depends on it):
+     1>Target "BuildLink" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "Build" depends on it):
      1>Done building target "BuildLink" in project "libtheora_static.vcxproj".
        Target "CreateTfsBuildInfoResource" skipped, due to false condition; ( $(AddBuildInfoToAssembly)==true ) was evaluated as ( false==true ).
-     1>Target "AfterBuild" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.BuildSteps.Targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "Build" depends on it):
+     1>Target "AfterBuild" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.BuildSteps.Targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "Build" depends on it):
      1>Done building target "AfterBuild" in project "libtheora_static.vcxproj".
-     1>Target "FinalizeBuildStatus" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "Build" depends on it):
+     1>Target "FinalizeBuildStatus" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (target "Build" depends on it):
+       Using "Delete" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "Delete"
          Deleting file "x64\Debug\libtheora_static.tlog\unsuccessfulbuild".
        Done executing task "Delete".
@@ -588,10 +622,10 @@
          Touching "x64\Debug\libtheora_static.tlog\libtheora_static.lastbuildstate".
        Done executing task "Touch".
      1>Done building target "FinalizeBuildStatus" in project "libtheora_static.vcxproj".
-     1>Target "Build" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.BuildSteps.Targets" from project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (entry point):
+     1>Target "Build" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.BuildSteps.Targets" from project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (entry point):
      1>Done building target "Build" in project "libtheora_static.vcxproj".
-     1>Done Building Project "D:\Projects\rendervid\theoratest\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (Build target(s)).
+     1>Done Building Project "D:\Projects\rendervid\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:02.18
+Time Elapsed 00:00:01.85

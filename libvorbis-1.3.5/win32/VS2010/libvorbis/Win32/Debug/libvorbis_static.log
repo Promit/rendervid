@@ -1,5 +1,5 @@
-﻿Build started 5/16/2018 11:40:03 PM.
-     1>Project "D:\Projects\rendervid\libvorbis-1.3.5\win32\VS2010\libvorbis\libvorbis_static.vcxproj" on node 3 (Build target(s)).
+﻿Build started 5/17/2018 12:09:03 AM.
+     1>Project "D:\Projects\rendervid\libvorbis-1.3.5\win32\VS2010\libvorbis\libvorbis_static.vcxproj" on node 4 (Build target(s)).
      1>Building with tools version "14.0".
      1>Target "_CheckForInvalidConfigurationAndPlatform" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Projects\rendervid\libvorbis-1.3.5\win32\VS2010\libvorbis\libvorbis_static.vcxproj" (entry point):
        Task "Error" skipped, due to false condition; ( '$(_InvalidConfigurationError)' == 'true' ) was evaluated as ( '' == 'true' ).
@@ -11,7 +11,7 @@
        Task "Message"
          Platform=Win32
        Done executing task "Message".
-       Task "Error" skipped, due to false condition; ('$(OutDir)' != '' and !HasTrailingSlash('$(OutDir)')) was evaluated as ('D:\Projects\rendervid\theoratest\Win32\Debug\' != '' and !HasTrailingSlash('D:\Projects\rendervid\theoratest\Win32\Debug\')).
+       Task "Error" skipped, due to false condition; ('$(OutDir)' != '' and !HasTrailingSlash('$(OutDir)')) was evaluated as ('D:\Projects\rendervid\TheoraPlayer\Win32\Debug\' != '' and !HasTrailingSlash('D:\Projects\rendervid\TheoraPlayer\Win32\Debug\')).
        Task "Error" skipped, due to false condition; ('$(BaseIntermediateOutputPath)' != '' and !HasTrailingSlash('$(BaseIntermediateOutputPath)')) was evaluated as ('obj\' != '' and !HasTrailingSlash('obj\')).
        Task "Error" skipped, due to false condition; ('$(IntermediateOutputPath)' != '' and !HasTrailingSlash('$(IntermediateOutputPath)')) was evaluated as ('Win32\Debug\' != '' and !HasTrailingSlash('Win32\Debug\')).
      1>Done building target "_CheckForInvalidConfigurationAndPlatform" in project "libvorbis_static.vcxproj".
@@ -53,7 +53,7 @@
      1>Target "SetBuildDefaultEnvironmentVariables" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.Cpp.Current.targets" from project "D:\Projects\rendervid\libvorbis-1.3.5\win32\VS2010\libvorbis\libvorbis_static.vcxproj" (target "PrepareForBuild" depends on it):
        Using "SetEnv" task from assembly "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.Build.CppTasks.Common.dll".
        Task "SetEnv"
-         PATH=C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin;C:\Program Files (x86)\Windows Kits\8.1\bin\x86;;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\Tools\bin;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\tools;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;;C:\Program Files (x86)\MSBuild\14.0\bin\;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\;C:\WINDOWS\SysWow64;;C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MGY3CUOZ.PQB\NativeBinaries\x86;C:\VulkanSDK\1.1.73.0\Bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files (x86)\Autodesk\Backburner\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\Git\cmd;C:\Users\Promit\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft Emulator Manager\1.0\;C:\ProgramData\Oracle\Java\javapath;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Program Files\SourceGear\Common\DiffMerge\;C:\Program Files\dotnet\;C:\Users\Promit\AppData\Local\Microsoft\WindowsApps;C:\Users\Promit\AppData\Roaming\npm;C:\Users\Promit\AppData\Local\GitHubDesktop\bin;
+         PATH=C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin;C:\Program Files (x86)\Windows Kits\8.1\bin\x86;;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\Tools\bin;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\tools;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;;C:\Program Files (x86)\MSBuild\14.0\bin\;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\;C:\WINDOWS\SysWow64;;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\NativeBinaries\x86;C:\VulkanSDK\1.1.73.0\Bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files (x86)\Autodesk\Backburner\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\Git\cmd;C:\Users\Promit\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft Emulator Manager\1.0\;C:\ProgramData\Oracle\Java\javapath;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Program Files\SourceGear\Common\DiffMerge\;C:\Program Files\dotnet\;C:\Users\Promit\AppData\Local\Microsoft\WindowsApps;C:\Users\Promit\AppData\Roaming\npm;C:\Users\Promit\AppData\Local\GitHubDesktop\bin;
        Done executing task "SetEnv".
        Task "SetEnv"
          LIB=C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\lib;;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\lib;;C:\Program Files (x86)\Windows Kits\10\lib\10.0.10240.0\ucrt\x86;;;C:\Program Files (x86)\Windows Kits\8.1\lib\winv6.3\um\x86;;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\Lib\um\x86
@@ -256,243 +256,35 @@
        Target "GenerateTargetFrameworkMonikerAttribute" skipped, due to false condition; ('$(GenerateTargetFrameworkAttribute)' == 'true') was evaluated as ('false' == 'true').
        Target "ManagedIncrementalBuildPreProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('..\..\..\lib\analysis.c;..\..\..\lib\bitrate.c;..\..\..\lib\block.c;..\..\..\lib\codebook.c;..\..\..\lib\envelope.c;..\..\..\lib\floor0.c;..\..\..\lib\floor1.c;..\..\..\lib\info.c;..\..\..\lib\lookup.c;..\..\..\lib\lpc.c;..\..\..\lib\lsp.c;..\..\..\lib\mapping0.c;..\..\..\lib\mdct.c;..\..\..\lib\psy.c;..\..\..\lib\registry.c;..\..\..\lib\res0.c;..\..\..\lib\sharedbook.c;..\..\..\lib\smallft.c;..\..\..\lib\synthesis.c;..\..\..\lib\vorbisenc.c;..\..\..\lib\window.c' != '' and 'false' == 'True').
      1>Target "ClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "D:\Projects\rendervid\libvorbis-1.3.5\win32\VS2010\libvorbis\libvorbis_static.vcxproj" (target "_ClCompile" depends on it):
-       Using "Delete" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-       Task "Delete"
-       Done executing task "Delete".
+       Task "Delete" skipped, due to false condition; ('%(ClCompile.DebugInformationFormat)' != '' and '%(ClCompile.DebugInformationFormat)' != 'None' and '%(ClCompile.DebugInformationFormat)' != 'OldStyle' and '%(ClCompile.ProgramDataBaseFileName)' != '' and !Exists(%(ClCompile.ProgramDataBaseFileName))) was evaluated as ('EditAndContinue' != '' and 'EditAndContinue' != 'None' and 'EditAndContinue' != 'OldStyle' and 'Win32\Debug\libvorbis_static.pdb' != '' and !Exists(Win32\Debug\libvorbis_static.pdb)).
        Task "CL" skipped, due to false condition; ('%(ClCompile.PrecompiledHeader)' == 'Create' and '%(ClCompile.ExcludedFromBuild)'!='true' and '%(ClCompile.CompilerIteration)' == '') was evaluated as ('' == 'Create' and ''!='true' and '' == '').
        Using "CL" task from assembly "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.Build.CppTasks.Common.dll".
        Task "CL"
-         Forcing recompile of all source files due to missing PDB "Win32\Debug\libvorbis_static.pdb".
-         Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=1784
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I..\..\..\include /I..\..\..\..\libogg\include /I"..\..\..\..\libogg-1.3.2\include" /I..\..\..\..\ogg\include /I..\..\..\..\..\..\..\core\ogg\libogg\include /ZI /nologo /W4 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D LIBVORBIS_EXPORTS /D _VC80_UPGRADE=0x0710 /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Win32\Debug\\" /Fd"Win32\Debug\libvorbis_static.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\..\lib\analysis.c ..\..\..\lib\bitrate.c ..\..\..\lib\block.c ..\..\..\lib\codebook.c ..\..\..\lib\envelope.c ..\..\..\lib\floor0.c ..\..\..\lib\floor1.c ..\..\..\lib\info.c ..\..\..\lib\lookup.c ..\..\..\lib\lpc.c ..\..\..\lib\lsp.c ..\..\..\lib\mapping0.c ..\..\..\lib\mdct.c ..\..\..\lib\psy.c ..\..\..\lib\registry.c ..\..\..\lib\res0.c ..\..\..\lib\sharedbook.c ..\..\..\lib\smallft.c ..\..\..\lib\synthesis.c ..\..\..\lib\vorbisenc.c ..\..\..\lib\window.c
-         Tracking command:
-         C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker.dll" /i D:\Projects\rendervid\libvorbis-1.3.5\win32\VS2010\libvorbis\Win32\Debug\libvorbis_static.tlog /r "D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\ANALYSIS.C|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\BITRATE.C|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\BLOCK.C|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\CODEBOOK.C|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\ENVELOPE.C|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\FLOOR0.C|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\FLOOR1.C|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\INFO.C|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\LOOKUP.C|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\LPC.C|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\LSP.C|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\MAPPING0.C|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\MDCT.C|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\PSY.C|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\REGISTRY.C|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\RES0.C|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\SHAREDBOOK.C|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\SMALLFT.C|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\SYNTHESIS.C|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\VORBISENC.C|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\WINDOW.C" /b MSBuildConsole_CancelEventaa71bb6234d04348a255813cbed5a481  /c "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe"  /c /I..\..\..\include /I..\..\..\..\libogg\include /I"..\..\..\..\libogg-1.3.2\include" /I..\..\..\..\ogg\include /I..\..\..\..\..\..\..\core\ogg\libogg\include /ZI /nologo /W4 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D LIBVORBIS_EXPORTS /D _VC80_UPGRADE=0x0710 /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Win32\Debug\\" /Fd"Win32\Debug\libvorbis_static.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\..\lib\analysis.c ..\..\..\lib\bitrate.c ..\..\..\lib\block.c ..\..\..\lib\codebook.c ..\..\..\lib\envelope.c ..\..\..\lib\floor0.c ..\..\..\lib\floor1.c ..\..\..\lib\info.c ..\..\..\lib\lookup.c ..\..\..\lib\lpc.c ..\..\..\lib\lsp.c ..\..\..\lib\mapping0.c ..\..\..\lib\mdct.c ..\..\..\lib\psy.c ..\..\..\lib\registry.c ..\..\..\lib\res0.c ..\..\..\lib\sharedbook.c ..\..\..\lib\smallft.c ..\..\..\lib\synthesis.c ..\..\..\lib\vorbisenc.c ..\..\..\lib\window.c
-         window.c
-         vorbisenc.c
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\modes\psych_44.h(27): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\modes\psych_44.h(33): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\modes\psych_44.h(39): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\modes\psych_44.h(45): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\modes\psych_44.h(51): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(248): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(249): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(251): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(231): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(272): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(273): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(274): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(276): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(277): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(278): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(284): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(285): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(286): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(289): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(291): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(292): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(258): warning C4244: 'initializing': conversion from 'const double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(259): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(271): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(282): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(312): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(345): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(346): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(347): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(348): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(349): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(351): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(354): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(338): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(377): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(362): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(388): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(383): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(403): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(410): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(417): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(398): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(429): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(430): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(447): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(529): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(593): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(622): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(659): warning C4244: 'initializing': conversion from 'const double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(660): warning C4244: 'initializing': conversion from 'const double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(661): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(717): warning C4244: 'function': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(834): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(840): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(842): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(877): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(913): warning C4305: '+=': truncation from 'double' to 'float'
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(914): warning C4305: '=': truncation from 'double' to 'float'
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(967): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(969): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(979): warning C4244: '=': conversion from 'long' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(990): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(1074): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(1090): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\vorbisenc.c(1093): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
-         synthesis.c
-         smallft.c
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\smallft.c(99): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\smallft.c(100): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\smallft.c(283): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\smallft.c(284): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\smallft.c(853): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\smallft.c(854): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-         sharedbook.c
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\sharedbook.c(53): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\sharedbook.c(54): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\sharedbook.c(65): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\sharedbook.c(161): warning C4244: 'initializing': conversion from 'double' to 'long', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\sharedbook.c(220): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\sharedbook.c(240): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\sharedbook.c(219): warning C4244: 'initializing': conversion from 'long' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\sharedbook.c(239): warning C4244: 'initializing': conversion from 'long' to 'float', possible loss of data
-         res0.c
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\res0.c(443): warning C4244: '*=': conversion from 'float' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\res0.c(423): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-         registry.c
-         psy.c
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(137): warning C4244: 'function': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(139): warning C4244: 'function': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(173): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(174): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(175): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(239): warning C4456: declaration of 'bin' hides previous local declaration
-         d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(160): note: see declaration of 'bin'
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(254): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(259): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(192): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(193): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(217): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(218): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(239): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(274): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(276): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(277): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(290): warning C4305: '=': truncation from 'double' to 'float'
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(291): warning C4305: '=': truncation from 'double' to 'float'
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(301): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(325): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(327): warning C4244: 'function': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(348): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(296): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(312): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(336): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(402): warning C4244: '=': conversion from 'const float' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(404): warning C4244: '=': conversion from 'const float' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(571): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(739): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(801): warning C4305: '=': truncation from 'double' to 'float'
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(807): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(814): warning C4305: '=': truncation from 'double' to 'float'
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(818): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(922): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(953): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(955): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(976): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(978): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(992): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(1050): warning C4244: '=': conversion from 'const double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(1128): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(1157): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(1176): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(1178): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(1021): warning C4244: 'initializing': conversion from 'const double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\psy.c(1022): warning C4244: 'initializing': conversion from 'const double' to 'float', possible loss of data
-         mdct.c
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\mdct.c(58): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\mdct.c(66): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\mdct.c(67): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\mdct.c(68): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\mdct.c(69): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\mdct.c(72): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\mdct.c(73): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\mdct.c(79): warning C4456: declaration of 'i' hides previous local declaration
-         d:\projects\rendervid\libvorbis-1.3.5\lib\mdct.c(56): note: see declaration of 'i'
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\mdct.c(440): warning C4456: declaration of 'iX' hides previous local declaration
-         d:\projects\rendervid\libvorbis-1.3.5\lib\mdct.c(404): note: see declaration of 'iX'
-         mapping0.c
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\mapping0.c(266): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\mapping0.c(312): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\mapping0.c(329): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\mapping0.c(387): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-         lsp.c
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\lsp.c(252): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\lsp.c(276): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\lsp.c(259): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\lsp.c(350): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\lsp.c(397): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\lsp.c(449): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\lsp.c(452): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-         lpc.c
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\lpc.c(130): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-         lookup.c
-         info.c
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\info.c(47): warning C4244: '=': conversion from 'long' to 'char', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\info.c(62): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-         c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\info.c(69): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-         c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\info.c(70): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-         c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(90): note: see declaration of 'strcat'
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\info.c(71): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-         c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(90): note: see declaration of 'strcat'
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\info.c(93): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-         c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\info.c(94): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-         c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(90): note: see declaration of 'strcat'
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\info.c(112): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-         c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\info.c(113): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-         c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(90): note: see declaration of 'strcat'
-         floor1.c
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\floor1.c(275): warning C4244: 'initializing': conversion from 'const float' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\floor1.c(497): warning C4457: declaration of 'a' hides function parameter
-         d:\projects\rendervid\libvorbis-1.3.5\lib\floor1.c(457): note: see declaration of 'a'
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\floor1.c(499): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\floor1.c(500): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\floor1.c(714): warning C4456: declaration of 'y0' hides previous local declaration
-         d:\projects\rendervid\libvorbis-1.3.5\lib\floor1.c(613): note: see declaration of 'y0'
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\floor1.c(715): warning C4456: declaration of 'y1' hides previous local declaration
-         d:\projects\rendervid\libvorbis-1.3.5\lib\floor1.c(614): note: see declaration of 'y1'
-         floor0.c
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\floor0.c(126): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\floor0.c(136): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-         envelope.c
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\envelope.c(48): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\envelope.c(65): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\envelope.c(68): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\envelope.c(145): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\envelope.c(127): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-         codebook.c
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\codebook.c(183): warning C4244: '=': conversion from 'long' to 'char', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\codebook.c(192): warning C4244: '=': conversion from 'long' to 'char', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\codebook.c(214): warning C4244: '=': conversion from 'long' to 'char', possible loss of data
-         block.c
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\block.c(256): warning C4456: declaration of 'i' hides previous local declaration
-         d:\projects\rendervid\libvorbis-1.3.5\lib\block.c(172): note: see declaration of 'i'
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\block.c(864): warning C4244: 'initializing': conversion from 'ogg_int64_t' to 'long', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\block.c(902): warning C4244: 'initializing': conversion from 'ogg_int64_t' to 'long', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\block.c(1029): warning C4456: declaration of 'i' hides previous local declaration
-         d:\projects\rendervid\libvorbis-1.3.5\lib\block.c(972): note: see declaration of 'i'
-         bitrate.c
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\bitrate.c(42): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\bitrate.c(43): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\bitrate.c(44): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\bitrate.c(51): warning C4244: 'initializing': conversion from 'double' to 'long', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\bitrate.c(135): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\bitrate.c(83): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\bitrate.c(88): warning C4244: 'initializing': conversion from 'double' to 'long', possible loss of data
-         Generating Code...
-         Compiling...
-         analysis.c
-         Generating Code...
-     1>d:\projects\rendervid\libvorbis-1.3.5\lib\analysis.c(47): warning C4706: assignment within conditional expression
+         Read Tracking Logs:
+         	Win32\Debug\libvorbis_static.tlog\CL.read.1.tlog
+         Outputs for D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\ANALYSIS.C|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\BITRATE.C|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\BLOCK.C|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\CODEBOOK.C|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\ENVELOPE.C|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\FLOOR0.C|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\FLOOR1.C|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\INFO.C|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\LOOKUP.C|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\LPC.C|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\LSP.C|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\MAPPING0.C|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\MDCT.C|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\PSY.C|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\REGISTRY.C|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\RES0.C|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\SHAREDBOOK.C|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\SMALLFT.C|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\SYNTHESIS.C|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\VORBISENC.C|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\LIB\WINDOW.C:
+         	D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\ANALYSIS.OBJ
+         	D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\BITRATE.OBJ
+         	D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\BLOCK.OBJ
+         	D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\CODEBOOK.OBJ
+         	D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\ENVELOPE.OBJ
+         	D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\FLOOR0.OBJ
+         	D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\FLOOR1.OBJ
+         	D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\INFO.OBJ
+         	D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\LOOKUP.OBJ
+         	D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\LPC.OBJ
+         	D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\LSP.OBJ
+         	D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\MAPPING0.OBJ
+         	D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\MDCT.OBJ
+         	D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\PSY.OBJ
+         	D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\REGISTRY.OBJ
+         	D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\RES0.OBJ
+         	D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\SHAREDBOOK.OBJ
+         	D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\SMALLFT.OBJ
+         	D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\SYNTHESIS.OBJ
+         	D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\VORBISENC.OBJ
+         	D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\WINDOW.OBJ
+         All outputs are up-to-date.
        Done executing task "CL".
      1>Done building target "ClCompile" in project "libvorbis_static.vcxproj".
        Target "ManagedIncrementalBuildPostProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('..\..\..\lib\analysis.c;..\..\..\lib\bitrate.c;..\..\..\lib\block.c;..\..\..\lib\codebook.c;..\..\..\lib\envelope.c;..\..\..\lib\floor0.c;..\..\..\lib\floor1.c;..\..\..\lib\info.c;..\..\..\lib\lookup.c;..\..\..\lib\lpc.c;..\..\..\lib\lsp.c;..\..\..\lib\mapping0.c;..\..\..\lib\mdct.c;..\..\..\lib\psy.c;..\..\..\lib\registry.c;..\..\..\lib\res0.c;..\..\..\lib\sharedbook.c;..\..\..\lib\smallft.c;..\..\..\lib\synthesis.c;..\..\..\lib\vorbisenc.c;..\..\..\lib\window.c' != '' and 'false' == 'True').
@@ -543,10 +335,10 @@
        Done executing task "MakeDir".
      1>Done building target "MakeDirsForLib" in project "libvorbis_static.vcxproj".
      1>Target "DoLibOutputFilesMatch" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libvorbis-1.3.5\win32\VS2010\libvorbis\libvorbis_static.vcxproj" (target "_Lib" depends on it):
-       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLib)' == '') was evaluated as ('D:\Projects\rendervid\theoratest\Win32\Debug\libvorbis_static.lib' == '').
-       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLib)' != '' and '%(_OutputFileFromLib.FullPath)' != '$([System.IO.Path]::GetFullPath($(TargetPath)))') was evaluated as ('D:\Projects\rendervid\theoratest\Win32\Debug\libvorbis_static.lib' != '' and 'D:\Projects\rendervid\theoratest\Win32\Debug\libvorbis_static.lib' != 'D:\Projects\rendervid\theoratest\Win32\Debug\libvorbis_static.lib').
-       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLib)' != '' and '%(_OutputFileFromLib.Extension)' != '' and '%(_OutputFileFromLib.Extension)' != '$(TargetExt)') was evaluated as ('D:\Projects\rendervid\theoratest\Win32\Debug\libvorbis_static.lib' != '' and '.lib' != '' and '.lib' != '.lib').
-       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLib)' != '' and '%(_OutputFileFromLib.Filename)' !=  '' and '%(_OutputFileFromLib.Filename)' != '$(TargetName)') was evaluated as ('D:\Projects\rendervid\theoratest\Win32\Debug\libvorbis_static.lib' != '' and 'libvorbis_static' !=  '' and 'libvorbis_static' != 'libvorbis_static').
+       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLib)' == '') was evaluated as ('D:\Projects\rendervid\TheoraPlayer\Win32\Debug\libvorbis_static.lib' == '').
+       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLib)' != '' and '%(_OutputFileFromLib.FullPath)' != '$([System.IO.Path]::GetFullPath($(TargetPath)))') was evaluated as ('D:\Projects\rendervid\TheoraPlayer\Win32\Debug\libvorbis_static.lib' != '' and 'D:\Projects\rendervid\TheoraPlayer\Win32\Debug\libvorbis_static.lib' != 'D:\Projects\rendervid\TheoraPlayer\Win32\Debug\libvorbis_static.lib').
+       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLib)' != '' and '%(_OutputFileFromLib.Extension)' != '' and '%(_OutputFileFromLib.Extension)' != '$(TargetExt)') was evaluated as ('D:\Projects\rendervid\TheoraPlayer\Win32\Debug\libvorbis_static.lib' != '' and '.lib' != '' and '.lib' != '.lib').
+       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLib)' != '' and '%(_OutputFileFromLib.Filename)' !=  '' and '%(_OutputFileFromLib.Filename)' != '$(TargetName)') was evaluated as ('D:\Projects\rendervid\TheoraPlayer\Win32\Debug\libvorbis_static.lib' != '' and 'libvorbis_static' !=  '' and 'libvorbis_static' != 'libvorbis_static').
      1>Done building target "DoLibOutputFilesMatch" in project "libvorbis_static.vcxproj".
      1>Target "PreLinkEvent" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "D:\Projects\rendervid\libvorbis-1.3.5\win32\VS2010\libvorbis\libvorbis_static.vcxproj" (target "_Lib" depends on it):
        Task "Message" skipped, due to false condition; ('%(PreLinkEvent.Message)' != '' and '%(PreLinkEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
@@ -555,8 +347,15 @@
      1>Target "Lib" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "D:\Projects\rendervid\libvorbis-1.3.5\win32\VS2010\libvorbis\libvorbis_static.vcxproj" (target "_Lib" depends on it):
        Using "LIB" task from assembly "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.Build.CppTasks.Common.dll".
        Task "LIB"
-         Forcing rebuild of all source files due to missing command TLog "D:\Projects\rendervid\libvorbis-1.3.5\win32\VS2010\libvorbis\Win32\Debug\libvorbis_static.tlog\lib.command.1.tlog".
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\Lib.exe /OUT:"D:\Projects\rendervid\theoratest\Win32\Debug\libvorbis_static.lib" /NOLOGO Win32\Debug\analysis.obj
+         Write Tracking Logs:
+         	Win32\Debug\libvorbis_static.tlog\Lib-link.write.1.tlog
+         Read Tracking Logs:
+         	Win32\Debug\libvorbis_static.tlog\Lib-link.read.1.tlog
+         Outputs for D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\ANALYSIS.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\BITRATE.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\BLOCK.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\CODEBOOK.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\ENVELOPE.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\FLOOR0.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\FLOOR1.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\INFO.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\LOOKUP.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\LPC.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\LSP.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\MAPPING0.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\MDCT.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\PSY.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\REGISTRY.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\RES0.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\SHAREDBOOK.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\SMALLFT.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\SYNTHESIS.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\VORBISENC.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\WINDOW.OBJ:
+         	D:\PROJECTS\RENDERVID\THEORATEST\WIN32\DEBUG\LIBVORBIS_STATIC.LIB
+         All outputs are up-to-date.
+         Forcing rebuild of all source files due to a change in the command line since the last build.
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\Lib.exe /OUT:"D:\Projects\rendervid\TheoraPlayer\Win32\Debug\libvorbis_static.lib" /NOLOGO Win32\Debug\analysis.obj
          Win32\Debug\bitrate.obj
          Win32\Debug\block.obj
          Win32\Debug\codebook.obj
@@ -578,7 +377,7 @@
          Win32\Debug\vorbisenc.obj
          Win32\Debug\window.obj
          Tracking command:
-         C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker.dll" /i D:\Projects\rendervid\libvorbis-1.3.5\win32\VS2010\libvorbis\Win32\Debug\libvorbis_static.tlog /r "D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\ANALYSIS.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\BITRATE.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\BLOCK.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\CODEBOOK.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\ENVELOPE.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\FLOOR0.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\FLOOR1.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\INFO.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\LOOKUP.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\LPC.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\LSP.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\MAPPING0.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\MDCT.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\PSY.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\REGISTRY.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\RES0.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\SHAREDBOOK.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\SMALLFT.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\SYNTHESIS.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\VORBISENC.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\WINDOW.OBJ" /b MSBuildConsole_CancelEvent5e6889e2146c47e4a4073b53f1107d6d  /c "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\Lib.exe"  /OUT:"D:\Projects\rendervid\theoratest\Win32\Debug\libvorbis_static.lib" /NOLOGO Win32\Debug\analysis.obj
+         C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker.dll" /i D:\Projects\rendervid\libvorbis-1.3.5\win32\VS2010\libvorbis\Win32\Debug\libvorbis_static.tlog /r "D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\ANALYSIS.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\BITRATE.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\BLOCK.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\CODEBOOK.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\ENVELOPE.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\FLOOR0.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\FLOOR1.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\INFO.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\LOOKUP.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\LPC.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\LSP.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\MAPPING0.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\MDCT.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\PSY.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\REGISTRY.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\RES0.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\SHAREDBOOK.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\SMALLFT.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\SYNTHESIS.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\VORBISENC.OBJ|D:\PROJECTS\RENDERVID\LIBVORBIS-1.3.5\WIN32\VS2010\LIBVORBIS\WIN32\DEBUG\WINDOW.OBJ" /b MSBuildConsole_CancelEvent74881b2d5d53411398be81a8dea0b391  /c "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\Lib.exe"  /OUT:"D:\Projects\rendervid\TheoraPlayer\Win32\Debug\libvorbis_static.lib" /NOLOGO Win32\Debug\analysis.obj
          Win32\Debug\bitrate.obj
          Win32\Debug\block.obj
          Win32\Debug\codebook.obj
@@ -601,7 +400,7 @@
          Win32\Debug\window.obj
        Done executing task "LIB".
        Task "Message"
-         libvorbis_static.vcxproj -> D:\Projects\rendervid\theoratest\Win32\Debug\libvorbis_static.lib
+         libvorbis_static.vcxproj -> D:\Projects\rendervid\TheoraPlayer\Win32\Debug\libvorbis_static.lib
        Done executing task "Message".
      1>Done building target "Lib" in project "libvorbis_static.vcxproj".
      1>Target "AfterLib" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libvorbis-1.3.5\win32\VS2010\libvorbis\libvorbis_static.vcxproj" (target "_Lib" depends on it):
@@ -716,7 +515,7 @@
        Task "Copy" skipped, due to false condition; ('$(_SGenDllCreated)'=='true') was evaluated as ('false'=='true').
        Using "Copy" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "Copy"
-         Copying file from "Win32\Debug\libvorbis_static.pdb" to "D:\Projects\rendervid\theoratest\Win32\Debug\libvorbis_static.pdb".
+         Copying file from "Win32\Debug\libvorbis_static.pdb" to "D:\Projects\rendervid\TheoraPlayer\Win32\Debug\libvorbis_static.pdb".
        Done executing task "Copy".
        Task "Copy" skipped, due to false condition; ('$(_DocumentationFileProduced)'=='true') was evaluated as ('false'=='true').
        Task "Copy" skipped, due to false condition; ('@(IntermediateSatelliteAssembliesWithTargetPath)' != '') was evaluated as ('' != '').
@@ -739,6 +538,7 @@
      1>Target "AfterBuild" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.BuildSteps.Targets" from project "D:\Projects\rendervid\libvorbis-1.3.5\win32\VS2010\libvorbis\libvorbis_static.vcxproj" (target "Build" depends on it):
      1>Done building target "AfterBuild" in project "libvorbis_static.vcxproj".
      1>Target "FinalizeBuildStatus" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "D:\Projects\rendervid\libvorbis-1.3.5\win32\VS2010\libvorbis\libvorbis_static.vcxproj" (target "Build" depends on it):
+       Using "Delete" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "Delete"
          Deleting file "Win32\Debug\libvorbis_static.tlog\unsuccessfulbuild".
        Done executing task "Delete".
@@ -752,4 +552,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.98
+Time Elapsed 00:00:00.16
