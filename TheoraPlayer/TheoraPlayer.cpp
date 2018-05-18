@@ -4,6 +4,7 @@
 #include <cstring>
 #include <cstdlib>
 #include <cassert>
+#include <utility>
 
 #include "theora/theoradec.h"
 #include "vorbis/codec.h"
@@ -138,22 +139,11 @@ struct THEORAPLAYER_Decoder
 {
 	// API state...
 	THEORAPLAYER_Io *io;
-	unsigned int maxframes;  // Max video frames to buffer.
-	volatile unsigned int prepped;
-	volatile unsigned int videocount;  // currently buffered frames.
-	volatile unsigned int audioms;  // currently buffered audio samples.
-	volatile int hasvideo;
-	volatile int hasaudio;
-	volatile int decode_error;
+	unsigned int audioms;  // currently buffered audio samples.
+	int decode_error;
 
 	THEORAPLAYER_VideoFormat vidfmt;
 	ConvertVideoFrameFn vidcvt;
-
-	VideoFrame *videolist;
-	VideoFrame *videolisttail;
-
-	AudioPacket *audiolist;
-	AudioPacket *audiolisttail;
 
 	~THEORAPLAYER_Decoder()
 	{
@@ -452,7 +442,12 @@ TheoraPlayer::TheoraPlayer()
 
 }
 
-TheoraPlayer::~TheoraPlayer() = default;
+TheoraPlayer::~TheoraPlayer()
+{
+	delete _decoder;
+	delete _state;
+	delete _io;
+}
 
 int TheoraPlayer::OpenDecode(const char* filename, THEORAPLAYER_VideoFormat outputFormat)
 {
@@ -462,11 +457,11 @@ int TheoraPlayer::OpenDecode(const char* filename, THEORAPLAYER_VideoFormat outp
 		return -1;
 	} // if
 
-	_io.reset(new THEORAPLAYER_Io());
+	_io = new THEORAPLAYER_Io();
 	_io->read = IoFopenRead;
 	_io->close = IoFopenClose;
 	_io->userdata = f;
-	return OpenDecode(_io.get(), outputFormat);
+	return OpenDecode(_io, outputFormat);
 }
 
 int TheoraPlayer::OpenDecode(THEORAPLAYER_Io* io, THEORAPLAYER_VideoFormat outputFormat)
@@ -497,7 +492,7 @@ int TheoraPlayer::OpenDecode(THEORAPLAYER_Io* io, THEORAPLAYER_VideoFormat outpu
 		return -1;
 	}
 
-	_decoder.reset(new THEORAPLAYER_Decoder);
+	_decoder = new THEORAPLAYER_Decoder;
 	_decoder->vidfmt = outputFormat;
 	_decoder->vidcvt = vidcvt;
 	_decoder->io = io;
@@ -512,11 +507,14 @@ int TheoraPlayer::Prepare()
 	if(_state)
 		return -1;
 
-	_state.reset(new THEORAPLAYER_State);
-	_state->ctx = _decoder.get();
+	_state = new THEORAPLAYER_State;
+	_state->ctx = _decoder;
 	auto result = _state->Prepare();
 	if(!result)
-		_state.reset();
+	{
+		delete _state;
+		_state = nullptr;
+	}
 	return result;
 }
 
@@ -529,7 +527,10 @@ int TheoraPlayer::GetVideoFrame(THEORAPLAYER_VideoFrame* frame)
 
 	auto result = _state->DecodeNextVideoFrame(frame);
 	if(result < 0)
-		_state.reset();
+	{
+		delete _state;
+		_state = nullptr;
+	}
 	return result;
 }
 

@@ -1,7 +1,5 @@
 #pragma once
 
-#include <memory>
-
 struct THEORAPLAYER_Io
 {
 	size_t(*read)(THEORAPLAYER_Io *io, void *buf, long buflen);
@@ -54,7 +52,7 @@ public:
 	int GetVideoFrame(THEORAPLAYER_VideoFrame* frame);
 
 private:
-	std::unique_ptr<struct THEORAPLAYER_Decoder> _decoder;
-	std::unique_ptr<struct THEORAPLAYER_State> _state;
-	std::unique_ptr<THEORAPLAYER_Io> _io;
+	struct THEORAPLAYER_Decoder* _decoder = nullptr;
+	struct THEORAPLAYER_State* _state = nullptr;
+	THEORAPLAYER_Io* _io = nullptr;
 };
