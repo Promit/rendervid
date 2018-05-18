@@ -451,21 +451,30 @@ TheoraPlayer::~TheoraPlayer()
 
 int TheoraPlayer::OpenDecode(const char* filename, THEORAPLAYER_VideoFormat outputFormat)
 {
+	if(_decoder)
+		return -1;
+
 	FILE *f = fopen(filename, "rb");
 	if(f == NULL)
 	{
 		return -1;
 	} // if
 
-	_io = new THEORAPLAYER_Io();
-	_io->read = IoFopenRead;
-	_io->close = IoFopenClose;
-	_io->userdata = f;
+	if(!_io)
+	{
+		_io = new THEORAPLAYER_Io();
+		_io->read = IoFopenRead;
+		_io->close = IoFopenClose;
+		_io->userdata = f;
+	}
 	return OpenDecode(_io, outputFormat);
 }
 
 int TheoraPlayer::OpenDecode(THEORAPLAYER_Io* io, THEORAPLAYER_VideoFormat outputFormat)
 {
+	if(_decoder)
+		return -1;
+
 	ConvertVideoFrameFn vidcvt = nullptr;
 	switch(outputFormat)
 	{
