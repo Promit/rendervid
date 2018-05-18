@@ -3,12 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libtheora_static", "..\libtheora-1.1.1\win32\VS2008\libtheora\libtheora_static.vcxproj", "{653F3841-3F26-49B9-AFCF-091DB4B67031}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libogg_static", "..\libogg-1.3.2\win32\VS2010\libogg_static.vcxproj", "{15CBFEFF-7965-41F5-B4E2-21E8795C9159}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libvorbis_static", "..\libvorbis-1.3.5\win32\VS2010\libvorbis\libvorbis_static.vcxproj", "{3A214E06-B95E-4D61-A291-1F8DF2EC10FD}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TheoraPlayer", "TheoraPlayer.vcxproj", "{4B729A4A-1A92-408B-8C15-4E1FEB23B770}"
 EndProject
 Global
@@ -19,30 +13,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{653F3841-3F26-49B9-AFCF-091DB4B67031}.Debug|x64.ActiveCfg = Debug|x64
-		{653F3841-3F26-49B9-AFCF-091DB4B67031}.Debug|x64.Build.0 = Debug|x64
-		{653F3841-3F26-49B9-AFCF-091DB4B67031}.Debug|x86.ActiveCfg = Debug|Win32
-		{653F3841-3F26-49B9-AFCF-091DB4B67031}.Debug|x86.Build.0 = Debug|Win32
-		{653F3841-3F26-49B9-AFCF-091DB4B67031}.Release|x64.ActiveCfg = Release_SSE2|x64
-		{653F3841-3F26-49B9-AFCF-091DB4B67031}.Release|x64.Build.0 = Release_SSE2|x64
-		{653F3841-3F26-49B9-AFCF-091DB4B67031}.Release|x86.ActiveCfg = Release_SSE2|Win32
-		{653F3841-3F26-49B9-AFCF-091DB4B67031}.Release|x86.Build.0 = Release_SSE2|Win32
-		{15CBFEFF-7965-41F5-B4E2-21E8795C9159}.Debug|x64.ActiveCfg = Debug|x64
-		{15CBFEFF-7965-41F5-B4E2-21E8795C9159}.Debug|x64.Build.0 = Debug|x64
-		{15CBFEFF-7965-41F5-B4E2-21E8795C9159}.Debug|x86.ActiveCfg = Debug|Win32
-		{15CBFEFF-7965-41F5-B4E2-21E8795C9159}.Debug|x86.Build.0 = Debug|Win32
-		{15CBFEFF-7965-41F5-B4E2-21E8795C9159}.Release|x64.ActiveCfg = Release|x64
-		{15CBFEFF-7965-41F5-B4E2-21E8795C9159}.Release|x64.Build.0 = Release|x64
-		{15CBFEFF-7965-41F5-B4E2-21E8795C9159}.Release|x86.ActiveCfg = Release|Win32
-		{15CBFEFF-7965-41F5-B4E2-21E8795C9159}.Release|x86.Build.0 = Release|Win32
-		{3A214E06-B95E-4D61-A291-1F8DF2EC10FD}.Debug|x64.ActiveCfg = Debug|x64
-		{3A214E06-B95E-4D61-A291-1F8DF2EC10FD}.Debug|x64.Build.0 = Debug|x64
-		{3A214E06-B95E-4D61-A291-1F8DF2EC10FD}.Debug|x86.ActiveCfg = Debug|Win32
-		{3A214E06-B95E-4D61-A291-1F8DF2EC10FD}.Debug|x86.Build.0 = Debug|Win32
-		{3A214E06-B95E-4D61-A291-1F8DF2EC10FD}.Release|x64.ActiveCfg = Release|x64
-		{3A214E06-B95E-4D61-A291-1F8DF2EC10FD}.Release|x64.Build.0 = Release|x64
-		{3A214E06-B95E-4D61-A291-1F8DF2EC10FD}.Release|x86.ActiveCfg = Release|Win32
-		{3A214E06-B95E-4D61-A291-1F8DF2EC10FD}.Release|x86.Build.0 = Release|Win32
 		{4B729A4A-1A92-408B-8C15-4E1FEB23B770}.Debug|x64.ActiveCfg = Debug|x64
 		{4B729A4A-1A92-408B-8C15-4E1FEB23B770}.Debug|x64.Build.0 = Debug|x64
 		{4B729A4A-1A92-408B-8C15-4E1FEB23B770}.Debug|x86.ActiveCfg = Debug|Win32
