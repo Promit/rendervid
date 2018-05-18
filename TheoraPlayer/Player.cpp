@@ -168,7 +168,8 @@ static void playfile(const char *fname)
 		return;
 	}
 
-	player.GetVideoFrame(&video);
+	video = new THEORAPLAYER_VideoFrame();
+	player.GetVideoFrame(video);
 	framems = (video->fps == 0.0) ? 0 : ((GLuint)(1000.0 / video->fps));
 	if(!window)
 	{
@@ -181,8 +182,7 @@ static void playfile(const char *fname)
 		const long long now = getTime() - baseticks;
 
 		game_loop(ourShader, video, VAO);
-		delete video;
-		player.GetVideoFrame(&video);
+		player.GetVideoFrame(video);
 
 		//FIXME: This is the old code for correctly timing the video. Need to rewrite this for the new code.
 #if 0

@@ -291,7 +291,6 @@
     <ClInclude Include="..\libvorbis-1.3.5\lib\window.h" />
     <ClInclude Include="shader.h" />
     <ClInclude Include="TheoraPlayer.h" />
-    <ClInclude Include="theoraplay_cvtrgb.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="texture.frag" />

@@ -4,7 +4,7 @@
 
 struct THEORAPLAYER_Io
 {
-	long(*read)(THEORAPLAYER_Io *io, void *buf, long buflen);
+	size_t(*read)(THEORAPLAYER_Io *io, void *buf, long buflen);
 	void(*close)(THEORAPLAYER_Io *io);
 	void *userdata;
 };
@@ -51,7 +51,7 @@ public:
 	
 	int Prepare();
 	int IsDecoding() const;
-	int GetVideoFrame(THEORAPLAYER_VideoFrame** frame);
+	int GetVideoFrame(THEORAPLAYER_VideoFrame* frame);
 
 private:
 	std::unique_ptr<struct THEORAPLAYER_Decoder> _decoder;

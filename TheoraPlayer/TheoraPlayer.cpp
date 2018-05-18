@@ -14,19 +14,19 @@ typedef THEORAPLAYER_VideoFrame VideoFrame;
 typedef THEORAPLAYER_AudioPacket AudioPacket;
 
 // !!! FIXME: these all count on the pixel format being TH_PF_420 for now.
-typedef unsigned char *(*ConvertVideoFrameFn)(const th_info *tinfo,
-	const th_ycbcr_buffer ycbcr);
+typedef void (*ConvertVideoFrameFn)(const th_info *tinfo, const th_ycbcr_buffer ycbcr, unsigned char* pixels);
 
-static unsigned char *ConvertVideoFrame420ToYUVPlanar(
-	const th_info *tinfo, const th_ycbcr_buffer ycbcr,
-	const int p0, const int p1, const int p2)
+static void ConvertVideoFrame420ToYUVPlanar(const th_info *tinfo, const th_ycbcr_buffer ycbcr, const int p0, const int p1, const int p2, unsigned char* yuv)
 {
+	assert(tinfo);
+	assert(yuv);
+
+	//output size is w * h * 2
 	int i;
 	const int w = tinfo->pic_width;
 	const int h = tinfo->pic_height;
 	const int yoff = (tinfo->pic_x & ~1) + ycbcr[0].stride * (tinfo->pic_y & ~1);
 	const int uvoff = (tinfo->pic_x / 2) + (ycbcr[1].stride) * (tinfo->pic_y / 2);
-	unsigned char *yuv = (unsigned char *)malloc(w * h * 2);
 	if(yuv)
 	{
 		unsigned char *dst = yuv;
@@ -37,55 +37,101 @@ static unsigned char *ConvertVideoFrame420ToYUVPlanar(
 		for(i = 0; i < (h / 2); i++, dst += w / 2)
 			memcpy(dst, ycbcr[p2].data + uvoff + ycbcr[p2].stride * i, w / 2);
 	} // if
-
-	return yuv;
 } // ConvertVideoFrame420ToYUVPlanar
 
 
-static unsigned char *ConvertVideoFrame420ToYV12(const th_info *tinfo,
-	const th_ycbcr_buffer ycbcr)
+static void ConvertVideoFrame420ToYV12(const th_info *tinfo, const th_ycbcr_buffer ycbcr, unsigned char* pixels)
 {
-	return ConvertVideoFrame420ToYUVPlanar(tinfo, ycbcr, 0, 2, 1);
+	return ConvertVideoFrame420ToYUVPlanar(tinfo, ycbcr, 0, 2, 1, pixels);
 } // ConvertVideoFrame420ToYV12
 
 
-static unsigned char *ConvertVideoFrame420ToIYUV(const th_info *tinfo,
-	const th_ycbcr_buffer ycbcr)
+static void ConvertVideoFrame420ToIYUV(const th_info *tinfo, const th_ycbcr_buffer ycbcr, unsigned char* pixels)
 {
-	return ConvertVideoFrame420ToYUVPlanar(tinfo, ycbcr, 0, 1, 2);
+	return ConvertVideoFrame420ToYUVPlanar(tinfo, ycbcr, 0, 1, 2, pixels);
 } // ConvertVideoFrame420ToIYUV
 
- // RGB
-#define THEORAPLAY_CVT_FNNAME_420 ConvertVideoFrame420ToRGB
-#define THEORAPLAY_CVT_RGB_ALPHA 0
-#include "theoraplay_cvtrgb.h"
-#undef THEORAPLAY_CVT_RGB_ALPHA
-#undef THEORAPLAY_CVT_FNNAME_420
+static void THEORAPLAY_CVT_420_RGB(const th_info *tinfo, const th_ycbcr_buffer ycbcr, unsigned char* pixels, THEORAPLAYER_VideoFormat format)
+{
+	assert(tinfo);
+	assert(pixels);
 
- // RGBA
-#define THEORAPLAY_CVT_FNNAME_420 ConvertVideoFrame420ToRGBA
-#define THEORAPLAY_CVT_RGB_ALPHA 1
-#include "theoraplay_cvtrgb.h"
-#undef THEORAPLAY_CVT_RGB_ALPHA
-#undef THEORAPLAY_CVT_FNNAME_420
+	const int w = tinfo->pic_width;
+	const int h = tinfo->pic_height;
+
+	unsigned char *dst = pixels;
+	const int ystride = ycbcr[0].stride;
+	const int cbstride = ycbcr[1].stride;
+	const int crstride = ycbcr[2].stride;
+	const int yoff = (tinfo->pic_x & ~1) + ystride * (tinfo->pic_y & ~1);
+	const int cboff = (tinfo->pic_x / 2) + (cbstride) * (tinfo->pic_y / 2);
+	const unsigned char *py = ycbcr[0].data + yoff;
+	const unsigned char *pcb = ycbcr[1].data + cboff;
+	const unsigned char *pcr = ycbcr[2].data + cboff;
+	int posx, posy;
+
+	for(posy = 0; posy < h; posy++)
+	{
+		for(posx = 0; posx < w; posx++)
+		{
+			// http://www.theora.org/doc/Theora.pdf, 1.1 spec,
+			//  chapter 4.2 (Y'CbCr -> Y'PbPr -> R'G'B')
+			// These constants apparently work for NTSC _and_ PAL/SECAM.
+			const float yoffset = 16.0f;
+			const float yexcursion = 219.0f;
+			const float cboffset = 128.0f;
+			const float cbexcursion = 224.0f;
+			const float croffset = 128.0f;
+			const float crexcursion = 224.0f;
+			const float kr = 0.299f;
+			const float kb = 0.114f;
+
+			const float y = (((float)py[posx]) - yoffset) / yexcursion;
+			const float pb = (((float)pcb[posx / 2]) - cboffset) / cbexcursion;
+			const float pr = (((float)pcr[posx / 2]) - croffset) / crexcursion;
+			const float r = (y + (2.0f * (1.0f - kr) * pr)) * 255.0f;
+			const float g = (y - ((2.0f * (((1.0f - kb) * kb) / ((1.0f - kb) - kr))) * pb) - ((2.0f * (((1.0f - kr) * kr) / ((1.0f - kb) - kr))) * pr)) * 255.0f;
+			const float b = (y + (2.0f * (1.0f - kb) * pb)) * 255.0f;
+
+			*(dst++) = (unsigned char)((r < 0.0f) ? 0.0f : (r > 255.0f) ? 255.0f : r);
+			*(dst++) = (unsigned char)((g < 0.0f) ? 0.0f : (g > 255.0f) ? 255.0f : g);
+			*(dst++) = (unsigned char)((b < 0.0f) ? 0.0f : (b > 255.0f) ? 255.0f : b);
+			if(format == THEORAPLAYER_VIDFMT_BGR || format == THEORAPLAYER_VIDFMT_BGRA)
+				std::swap(*(dst - 1), *(dst - 3));
+			if(format == THEORAPLAYER_VIDFMT_RGBA || format == THEORAPLAYER_VIDFMT_BGRA)
+				*(dst++) = 0xFF;
+		} // for
+
+			// adjust to the start of the next line.
+		py += ystride;
+		pcb += cbstride * (posy % 2);
+		pcr += crstride * (posy % 2);
+	} // for
+}
+
+ // RGB
+static void ConvertVideoFrame420ToRGB(const th_info *tinfo, const th_ycbcr_buffer ycbcr, unsigned char* pixels)
+{
+	THEORAPLAY_CVT_420_RGB(tinfo, ycbcr, pixels, THEORAPLAYER_VIDFMT_RGB);
+}
+
+// RGBA
+static void ConvertVideoFrame420ToRGBA(const th_info *tinfo, const th_ycbcr_buffer ycbcr, unsigned char* pixels)
+{
+	THEORAPLAY_CVT_420_RGB(tinfo, ycbcr, pixels, THEORAPLAYER_VIDFMT_RGBA);
+}
 
  // BGR
-#define THEORAPLAY_CVT_FNNAME_420 ConvertVideoFrame420ToBGR
-#define THEORAPLAY_CVT_RGB_ALPHA 0
-#define THEORAPLAY_CVT_BGR 1
-#include "theoraplay_cvtrgb.h"
-#undef THEORAPLAY_CVT_BGR
-#undef THEORAPLAY_CVT_RGB_ALPHA
-#undef THEORAPLAY_CVT_FNNAME_420
+static void ConvertVideoFrame420ToBGR(const th_info *tinfo, const th_ycbcr_buffer ycbcr, unsigned char* pixels)
+{
+	THEORAPLAY_CVT_420_RGB(tinfo, ycbcr, pixels, THEORAPLAYER_VIDFMT_BGR);
+}
 
  // BGRA
-#define THEORAPLAY_CVT_FNNAME_420 ConvertVideoFrame420ToBGRA
-#define THEORAPLAY_CVT_RGB_ALPHA 1
-#define THEORAPLAY_CVT_BGR 1
-#include "theoraplay_cvtrgb.h"
-#undef THEORAPLAY_CVT_BGR
-#undef THEORAPLAY_CVT_RGB_ALPHA
-#undef THEORAPLAY_CVT_FNNAME_420
+static void ConvertVideoFrame420ToBGRA(const th_info *tinfo, const th_ycbcr_buffer ycbcr, unsigned char* pixels)
+{
+	THEORAPLAY_CVT_420_RGB(tinfo, ycbcr, pixels, THEORAPLAYER_VIDFMT_BGRA);
+}
 
 
 struct THEORAPLAYER_Decoder
@@ -312,11 +358,10 @@ struct THEORAPLAYER_State
 		return 1;
 	} //Prepare
 
-	int DecodeNextVideoFrame(VideoFrame** frame)
+	int DecodeNextVideoFrame(VideoFrame* frame)
 	{
 		if(eos)
 		{
-			*frame = nullptr;
 			return 0;
 		}
 
@@ -355,37 +400,43 @@ struct THEORAPLAYER_State
 				if(th_decode_ycbcr_out(tdec, ycbcr) == 0)
 				{
 					const double videotime = th_granule_time(tdec, granulepos);
-					VideoFrame* item = new VideoFrame();
-					item->playms = (unsigned int)(videotime * 1000.0);
-					item->fps = fps;
-					item->width = tinfo.pic_width;
-					item->height = tinfo.pic_height;
-					item->format = ctx->vidfmt;
-					item->pixels = ctx->vidcvt(&tinfo, ycbcr);
-
-					if(item->pixels == NULL)
+					frame->playms = (unsigned int)(videotime * 1000.0);
+					frame->fps = fps;
+					frame->width = tinfo.pic_width;
+					frame->height = tinfo.pic_height;
+					frame->format = ctx->vidfmt;
+					if(!frame->pixels)
 					{
-						delete item;
+						//FIXME: use a user-supplied allocator
+						size_t allocSize = frame->width * frame->height * 4;
+						if(frame->format == THEORAPLAYER_VIDFMT_RGB || frame->format == THEORAPLAYER_VIDFMT_BGR)
+							allocSize = frame->width * frame->height * 3;
+						frame->pixels = new unsigned char[allocSize];
+					}
+
+					//copy the pixels over in the requested format
+					ctx->vidcvt(&tinfo, ycbcr, frame->pixels);
+					if(frame->pixels == NULL)
+					{
 						return -1;
 					} // if
 
 					saw_video_frame = 1;
-					*frame = item;
 				} // if
 			} // if
 		} // if
 
-		return 1;
+		return saw_video_frame;
 	}
 };
 
-static long IoFopenRead(THEORAPLAYER_Io *io, void *buf, long buflen)
+static size_t IoFopenRead(THEORAPLAYER_Io *io, void *buf, long buflen)
 {
 	FILE *f = (FILE *)io->userdata;
 	const size_t br = fread(buf, 1, buflen, f);
 	if((br == 0) && ferror(f))
 		return -1;
-	return (long)br;
+	return br;
 } // IoFopenRead
 
 
@@ -405,14 +456,13 @@ TheoraPlayer::~TheoraPlayer() = default;
 
 int TheoraPlayer::OpenDecode(const char* filename, THEORAPLAYER_VideoFormat outputFormat)
 {
-	_io.reset(new THEORAPLAYER_Io());
 	FILE *f = fopen(filename, "rb");
 	if(f == NULL)
 	{
-		_io.reset();
 		return -1;
 	} // if
 
+	_io.reset(new THEORAPLAYER_Io());
 	_io->read = IoFopenRead;
 	_io->close = IoFopenClose;
 	_io->userdata = f;
@@ -470,9 +520,11 @@ int TheoraPlayer::Prepare()
 	return result;
 }
 
-int TheoraPlayer::GetVideoFrame(THEORAPLAYER_VideoFrame** frame)
+int TheoraPlayer::GetVideoFrame(THEORAPLAYER_VideoFrame* frame)
 {
 	if(!_state)
+		return -1;
+	if(!frame)
 		return -1;
 
 	auto result = _state->DecodeNextVideoFrame(frame);

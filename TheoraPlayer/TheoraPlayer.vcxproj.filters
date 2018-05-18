@@ -127,7 +127,6 @@
   <ItemGroup>
     <ClInclude Include="TheoraPlayer.h" />
     <ClInclude Include="shader.h" />
-    <ClInclude Include="theoraplay_cvtrgb.h" />
     <ClInclude Include="..\libvorbis-1.3.5\lib\backends.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
