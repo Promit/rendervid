@@ -3,299 +3,299 @@
   <ItemGroup>
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="TheoraPlayer.cpp" />
-    <ClCompile Include="..\libvorbis-1.3.5\lib\analysis.c">
+    <ClCompile Include="libvorbis-1.3.5\lib\analysis.c">
       <Filter>libvorbis</Filter>
     </ClCompile>
-    <ClCompile Include="..\libvorbis-1.3.5\lib\bitrate.c">
+    <ClCompile Include="libvorbis-1.3.5\lib\bitrate.c">
       <Filter>libvorbis</Filter>
     </ClCompile>
-    <ClCompile Include="..\libvorbis-1.3.5\lib\block.c">
+    <ClCompile Include="libvorbis-1.3.5\lib\block.c">
       <Filter>libvorbis</Filter>
     </ClCompile>
-    <ClCompile Include="..\libvorbis-1.3.5\lib\codebook.c">
+    <ClCompile Include="libvorbis-1.3.5\lib\codebook.c">
       <Filter>libvorbis</Filter>
     </ClCompile>
-    <ClCompile Include="..\libvorbis-1.3.5\lib\envelope.c">
+    <ClCompile Include="libvorbis-1.3.5\lib\envelope.c">
       <Filter>libvorbis</Filter>
     </ClCompile>
-    <ClCompile Include="..\libvorbis-1.3.5\lib\floor0.c">
+    <ClCompile Include="libvorbis-1.3.5\lib\floor0.c">
       <Filter>libvorbis</Filter>
     </ClCompile>
-    <ClCompile Include="..\libvorbis-1.3.5\lib\floor1.c">
+    <ClCompile Include="libvorbis-1.3.5\lib\floor1.c">
       <Filter>libvorbis</Filter>
     </ClCompile>
-    <ClCompile Include="..\libvorbis-1.3.5\lib\info.c">
+    <ClCompile Include="libvorbis-1.3.5\lib\info.c">
       <Filter>libvorbis</Filter>
     </ClCompile>
-    <ClCompile Include="..\libvorbis-1.3.5\lib\lookup.c">
+    <ClCompile Include="libvorbis-1.3.5\lib\lookup.c">
       <Filter>libvorbis</Filter>
     </ClCompile>
-    <ClCompile Include="..\libvorbis-1.3.5\lib\lpc.c">
+    <ClCompile Include="libvorbis-1.3.5\lib\lpc.c">
       <Filter>libvorbis</Filter>
     </ClCompile>
-    <ClCompile Include="..\libvorbis-1.3.5\lib\lsp.c">
+    <ClCompile Include="libvorbis-1.3.5\lib\lsp.c">
       <Filter>libvorbis</Filter>
     </ClCompile>
-    <ClCompile Include="..\libvorbis-1.3.5\lib\mapping0.c">
+    <ClCompile Include="libvorbis-1.3.5\lib\mapping0.c">
       <Filter>libvorbis</Filter>
     </ClCompile>
-    <ClCompile Include="..\libvorbis-1.3.5\lib\mdct.c">
+    <ClCompile Include="libvorbis-1.3.5\lib\mdct.c">
       <Filter>libvorbis</Filter>
     </ClCompile>
-    <ClCompile Include="..\libvorbis-1.3.5\lib\psy.c">
+    <ClCompile Include="libvorbis-1.3.5\lib\psy.c">
       <Filter>libvorbis</Filter>
     </ClCompile>
-    <ClCompile Include="..\libvorbis-1.3.5\lib\registry.c">
+    <ClCompile Include="libvorbis-1.3.5\lib\registry.c">
       <Filter>libvorbis</Filter>
     </ClCompile>
-    <ClCompile Include="..\libvorbis-1.3.5\lib\res0.c">
+    <ClCompile Include="libvorbis-1.3.5\lib\res0.c">
       <Filter>libvorbis</Filter>
     </ClCompile>
-    <ClCompile Include="..\libvorbis-1.3.5\lib\sharedbook.c">
+    <ClCompile Include="libvorbis-1.3.5\lib\sharedbook.c">
       <Filter>libvorbis</Filter>
     </ClCompile>
-    <ClCompile Include="..\libvorbis-1.3.5\lib\smallft.c">
+    <ClCompile Include="libvorbis-1.3.5\lib\smallft.c">
       <Filter>libvorbis</Filter>
     </ClCompile>
-    <ClCompile Include="..\libvorbis-1.3.5\lib\synthesis.c">
+    <ClCompile Include="libvorbis-1.3.5\lib\synthesis.c">
       <Filter>libvorbis</Filter>
     </ClCompile>
-    <ClCompile Include="..\libvorbis-1.3.5\lib\window.c">
+    <ClCompile Include="libvorbis-1.3.5\lib\window.c">
       <Filter>libvorbis</Filter>
     </ClCompile>
-    <ClCompile Include="..\libtheora-1.1.1\lib\cpu.c">
+    <ClCompile Include="libtheora-1.1.1\lib\cpu.c">
       <Filter>libtheora\lib</Filter>
     </ClCompile>
-    <ClCompile Include="..\libtheora-1.1.1\lib\apiwrapper.c">
+    <ClCompile Include="libtheora-1.1.1\lib\apiwrapper.c">
       <Filter>libtheora\lib\dec</Filter>
     </ClCompile>
-    <ClCompile Include="..\libtheora-1.1.1\lib\bitpack.c">
+    <ClCompile Include="libtheora-1.1.1\lib\bitpack.c">
       <Filter>libtheora\lib\dec</Filter>
     </ClCompile>
-    <ClCompile Include="..\libtheora-1.1.1\lib\decapiwrapper.c">
+    <ClCompile Include="libtheora-1.1.1\lib\decapiwrapper.c">
       <Filter>libtheora\lib\dec</Filter>
     </ClCompile>
-    <ClCompile Include="..\libtheora-1.1.1\lib\decinfo.c">
+    <ClCompile Include="libtheora-1.1.1\lib\decinfo.c">
       <Filter>libtheora\lib\dec</Filter>
     </ClCompile>
-    <ClCompile Include="..\libtheora-1.1.1\lib\decode.c">
+    <ClCompile Include="libtheora-1.1.1\lib\decode.c">
       <Filter>libtheora\lib\dec</Filter>
     </ClCompile>
-    <ClCompile Include="..\libtheora-1.1.1\lib\dequant.c">
+    <ClCompile Include="libtheora-1.1.1\lib\dequant.c">
       <Filter>libtheora\lib\dec</Filter>
     </ClCompile>
-    <ClCompile Include="..\libtheora-1.1.1\lib\fragment.c">
+    <ClCompile Include="libtheora-1.1.1\lib\fragment.c">
       <Filter>libtheora\lib\dec</Filter>
     </ClCompile>
-    <ClCompile Include="..\libtheora-1.1.1\lib\huffdec.c">
+    <ClCompile Include="libtheora-1.1.1\lib\huffdec.c">
       <Filter>libtheora\lib\dec</Filter>
     </ClCompile>
-    <ClCompile Include="..\libtheora-1.1.1\lib\idct.c">
+    <ClCompile Include="libtheora-1.1.1\lib\idct.c">
       <Filter>libtheora\lib\dec</Filter>
     </ClCompile>
-    <ClCompile Include="..\libtheora-1.1.1\lib\internal.c">
+    <ClCompile Include="libtheora-1.1.1\lib\internal.c">
       <Filter>libtheora\lib\dec</Filter>
     </ClCompile>
-    <ClCompile Include="..\libtheora-1.1.1\lib\quant.c">
+    <ClCompile Include="libtheora-1.1.1\lib\quant.c">
       <Filter>libtheora\lib\dec</Filter>
     </ClCompile>
-    <ClCompile Include="..\libtheora-1.1.1\lib\state.c">
+    <ClCompile Include="libtheora-1.1.1\lib\state.c">
       <Filter>libtheora\lib\dec</Filter>
     </ClCompile>
-    <ClCompile Include="..\libtheora-1.1.1\lib\x86_vc\mmxfrag.c">
+    <ClCompile Include="libtheora-1.1.1\lib\x86_vc\mmxfrag.c">
       <Filter>libtheora\lib\dec\x86_vc</Filter>
     </ClCompile>
-    <ClCompile Include="..\libtheora-1.1.1\lib\x86_vc\mmxidct.c">
+    <ClCompile Include="libtheora-1.1.1\lib\x86_vc\mmxidct.c">
       <Filter>libtheora\lib\dec\x86_vc</Filter>
     </ClCompile>
-    <ClCompile Include="..\libtheora-1.1.1\lib\x86_vc\mmxstate.c">
+    <ClCompile Include="libtheora-1.1.1\lib\x86_vc\mmxstate.c">
       <Filter>libtheora\lib\dec\x86_vc</Filter>
     </ClCompile>
-    <ClCompile Include="..\libtheora-1.1.1\lib\x86_vc\x86state.c">
+    <ClCompile Include="libtheora-1.1.1\lib\x86_vc\x86state.c">
       <Filter>libtheora\lib\dec\x86_vc</Filter>
     </ClCompile>
-    <ClCompile Include="..\libogg-1.3.2\src\bitwise.c">
+    <ClCompile Include="libogg-1.3.2\src\bitwise.c">
       <Filter>libogg</Filter>
     </ClCompile>
-    <ClCompile Include="..\libogg-1.3.2\src\framing.c">
+    <ClCompile Include="libogg-1.3.2\src\framing.c">
       <Filter>libogg</Filter>
     </ClCompile>
-    <ClCompile Include="..\libtheora-1.1.1\lib\th_info.c">
+    <ClCompile Include="libtheora-1.1.1\lib\th_info.c">
       <Filter>libtheora\lib\dec</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TheoraPlayer.h" />
     <ClInclude Include="shader.h" />
-    <ClInclude Include="..\libvorbis-1.3.5\lib\backends.h">
+    <ClInclude Include="libvorbis-1.3.5\lib\backends.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
-    <ClInclude Include="..\libvorbis-1.3.5\lib\bitrate.h">
+    <ClInclude Include="libvorbis-1.3.5\lib\bitrate.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
-    <ClInclude Include="..\libvorbis-1.3.5\lib\codebook.h">
+    <ClInclude Include="libvorbis-1.3.5\lib\codebook.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
-    <ClInclude Include="..\libvorbis-1.3.5\include\vorbis\codec.h">
+    <ClInclude Include="libvorbis-1.3.5\include\vorbis\codec.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
-    <ClInclude Include="..\libvorbis-1.3.5\lib\codec_internal.h">
+    <ClInclude Include="libvorbis-1.3.5\lib\codec_internal.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
-    <ClInclude Include="..\libvorbis-1.3.5\lib\envelope.h">
+    <ClInclude Include="libvorbis-1.3.5\lib\envelope.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
-    <ClInclude Include="..\libvorbis-1.3.5\lib\modes\floor_all.h">
+    <ClInclude Include="libvorbis-1.3.5\lib\modes\floor_all.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
-    <ClInclude Include="..\libvorbis-1.3.5\lib\books\floor\floor_books.h">
+    <ClInclude Include="libvorbis-1.3.5\lib\books\floor\floor_books.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
-    <ClInclude Include="..\libvorbis-1.3.5\lib\highlevel.h">
+    <ClInclude Include="libvorbis-1.3.5\lib\highlevel.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
-    <ClInclude Include="..\libvorbis-1.3.5\lib\lookup.h">
+    <ClInclude Include="libvorbis-1.3.5\lib\lookup.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
-    <ClInclude Include="..\libvorbis-1.3.5\lib\lookup_data.h">
+    <ClInclude Include="libvorbis-1.3.5\lib\lookup_data.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
-    <ClInclude Include="..\libvorbis-1.3.5\lib\lpc.h">
+    <ClInclude Include="libvorbis-1.3.5\lib\lpc.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
-    <ClInclude Include="..\libvorbis-1.3.5\lib\lsp.h">
+    <ClInclude Include="libvorbis-1.3.5\lib\lsp.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
-    <ClInclude Include="..\libvorbis-1.3.5\lib\masking.h">
+    <ClInclude Include="libvorbis-1.3.5\lib\masking.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
-    <ClInclude Include="..\libvorbis-1.3.5\lib\mdct.h">
+    <ClInclude Include="libvorbis-1.3.5\lib\mdct.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
-    <ClInclude Include="..\libvorbis-1.3.5\lib\misc.h">
+    <ClInclude Include="libvorbis-1.3.5\lib\misc.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
-    <ClInclude Include="..\libvorbis-1.3.5\lib\os.h">
+    <ClInclude Include="libvorbis-1.3.5\lib\os.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
-    <ClInclude Include="..\libvorbis-1.3.5\lib\psy.h">
+    <ClInclude Include="libvorbis-1.3.5\lib\psy.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
-    <ClInclude Include="..\libvorbis-1.3.5\lib\modes\psych_8.h">
+    <ClInclude Include="libvorbis-1.3.5\lib\modes\psych_8.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
-    <ClInclude Include="..\libvorbis-1.3.5\lib\modes\psych_11.h">
+    <ClInclude Include="libvorbis-1.3.5\lib\modes\psych_11.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
-    <ClInclude Include="..\libvorbis-1.3.5\lib\modes\psych_16.h">
+    <ClInclude Include="libvorbis-1.3.5\lib\modes\psych_16.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
-    <ClInclude Include="..\libvorbis-1.3.5\lib\modes\psych_44.h">
+    <ClInclude Include="libvorbis-1.3.5\lib\modes\psych_44.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
-    <ClInclude Include="..\libvorbis-1.3.5\lib\registry.h">
+    <ClInclude Include="libvorbis-1.3.5\lib\registry.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
-    <ClInclude Include="..\libvorbis-1.3.5\lib\books\coupled\res_books_stereo.h">
+    <ClInclude Include="libvorbis-1.3.5\lib\books\coupled\res_books_stereo.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
-    <ClInclude Include="..\libvorbis-1.3.5\lib\books\uncoupled\res_books_uncoupled.h">
+    <ClInclude Include="libvorbis-1.3.5\lib\books\uncoupled\res_books_uncoupled.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
-    <ClInclude Include="..\libvorbis-1.3.5\lib\modes\residue_8.h">
+    <ClInclude Include="libvorbis-1.3.5\lib\modes\residue_8.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
-    <ClInclude Include="..\libvorbis-1.3.5\lib\modes\residue_16.h">
+    <ClInclude Include="libvorbis-1.3.5\lib\modes\residue_16.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
-    <ClInclude Include="..\libvorbis-1.3.5\lib\modes\residue_44.h">
+    <ClInclude Include="libvorbis-1.3.5\lib\modes\residue_44.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
-    <ClInclude Include="..\libvorbis-1.3.5\lib\modes\residue_44u.h">
+    <ClInclude Include="libvorbis-1.3.5\lib\modes\residue_44u.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
-    <ClInclude Include="..\libvorbis-1.3.5\lib\scales.h">
+    <ClInclude Include="libvorbis-1.3.5\lib\scales.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
-    <ClInclude Include="..\libvorbis-1.3.5\lib\modes\setup_8.h">
+    <ClInclude Include="libvorbis-1.3.5\lib\modes\setup_8.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
-    <ClInclude Include="..\libvorbis-1.3.5\lib\modes\setup_11.h">
+    <ClInclude Include="libvorbis-1.3.5\lib\modes\setup_11.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
-    <ClInclude Include="..\libvorbis-1.3.5\lib\modes\setup_16.h">
+    <ClInclude Include="libvorbis-1.3.5\lib\modes\setup_16.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
-    <ClInclude Include="..\libvorbis-1.3.5\lib\modes\setup_22.h">
+    <ClInclude Include="libvorbis-1.3.5\lib\modes\setup_22.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
-    <ClInclude Include="..\libvorbis-1.3.5\lib\modes\setup_32.h">
+    <ClInclude Include="libvorbis-1.3.5\lib\modes\setup_32.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
-    <ClInclude Include="..\libvorbis-1.3.5\lib\modes\setup_44.h">
+    <ClInclude Include="libvorbis-1.3.5\lib\modes\setup_44.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
-    <ClInclude Include="..\libvorbis-1.3.5\lib\modes\setup_44u.h">
+    <ClInclude Include="libvorbis-1.3.5\lib\modes\setup_44u.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
-    <ClInclude Include="..\libvorbis-1.3.5\lib\modes\setup_X.h">
+    <ClInclude Include="libvorbis-1.3.5\lib\modes\setup_X.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
-    <ClInclude Include="..\libvorbis-1.3.5\lib\smallft.h">
+    <ClInclude Include="libvorbis-1.3.5\lib\smallft.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
-    <ClInclude Include="..\libvorbis-1.3.5\include\vorbis\vorbisfile.h">
+    <ClInclude Include="libvorbis-1.3.5\include\vorbis\vorbisfile.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
-    <ClInclude Include="..\libvorbis-1.3.5\lib\window.h">
+    <ClInclude Include="libvorbis-1.3.5\lib\window.h">
       <Filter>libvorbis</Filter>
     </ClInclude>
-    <ClInclude Include="..\libtheora-1.1.1\include\theora\codec.h">
+    <ClInclude Include="libtheora-1.1.1\include\theora\codec.h">
       <Filter>libtheora\include\theora</Filter>
     </ClInclude>
-    <ClInclude Include="..\libtheora-1.1.1\include\theora\theora.h">
+    <ClInclude Include="libtheora-1.1.1\include\theora\theora.h">
       <Filter>libtheora\include\theora</Filter>
     </ClInclude>
-    <ClInclude Include="..\libtheora-1.1.1\include\theora\theoradec.h">
+    <ClInclude Include="libtheora-1.1.1\include\theora\theoradec.h">
       <Filter>libtheora\include\theora</Filter>
     </ClInclude>
-    <ClInclude Include="..\libtheora-1.1.1\lib\cpu.h">
+    <ClInclude Include="libtheora-1.1.1\lib\cpu.h">
       <Filter>libtheora\lib</Filter>
     </ClInclude>
-    <ClInclude Include="..\libtheora-1.1.1\lib\internal.h">
+    <ClInclude Include="libtheora-1.1.1\lib\internal.h">
       <Filter>libtheora\lib</Filter>
     </ClInclude>
-    <ClInclude Include="..\libtheora-1.1.1\lib\apiwrapper.h">
+    <ClInclude Include="libtheora-1.1.1\lib\apiwrapper.h">
       <Filter>libtheora\lib\dec</Filter>
     </ClInclude>
-    <ClInclude Include="..\libtheora-1.1.1\lib\bitpack.h">
+    <ClInclude Include="libtheora-1.1.1\lib\bitpack.h">
       <Filter>libtheora\lib\dec</Filter>
     </ClInclude>
-    <ClInclude Include="..\libtheora-1.1.1\lib\dct.h">
+    <ClInclude Include="libtheora-1.1.1\lib\dct.h">
       <Filter>libtheora\lib\dec</Filter>
     </ClInclude>
-    <ClInclude Include="..\libtheora-1.1.1\lib\decint.h">
+    <ClInclude Include="libtheora-1.1.1\lib\decint.h">
       <Filter>libtheora\lib\dec</Filter>
     </ClInclude>
-    <ClInclude Include="..\libtheora-1.1.1\lib\dequant.h">
+    <ClInclude Include="libtheora-1.1.1\lib\dequant.h">
       <Filter>libtheora\lib\dec</Filter>
     </ClInclude>
-    <ClInclude Include="..\libtheora-1.1.1\lib\huffdec.h">
+    <ClInclude Include="libtheora-1.1.1\lib\huffdec.h">
       <Filter>libtheora\lib\dec</Filter>
     </ClInclude>
-    <ClInclude Include="..\libtheora-1.1.1\lib\huffman.h">
+    <ClInclude Include="libtheora-1.1.1\lib\huffman.h">
       <Filter>libtheora\lib\dec</Filter>
     </ClInclude>
-    <ClInclude Include="..\libtheora-1.1.1\lib\ocintrin.h">
+    <ClInclude Include="libtheora-1.1.1\lib\ocintrin.h">
       <Filter>libtheora\lib\dec</Filter>
     </ClInclude>
-    <ClInclude Include="..\libtheora-1.1.1\lib\quant.h">
+    <ClInclude Include="libtheora-1.1.1\lib\quant.h">
       <Filter>libtheora\lib\dec</Filter>
     </ClInclude>
-    <ClInclude Include="..\libogg-1.3.2\include\ogg\ogg.h">
+    <ClInclude Include="libogg-1.3.2\include\ogg\ogg.h">
       <Filter>libogg</Filter>
     </ClInclude>
-    <ClInclude Include="..\libogg-1.3.2\include\ogg\os_types.h">
+    <ClInclude Include="libogg-1.3.2\include\ogg\os_types.h">
       <Filter>libogg</Filter>
     </ClInclude>
   </ItemGroup>
