@@ -535,10 +535,12 @@ int TheoraPlayer::GetVideoFrame(THEORAPLAYER_VideoFrame* frame)
 		return -1;
 
 	auto result = _state->DecodeNextVideoFrame(frame);
+	//If we had a decode error, nuke the internal state and refuse to provide any more data
 	if(result < 0)
 	{
 		delete _state;
 		_state = nullptr;
+		return -1;
 	}
 	return result;
 }

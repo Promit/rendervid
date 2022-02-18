@@ -2,6 +2,7 @@
 #include <cstring>
 #include <cassert>
 #include <chrono>
+#include <thread>
 #include "TheoraPlayer.h"
 
 #ifndef GLEW_STATIC
@@ -140,11 +141,10 @@ static void game_loop(Shader ourShader, const THEORAPLAYER_VideoFrame *video, GL
 
 static void playfile(const char *fname)
 {
+	using namespace std::chrono_literals;
+
 	TheoraPlayer player;
 	//const THEORAPLAYER_AudioPacket *audio = NULL;
-	THEORAPLAYER_VideoFrame *video = NULL;
-	GLuint framems = 0;
-	int initfailed = 0;
 	int quit = 0;
 	if(setup() != 0) {
 		return;
@@ -168,9 +168,9 @@ static void playfile(const char *fname)
 		return;
 	}
 
-	video = new THEORAPLAYER_VideoFrame();
+	THEORAPLAYER_VideoFrame* video = new THEORAPLAYER_VideoFrame();
 	player.GetVideoFrame(video);
-	framems = (video->fps == 0.0) ? 0 : ((GLuint)(1000.0 / video->fps));
+	const unsigned int framems = (video->fps == 0.0) ? 0 : ((GLuint)(1000.0 / video->fps));
 	if(!window)
 	{
 		std::cout << "ERROR" << std::endl;
@@ -181,65 +181,27 @@ static void playfile(const char *fname)
 	{
 		const long long now = getTime() - baseticks;
 
-		game_loop(ourShader, video, VAO);
-		player.GetVideoFrame(video);
-
-		//FIXME: This is the old code for correctly timing the video. Need to rewrite this for the new code.
-#if 0
 		// Play video frames when it's time.
-		if(video && (video->playms <= now))
+		if (video->playms <= now)
 		{
-			//printf("Play video frame (%u ms)!\n", video->playms);
-			if(framems && ((now - video->playms) >= framems))
+			if (framems && ((now - video->playms) >= framems))
 			{
-				// Skip frames to catch up, but keep track of the last one
-				//  in case we catch up to a series of dupe frames, which
-				//  means we'd have to draw that final frame and then wait for
-				//  more.
-				const THEORAPLAY_VideoFrame *last = video;
-				while((video = THEORAPLAY_getVideo(decoder)) != NULL)
+				// Skip frames to catch up
+				while (player.GetVideoFrame(video) >= 0)
 				{
-					THEORAPLAY_freeVideo(last);
-					last = video;
-					if((now - video->playms) < framems)
+					if ((now - video->playms) < framems)
 						break;
 				} // while
-
-				if(!video)
-					video = last;
 			} // if
 
-			if(!video)  // do nothing; we're far behind and out of options.
-			{
-				static int warned = 0;
-				if(!warned)
-				{
-					warned = 1;
-					fprintf(stderr, "WARNING: Playback can't keep up!\n");
-				} // if
-			} // if
-			else
-			{
-				game_loop(ourShader, video, VAO);
-			} // else
-
-			THEORAPLAY_freeVideo(video);
-			video = NULL;
-		} // if
-		else  // no new video frame? Give up some CPU.
+			game_loop(ourShader, video, VAO);
+			player.GetVideoFrame(video);
+		}
+		else
 		{
-			//SDL_Delay(10);
-		} // else
-#endif
+			std::this_thread::sleep_for(1ms);
+		}
 	}
-
-	/*if(initfailed)
-		printf("Initialization failed!\n");
-	else if(THEORAPLAY_decodingError(decoder))
-		printf("There was an error decoding this file!\n");
-	else
-		printf("done with this file!\n");*/
-
 } // playfile
 
 int main(int argc, char **argv)
