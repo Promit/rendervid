@@ -543,6 +543,7 @@ int TheoraPlayer::Prepare()
 	if(_state)
 		return -1;
 
+	//FIXME: Use a user-supplied allocator
 	_state = new THEORAPLAYER_State;
 	_state->ctx = _decoder;
 	auto result = _state->Prepare();
@@ -570,6 +571,12 @@ int TheoraPlayer::GetVideoFrame(THEORAPLAYER_VideoFrame* frame)
 		return -1;
 	}
 	return result;
+}
+
+//FIXME: Use a user-supplied allocator
+void TheoraPlayer::FreeFrameData(THEORAPLAYER_VideoFrame* frame)
+{
+	delete frame->pixels;
 }
 
 int TheoraPlayer::IsDecoding() const
