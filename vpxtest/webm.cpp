@@ -21,9 +21,8 @@ FILE _iob[] = { *stdin, *stdout, *stderr };
 
 extern "C" FILE * __cdecl __iob_func(void)
 {
-	return _iob;
+    return _iob;
 }
-
 
 static unsigned int mem_get_le32(const unsigned char *mem) {
     return (mem[3] << 24)|(mem[2] << 16)|(mem[1] << 8)|(mem[0]);
@@ -126,7 +125,10 @@ void play_webm(char const* name) {
     assert(id >= 0);
     int type = nestegg_track_type(ne, i);
     cout << "Track " << i << " codec id: " << id << " type " << type << " ";
-    interface = id == NESTEGG_CODEC_VP9 ? &vpx_codec_vp9_dx_algo : &vpx_codec_vp8_dx_algo;
+    if (id == NESTEGG_CODEC_VP9)
+        interface = &vpx_codec_vp9_dx_algo;
+    else if (id == NESTEGG_CODEC_VP8)
+        &vpx_codec_vp8_dx_algo;
     if (type == NESTEGG_TRACK_VIDEO) {
             
       r = nestegg_track_video_params(ne, i, &vparams);
