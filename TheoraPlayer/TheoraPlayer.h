@@ -47,13 +47,20 @@ enum THEORAPLAYER_VideoFormat
 	THEORAPLAYER_VIDFMT_BGRA   /* 32 bits packed pixel BGRA (full alpha). */
 };
 
+//Structure to hold one video frame, both metadata and pixel data
 struct THEORAPLAYER_VideoFrame
 {
+	//The timestamp of this frame
 	unsigned int playms;
+	//Playback framerate for this frame
 	double fps;
+	//Image width of this frame
 	unsigned int width;
+	//Image height of this frame
 	unsigned int height;
+	//Pixel format of this frame
 	THEORAPLAYER_VideoFormat format;
+	//Pixel data of this frame (owned by this struct)
 	unsigned char *pixels;
 };
 
@@ -73,12 +80,19 @@ public:
 	TheoraPlayer();
 	~TheoraPlayer();
 
+	//Open a video file by name for decode to the specified output format
 	int OpenDecode(const char* filename, THEORAPLAYER_VideoFormat outputFormat);
+	//Open a video file with user-supplied IO for decode to the specified output format
 	int OpenDecode(THEORAPLAYER_Io* io, THEORAPLAYER_VideoFormat outputFormat);
 	
+	//Begin decoding from the start of the video
 	int Prepare();
+	//True if we are currently in the midst of decoding this video and not at the end of the stream
 	int IsDecoding() const;
+	//Decode the next frame and save the data to the supplied frame. If the frame does not have pixel data, one will be allocated.
 	int GetVideoFrame(THEORAPLAYER_VideoFrame* frame);
+	//Free the previously allocated pixel data inside this frame.
+	void FreeFrameData(THEORAPLAYER_VideoFrame* frame);
 
 private:
 	struct THEORAPLAYER_Decoder* _decoder = nullptr;

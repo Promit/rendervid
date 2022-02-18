@@ -225,6 +225,8 @@ static void playfile(const char *fname)
 			std::this_thread::sleep_for(1ms);
 		}
 	}
+	player.FreeFrameData(video);
+	delete video;
 } // playfile
 
 int main(int argc, char **argv)
